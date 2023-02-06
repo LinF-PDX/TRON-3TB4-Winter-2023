@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/LinF/Documents/School/Winter 2023/3TB4/lab1/Tutorial2/simulation/qsim
+vmajority3
+Z1 !s110 1674494835
+!i10b 1
+!s100 :7mW[azZf2TL801>S>=NI0
+I:EdhId<c^YAGgfMBgIA=V2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1674494834
+8majority3.vo
+Fmajority3.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1674494835.000000
+!s107 majority3.vo|
+!s90 -work|work|majority3.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vmajority3_vlg_vec_tst
+R1
+!i10b 1
+!s100 BL]fR5T]mFoE^j3ggI5RQ1
+INPlB6_Q<]I;_bRLP8EnaT2
+R2
+R0
+w1674494833
+8majority3.vwf.vt
+Fmajority3.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 majority3.vwf.vt|
+!s90 -work|work|majority3.vwf.vt|
+!i113 1
+R5
+R6

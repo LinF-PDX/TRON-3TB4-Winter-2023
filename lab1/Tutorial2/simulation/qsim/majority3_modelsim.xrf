@@ -1,0 +1,10 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/LinF/Documents/School/Winter 2023/3TB4/lab1/Tutorial2/majority3.v
+source_file = 1, C:/Users/LinF/Documents/School/Winter 2023/3TB4/lab1/Tutorial2/db/majority3.cbx.xml
+design_name = majority3
+instance = comp, \f~output , f~output, majority3, 1
+instance = comp, \x3~input , x3~input, majority3, 1
+instance = comp, \x2~input , x2~input, majority3, 1
+instance = comp, \x1~input , x1~input, majority3, 1
+instance = comp, \f~0 , f~0, majority3, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, majority3, 1

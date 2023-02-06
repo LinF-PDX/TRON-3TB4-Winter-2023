@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/LinF/Documents/School/Winter 2023/3TB4/lab1/Tutorial1/simulation/qsim
+vlight
+Z1 !s110 1674491701
+!i10b 1
+!s100 ^FZQPg_>f2DhIZd3kT`ib0
+I[5IYcCESa5lzZOgPeol^I0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1674491697
+8light.vo
+Flight.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1674491701.000000
+!s107 light.vo|
+!s90 -work|work|light.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vlight_vlg_vec_tst
+R1
+!i10b 1
+!s100 ]ocB;`<Xf[@;f2>Ieh;C40
+IN^7Td9cm`Wk1dhSiikBNm3
+R2
+R0
+w1674491695
+8light.vwf.vt
+Flight.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 light.vwf.vt|
+!s90 -work|work|light.vwf.vt|
+!i113 1
+R5
+R6

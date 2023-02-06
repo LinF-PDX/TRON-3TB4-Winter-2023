@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/LinF/Documents/School/Winter2023/3TB4/lab1/lab1part1/simulation/qsim
+vlab1part1
+Z1 !s110 1675100436
+!i10b 1
+!s100 RY<?@3fYfSfTWi>f][miS3
+Iz1lYTaNCn<1cOULjd;Lga3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1675100435
+8lab1part1.vo
+Flab1part1.vo
+L0 31
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1675100436.000000
+!s107 lab1part1.vo|
+!s90 -work|work|lab1part1.vo|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+vlab1part1_vlg_vec_tst
+R1
+!i10b 1
+!s100 acjGSi9cghFLh8cPRaB>@3
+I8I2j;2To4JRFXHd3I[8SO0
+R2
+R0
+R3
+8Counter.vwf.vt
+FCounter.vwf.vt
+L0 29
+R4
+r1
+!s85 0
+31
+R5
+!s107 Counter.vwf.vt|
+!s90 -work|work|Counter.vwf.vt|
+!i113 1
+R6
+R7
