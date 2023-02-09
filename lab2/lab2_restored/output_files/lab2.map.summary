@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Wed Feb 08 15:44:00 2023
+Analysis & Synthesis Status : Successful - Thu Feb 09 01:00:59 2023
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 Revision Name : lab2
 Top-level Entity Name : lab2
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 97
+Total registers : 124
 Total pins : 57
 Total virtual pins : 0
 Total block memory bits : 0

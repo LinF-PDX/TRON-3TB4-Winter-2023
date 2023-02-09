@@ -45,6 +45,7 @@ module lab2(input CLOCK_50,  input [3:0] KEY,  output [6:0] HEX0,HEX1,HEX2,HEX3,
 	
 	
 	wire [13:0] random_wait_time;
+	wire rand_ready;
 
 	
 	reg [1:0]  hex_sel=2'b00;  //whether blinking or not
@@ -84,7 +85,7 @@ module lab2(input CLOCK_50,  input [3:0] KEY,  output [6:0] HEX0,HEX1,HEX2,HEX3,
 
 	counter (.clk(clk_ms), .reset_n(KEY[1]), .resume_n(KEY[2]), .enable(w_display_counter_start), .ms_count(display_ms));
 	
-
+	random (.clk(clk_ms), .reset_n(KEY[1]), .resume_n(KEY[2]), .random(random_wait_time), .rnd_ready(rand_ready));
 
 	
 	blinkHEX #(.factor(200) ) (.ms_clk(clk_ms), .Reset_n(KEY[1]), .d0(w_blink0), .d1(w_blink1), .d2(w_blink2), .d3(w_blink3), .d4(w_blink4),.d5(w_blink5));
@@ -109,7 +110,7 @@ module lab2(input CLOCK_50,  input [3:0] KEY,  output [6:0] HEX0,HEX1,HEX2,HEX3,
 	seven_seg_decoder  decoder5(digit5, HEX5);
 
 	
-	assign random_wait_time=1000;
+	//assign random_wait_time=1000;
 	
 	
 	
