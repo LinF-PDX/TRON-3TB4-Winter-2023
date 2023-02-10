@@ -1,2 +1,2 @@
-Warning (10273): Verilog HDL warning at seven_seg_decoder.v(27): extended using "x" or "z" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/lab2/Tutorial_lab2/seven_seg_decoder.v Line: 27
-Warning (10268): Verilog HDL information at counter.v(5): always construct contains both blocking and non-blocking assignments File: C:/Users/LinF/Documents/School/Winter2023/3TB4/lab2/Tutorial_lab2/counter.v Line: 5
+Warning (10273): Verilog HDL warning at seven_seg_decoder.v(27): extended using "x" or "z" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/Tutorial_lab2/seven_seg_decoder.v Line: 27
+Warning (10268): Verilog HDL information at counter.v(5): always construct contains both blocking and non-blocking assignments File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/Tutorial_lab2/counter.v Line: 5

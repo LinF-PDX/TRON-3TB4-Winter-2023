@@ -1,50 +1,50 @@
 |lab2Test
-CLOCK_50 => CLOCK_50.IN2
+CLOCK_50 => CLOCK_50.IN1
 KEY[0] => ~NO_FANOUT~
-KEY[1] => KEY[1].IN3
-KEY[2] => KEY[2].IN1
-HEX0[0] << seven_seg_decoder:decoder0.port1
-HEX0[1] << seven_seg_decoder:decoder0.port1
-HEX0[2] << seven_seg_decoder:decoder0.port1
-HEX0[3] << seven_seg_decoder:decoder0.port1
-HEX0[4] << seven_seg_decoder:decoder0.port1
-HEX0[5] << seven_seg_decoder:decoder0.port1
-HEX0[6] << seven_seg_decoder:decoder0.port1
-HEX1[0] << seven_seg_decoder:decoder1.port1
-HEX1[1] << seven_seg_decoder:decoder1.port1
-HEX1[2] << seven_seg_decoder:decoder1.port1
-HEX1[3] << seven_seg_decoder:decoder1.port1
-HEX1[4] << seven_seg_decoder:decoder1.port1
-HEX1[5] << seven_seg_decoder:decoder1.port1
-HEX1[6] << seven_seg_decoder:decoder1.port1
-HEX2[0] << seven_seg_decoder:decoder2.port1
-HEX2[1] << seven_seg_decoder:decoder2.port1
-HEX2[2] << seven_seg_decoder:decoder2.port1
-HEX2[3] << seven_seg_decoder:decoder2.port1
-HEX2[4] << seven_seg_decoder:decoder2.port1
-HEX2[5] << seven_seg_decoder:decoder2.port1
-HEX2[6] << seven_seg_decoder:decoder2.port1
-HEX3[0] << seven_seg_decoder:decoder3.port1
-HEX3[1] << seven_seg_decoder:decoder3.port1
-HEX3[2] << seven_seg_decoder:decoder3.port1
-HEX3[3] << seven_seg_decoder:decoder3.port1
-HEX3[4] << seven_seg_decoder:decoder3.port1
-HEX3[5] << seven_seg_decoder:decoder3.port1
-HEX3[6] << seven_seg_decoder:decoder3.port1
-HEX4[0] << seven_seg_decoder:decoder4.port1
-HEX4[1] << seven_seg_decoder:decoder4.port1
-HEX4[2] << seven_seg_decoder:decoder4.port1
-HEX4[3] << seven_seg_decoder:decoder4.port1
-HEX4[4] << seven_seg_decoder:decoder4.port1
-HEX4[5] << seven_seg_decoder:decoder4.port1
-HEX4[6] << seven_seg_decoder:decoder4.port1
-HEX5[0] << seven_seg_decoder:decoder5.port1
-HEX5[1] << seven_seg_decoder:decoder5.port1
-HEX5[2] << seven_seg_decoder:decoder5.port1
-HEX5[3] << seven_seg_decoder:decoder5.port1
-HEX5[4] << seven_seg_decoder:decoder5.port1
-HEX5[5] << seven_seg_decoder:decoder5.port1
-HEX5[6] << seven_seg_decoder:decoder5.port1
+KEY[1] => KEY[1].IN4
+KEY[2] => KEY[2].IN2
+HEX0[0] <= seven_seg_decoder:decoder0.port1
+HEX0[1] <= seven_seg_decoder:decoder0.port1
+HEX0[2] <= seven_seg_decoder:decoder0.port1
+HEX0[3] <= seven_seg_decoder:decoder0.port1
+HEX0[4] <= seven_seg_decoder:decoder0.port1
+HEX0[5] <= seven_seg_decoder:decoder0.port1
+HEX0[6] <= seven_seg_decoder:decoder0.port1
+HEX1[0] <= seven_seg_decoder:decoder1.port1
+HEX1[1] <= seven_seg_decoder:decoder1.port1
+HEX1[2] <= seven_seg_decoder:decoder1.port1
+HEX1[3] <= seven_seg_decoder:decoder1.port1
+HEX1[4] <= seven_seg_decoder:decoder1.port1
+HEX1[5] <= seven_seg_decoder:decoder1.port1
+HEX1[6] <= seven_seg_decoder:decoder1.port1
+HEX2[0] <= seven_seg_decoder:decoder2.port1
+HEX2[1] <= seven_seg_decoder:decoder2.port1
+HEX2[2] <= seven_seg_decoder:decoder2.port1
+HEX2[3] <= seven_seg_decoder:decoder2.port1
+HEX2[4] <= seven_seg_decoder:decoder2.port1
+HEX2[5] <= seven_seg_decoder:decoder2.port1
+HEX2[6] <= seven_seg_decoder:decoder2.port1
+HEX3[0] <= seven_seg_decoder:decoder3.port1
+HEX3[1] <= seven_seg_decoder:decoder3.port1
+HEX3[2] <= seven_seg_decoder:decoder3.port1
+HEX3[3] <= seven_seg_decoder:decoder3.port1
+HEX3[4] <= seven_seg_decoder:decoder3.port1
+HEX3[5] <= seven_seg_decoder:decoder3.port1
+HEX3[6] <= seven_seg_decoder:decoder3.port1
+HEX4[0] <= seven_seg_decoder:decoder4.port1
+HEX4[1] <= seven_seg_decoder:decoder4.port1
+HEX4[2] <= seven_seg_decoder:decoder4.port1
+HEX4[3] <= seven_seg_decoder:decoder4.port1
+HEX4[4] <= seven_seg_decoder:decoder4.port1
+HEX4[5] <= seven_seg_decoder:decoder4.port1
+HEX4[6] <= seven_seg_decoder:decoder4.port1
+HEX5[0] <= seven_seg_decoder:decoder5.port1
+HEX5[1] <= seven_seg_decoder:decoder5.port1
+HEX5[2] <= seven_seg_decoder:decoder5.port1
+HEX5[3] <= seven_seg_decoder:decoder5.port1
+HEX5[4] <= seven_seg_decoder:decoder5.port1
+HEX5[5] <= seven_seg_decoder:decoder5.port1
+HEX5[6] <= seven_seg_decoder:decoder5.port1
 
 
 |lab2Test|clock_divider:comb_3
@@ -117,7 +117,72 @@ Reset_n => countQ[31].ACLR
 Pulse_ms <= Pulse_ms~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|lab2Test|random:comb_4
+|lab2Test|counter:comb_4
+clk => ms_count[0]~reg0.CLK
+clk => ms_count[1]~reg0.CLK
+clk => ms_count[2]~reg0.CLK
+clk => ms_count[3]~reg0.CLK
+clk => ms_count[4]~reg0.CLK
+clk => ms_count[5]~reg0.CLK
+clk => ms_count[6]~reg0.CLK
+clk => ms_count[7]~reg0.CLK
+clk => ms_count[8]~reg0.CLK
+clk => ms_count[9]~reg0.CLK
+clk => ms_count[10]~reg0.CLK
+clk => ms_count[11]~reg0.CLK
+clk => ms_count[12]~reg0.CLK
+clk => ms_count[13]~reg0.CLK
+clk => ms_count[14]~reg0.CLK
+clk => ms_count[15]~reg0.CLK
+clk => ms_count[16]~reg0.CLK
+clk => ms_count[17]~reg0.CLK
+clk => ms_count[18]~reg0.CLK
+clk => ms_count[19]~reg0.CLK
+reset_n => always0.IN0
+resume_n => always0.IN1
+enable => ms_count[0]~reg0.ENA
+enable => ms_count[19]~reg0.ENA
+enable => ms_count[18]~reg0.ENA
+enable => ms_count[17]~reg0.ENA
+enable => ms_count[16]~reg0.ENA
+enable => ms_count[15]~reg0.ENA
+enable => ms_count[14]~reg0.ENA
+enable => ms_count[13]~reg0.ENA
+enable => ms_count[12]~reg0.ENA
+enable => ms_count[11]~reg0.ENA
+enable => ms_count[10]~reg0.ENA
+enable => ms_count[9]~reg0.ENA
+enable => ms_count[8]~reg0.ENA
+enable => ms_count[7]~reg0.ENA
+enable => ms_count[6]~reg0.ENA
+enable => ms_count[5]~reg0.ENA
+enable => ms_count[4]~reg0.ENA
+enable => ms_count[3]~reg0.ENA
+enable => ms_count[2]~reg0.ENA
+enable => ms_count[1]~reg0.ENA
+ms_count[0] <= ms_count[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ms_count[1] <= ms_count[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ms_count[2] <= ms_count[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ms_count[3] <= ms_count[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ms_count[4] <= ms_count[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ms_count[5] <= ms_count[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ms_count[6] <= ms_count[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ms_count[7] <= ms_count[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ms_count[8] <= ms_count[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ms_count[9] <= ms_count[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ms_count[10] <= ms_count[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ms_count[11] <= ms_count[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ms_count[12] <= ms_count[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ms_count[13] <= ms_count[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ms_count[14] <= ms_count[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ms_count[15] <= ms_count[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ms_count[16] <= ms_count[16]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ms_count[17] <= ms_count[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ms_count[18] <= ms_count[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ms_count[19] <= ms_count[19]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab2Test|random:comb_5
 clk => random[0]~reg0.CLK
 clk => random[1]~reg0.CLK
 clk => random[2]~reg0.CLK
@@ -223,12 +288,8 @@ random[13] <= random[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 rnd_ready <= rnd_ready~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|lab2Test|hex_to_bcd_converter:comb_5
-clk => ~NO_FANOUT~
-reset => ~NO_FANOUT~
-hex_number[0] => LessThan62.IN8
-hex_number[0] => Add62.IN8
-hex_number[0] => bcd_digit.DATAA
+|lab2Test|hex_to_bcd_converter:comb_6
+reset_n => ~NO_FANOUT~
 hex_number[0] => bcd_digit_0[0].DATAIN
 hex_number[1] => LessThan56.IN8
 hex_number[1] => Add56.IN8

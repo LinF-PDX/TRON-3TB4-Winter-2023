@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab2Test
-Thu Feb 09 16:13:50 2023
+Fri Feb 10 02:33:59 2023
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -14,12 +14,12 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Registers Removed During Synthesis
-  9. Removed Registers Triggering Further Register Optimizations
- 10. General Register Statistics
+  9. General Register Statistics
+ 10. Inverted Register Statistics
  11. Parameter Settings for User Entity Instance: clock_divider:comb_3
- 12. Port Connectivity Checks: "hex_to_bcd_converter:comb_5"
- 13. Port Connectivity Checks: "random:comb_4"
- 14. Port Connectivity Checks: "clock_divider:comb_3"
+ 12. Port Connectivity Checks: "hex_to_bcd_converter:comb_6"
+ 13. Port Connectivity Checks: "random:comb_5"
+ 14. Port Connectivity Checks: "counter:comb_4"
  15. Post-Synthesis Netlist Statistics for Top Partition
  16. Elapsed Time Per Partition
  17. Analysis & Synthesis Messages
@@ -49,13 +49,13 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Feb 09 16:13:50 2023       ;
+; Analysis & Synthesis Status     ; Successful - Fri Feb 10 02:33:59 2023       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; lab2Test                                    ;
 ; Top-level Entity Name           ; lab2Test                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 0                                           ;
+; Total registers                 ; 59                                          ;
 ; Total pins                      ; 46                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -165,10 +165,11 @@ refer to the applicable agreement for further details.
 ; Maximum allowed            ; 14          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 14          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processors 2-14        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -181,67 +182,60 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary            ;
-+---------------------------------------------+----------+
-; Resource                                    ; Usage    ;
-+---------------------------------------------+----------+
-; Estimate of Logic utilization (ALMs needed) ; 0        ;
-;                                             ;          ;
-; Combinational ALUT usage for logic          ; 0        ;
-;     -- 7 input functions                    ; 0        ;
-;     -- 6 input functions                    ; 0        ;
-;     -- 5 input functions                    ; 0        ;
-;     -- 4 input functions                    ; 0        ;
-;     -- <=3 input functions                  ; 0        ;
-;                                             ;          ;
-; Dedicated logic registers                   ; 0        ;
-;                                             ;          ;
-; I/O pins                                    ; 46       ;
-;                                             ;          ;
-; Total DSP Blocks                            ; 0        ;
-;                                             ;          ;
-; Maximum fan-out node                        ; CLOCK_50 ;
-; Maximum fan-out                             ; 1        ;
-; Total fan-out                               ; 46       ;
-; Average fan-out                             ; 0.50     ;
-+---------------------------------------------+----------+
++------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                ;
++---------------------------------------------+--------------+
+; Resource                                    ; Usage        ;
++---------------------------------------------+--------------+
+; Estimate of Logic utilization (ALMs needed) ; 74           ;
+;                                             ;              ;
+; Combinational ALUT usage for logic          ; 122          ;
+;     -- 7 input functions                    ; 0            ;
+;     -- 6 input functions                    ; 24           ;
+;     -- 5 input functions                    ; 17           ;
+;     -- 4 input functions                    ; 30           ;
+;     -- <=3 input functions                  ; 51           ;
+;                                             ;              ;
+; Dedicated logic registers                   ; 59           ;
+;                                             ;              ;
+; I/O pins                                    ; 46           ;
+;                                             ;              ;
+; Total DSP Blocks                            ; 0            ;
+;                                             ;              ;
+; Maximum fan-out node                        ; KEY[1]~input ;
+; Maximum fan-out                             ; 48           ;
+; Total fan-out                               ; 733          ;
+; Average fan-out                             ; 2.68         ;
++---------------------------------------------+--------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                    ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |lab2Test                  ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 46   ; 0            ; |lab2Test           ; lab2Test    ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                     ;
++----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------+----------------------+--------------+
+; Compilation Hierarchy Node       ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                   ; Entity Name          ; Library Name ;
++----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------+----------------------+--------------+
+; |lab2Test                        ; 122 (0)             ; 59 (0)                    ; 0                 ; 0          ; 46   ; 0            ; |lab2Test                             ; lab2Test             ; work         ;
+;    |clock_divider:comb_3|        ; 41 (41)             ; 33 (33)                   ; 0                 ; 0          ; 0    ; 0            ; |lab2Test|clock_divider:comb_3        ; clock_divider        ; work         ;
+;    |hex_to_bcd_converter:comb_6| ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab2Test|hex_to_bcd_converter:comb_6 ; hex_to_bcd_converter ; work         ;
+;    |random:comb_5|               ; 22 (22)             ; 26 (26)                   ; 0                 ; 0          ; 0    ; 0            ; |lab2Test|random:comb_5               ; random               ; work         ;
+;    |seven_seg_decoder:decoder0|  ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab2Test|seven_seg_decoder:decoder0  ; seven_seg_decoder    ; work         ;
+;    |seven_seg_decoder:decoder1|  ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab2Test|seven_seg_decoder:decoder1  ; seven_seg_decoder    ; work         ;
+;    |seven_seg_decoder:decoder2|  ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab2Test|seven_seg_decoder:decoder2  ; seven_seg_decoder    ; work         ;
+;    |seven_seg_decoder:decoder3|  ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab2Test|seven_seg_decoder:decoder3  ; seven_seg_decoder    ; work         ;
++----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------+----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                            ;
-+----------------------------------------+--------------------------------------+
-; Register name                          ; Reason for Removal                   ;
-+----------------------------------------+--------------------------------------+
-; random:comb_4|random[0]                ; Stuck at GND due to stuck port clock ;
-; random:comb_4|reg_values[0..13]        ; Stuck at VCC due to stuck port clock ;
-; random:comb_4|enable                   ; Stuck at VCC due to stuck port clock ;
-; Total Number of Removed Registers = 16 ;                                      ;
-+----------------------------------------+--------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                          ;
-+------------------------------+-------------------------+-------------------------------------------------------------+
-; Register name                ; Reason for Removal      ; Registers Removed due to This Register                      ;
-+------------------------------+-------------------------+-------------------------------------------------------------+
-; random:comb_4|reg_values[12] ; Stuck at VCC            ; random:comb_4|reg_values[11], random:comb_4|reg_values[10], ;
-;                              ; due to stuck port clock ; random:comb_4|reg_values[9], random:comb_4|reg_values[8],   ;
-;                              ;                         ; random:comb_4|reg_values[7], random:comb_4|reg_values[6],   ;
-;                              ;                         ; random:comb_4|reg_values[5], random:comb_4|reg_values[4],   ;
-;                              ;                         ; random:comb_4|reg_values[3], random:comb_4|reg_values[2],   ;
-;                              ;                         ; random:comb_4|reg_values[1]                                 ;
-+------------------------------+-------------------------+-------------------------------------------------------------+
++----------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                               ;
++---------------------------------------+------------------------------------------+
+; Register name                         ; Reason for Removal                       ;
++---------------------------------------+------------------------------------------+
+; random:comb_5|random[13]              ; Merged with random:comb_5|random[12]     ;
+; random:comb_5|reg_values[13]          ; Merged with random:comb_5|reg_values[12] ;
+; random:comb_5|random[12]              ; Stuck at GND due to stuck port data_in   ;
+; Total Number of Removed Registers = 3 ;                                          ;
++---------------------------------------+------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -249,14 +243,37 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
+; Total registers                              ; 59    ;
+; Number of registers using Synchronous Clear  ; 32    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 47    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 24    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++---------------------------------------------------+
+; Inverted Register Statistics                      ;
++-----------------------------------------+---------+
+; Inverted Register                       ; Fan out ;
++-----------------------------------------+---------+
+; random:comb_5|reg_values[0]             ; 5       ;
+; random:comb_5|reg_values[12]            ; 3       ;
+; random:comb_5|reg_values[4]             ; 4       ;
+; random:comb_5|reg_values[3]             ; 2       ;
+; random:comb_5|reg_values[9]             ; 3       ;
+; random:comb_5|reg_values[8]             ; 3       ;
+; random:comb_5|reg_values[7]             ; 3       ;
+; random:comb_5|reg_values[6]             ; 4       ;
+; random:comb_5|reg_values[5]             ; 2       ;
+; random:comb_5|reg_values[11]            ; 3       ;
+; random:comb_5|reg_values[10]            ; 3       ;
+; random:comb_5|enable                    ; 3       ;
+; random:comb_5|reg_values[1]             ; 1       ;
+; random:comb_5|reg_values[2]             ; 3       ;
+; Total number of inverted registers = 14 ;         ;
++-----------------------------------------+---------+
 
 
 +-------------------------------------------------------------------+
@@ -269,32 +286,33 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "hex_to_bcd_converter:comb_5"                                                                                                                              ;
-+------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port       ; Type  ; Severity ; Details                                                                                                                                              ;
-+------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------+
-; hex_number ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (20 bits) it drives.  Extra input bit(s) "hex_number[19..1]" will be connected to GND. ;
-+------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "hex_to_bcd_converter:comb_6"                                                                                                                                ;
++------------+-------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                                                                                                                ;
++------------+-------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; hex_number ; Input ; Warning  ; Input port expression (14 bits) is smaller than the input port (20 bits) it drives.  Extra input bit(s) "hex_number[19..14]" will be connected to GND. ;
++------------+-------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "random:comb_4"                                                                                                                   ;
-+-----------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------+
-; Port      ; Type   ; Severity ; Details                                                                                                                     ;
-+-----------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------+
-; random    ; Output ; Warning  ; Output or bidir port (14 bits) is wider than the port expression (1 bits) it drives; bit(s) "random[13..1]" have no fanouts ;
-; rnd_ready ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                         ;
-+-----------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "random:comb_5"                                                                           ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; rnd_ready ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "clock_divider:comb_3"                                                                   ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port     ; Type   ; Severity ; Details                                                                             ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; Pulse_ms ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "counter:comb_4"                                                                                                                                                                          ;
++------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                                                                                                                            ;
++------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; enable     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; enable[-1] ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; ms_count   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                                ;
++------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -302,13 +320,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 2                           ;
-;     normal            ; 2                           ;
+; arriav_ff             ; 59                          ;
+;     CLR               ; 3                           ;
+;     CLR SCLR          ; 32                          ;
+;     ENA               ; 12                          ;
+;     ENA CLR           ; 12                          ;
+; arriav_lcell_comb     ; 130                         ;
+;     arith             ; 32                          ;
+;         1 data inputs ; 32                          ;
+;     normal            ; 98                          ;
 ;         0 data inputs ; 2                           ;
+;         1 data inputs ; 18                          ;
+;         2 data inputs ; 7                           ;
+;         4 data inputs ; 30                          ;
+;         5 data inputs ; 17                          ;
+;         6 data inputs ; 24                          ;
 ; boundary_port         ; 46                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 0.00                        ;
-; Average LUT depth     ; 0.00                        ;
+; Max LUT depth         ; 6.00                        ;
+; Average LUT depth     ; 3.57                        ;
 +-----------------------+-----------------------------+
 
 
@@ -317,7 +347,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -327,57 +357,32 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Thu Feb 09 16:13:44 2023
+    Info: Processing started: Fri Feb 10 02:33:51 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab2Test -c lab2Test
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 14 of the 14 processors detected
-Info (12021): Found 5 design units, including 5 entities, in source file lab2test.v
+Warning (10463): Verilog HDL Declaration warning at lab2Test.v(5): "rand" is SystemVerilog-2005 keyword File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 5
+Info (12021): Found 6 design units, including 6 entities, in source file lab2test.v
     Info (12023): Found entity 1: lab2Test File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 1
-    Info (12023): Found entity 2: random File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 30
-    Info (12023): Found entity 3: hex_to_bcd_converter File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 76
-    Info (12023): Found entity 4: clock_divider File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 119
-    Info (12023): Found entity 5: seven_seg_decoder File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 144
-Warning (10236): Verilog HDL Implicit Net warning at lab2Test.v(8): created implicit net for "clk_in" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 8
-Warning (10236): Verilog HDL Implicit Net warning at lab2Test.v(8): created implicit net for "rand" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 8
-Warning (10463): Verilog HDL Declaration warning at lab2Test.v(8): "rand" is SystemVerilog-2005 keyword File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 8
-Critical Warning (10846): Verilog HDL Instantiation warning at lab2Test.v(7): instance has no name File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 7
-Critical Warning (10846): Verilog HDL Instantiation warning at lab2Test.v(8): instance has no name File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 8
+    Info (12023): Found entity 2: random File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 33
+    Info (12023): Found entity 3: hex_to_bcd_converter File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 79
+    Info (12023): Found entity 4: clock_divider File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 128
+    Info (12023): Found entity 5: counter File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 153
+    Info (12023): Found entity 6: seven_seg_decoder File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 168
+Warning (10236): Verilog HDL Implicit Net warning at lab2Test.v(10): created implicit net for "elk_en" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 10
 Critical Warning (10846): Verilog HDL Instantiation warning at lab2Test.v(9): instance has no name File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 9
+Critical Warning (10846): Verilog HDL Instantiation warning at lab2Test.v(10): instance has no name File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 10
+Critical Warning (10846): Verilog HDL Instantiation warning at lab2Test.v(11): instance has no name File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 11
+Critical Warning (10846): Verilog HDL Instantiation warning at lab2Test.v(12): instance has no name File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 12
 Info (12127): Elaborating entity "lab2Test" for the top level hierarchy
-Info (12128): Elaborating entity "clock_divider" for hierarchy "clock_divider:comb_3" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 7
-Info (12128): Elaborating entity "random" for hierarchy "random:comb_4" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 8
-Info (12128): Elaborating entity "hex_to_bcd_converter" for hierarchy "hex_to_bcd_converter:comb_5" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 9
-Info (12128): Elaborating entity "seven_seg_decoder" for hierarchy "seven_seg_decoder:decoder0" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 10
+Info (12128): Elaborating entity "clock_divider" for hierarchy "clock_divider:comb_3" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 9
+Info (12128): Elaborating entity "counter" for hierarchy "counter:comb_4" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 10
+Warning (10230): Verilog HDL assignment warning at lab2Test.v(163): truncated value with size 32 to match size of target (20) File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 163
+Info (12128): Elaborating entity "random" for hierarchy "random:comb_5" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 11
+Info (12128): Elaborating entity "hex_to_bcd_converter" for hierarchy "hex_to_bcd_converter:comb_6" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 12
+Info (12128): Elaborating entity "seven_seg_decoder" for hierarchy "seven_seg_decoder:decoder0" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 13
 Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "HEX0[0]" is stuck at GND File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 1
-    Warning (13410): Pin "HEX0[1]" is stuck at GND File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 1
-    Warning (13410): Pin "HEX0[2]" is stuck at GND File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 1
-    Warning (13410): Pin "HEX0[3]" is stuck at GND File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 1
-    Warning (13410): Pin "HEX0[4]" is stuck at GND File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 1
-    Warning (13410): Pin "HEX0[5]" is stuck at GND File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 1
-    Warning (13410): Pin "HEX0[6]" is stuck at VCC File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 1
-    Warning (13410): Pin "HEX1[0]" is stuck at GND File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 1
-    Warning (13410): Pin "HEX1[1]" is stuck at GND File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 1
-    Warning (13410): Pin "HEX1[2]" is stuck at GND File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 1
-    Warning (13410): Pin "HEX1[3]" is stuck at GND File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 1
-    Warning (13410): Pin "HEX1[4]" is stuck at GND File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 1
-    Warning (13410): Pin "HEX1[5]" is stuck at GND File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 1
-    Warning (13410): Pin "HEX1[6]" is stuck at VCC File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 1
-    Warning (13410): Pin "HEX2[0]" is stuck at GND File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 1
-    Warning (13410): Pin "HEX2[1]" is stuck at GND File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 1
-    Warning (13410): Pin "HEX2[2]" is stuck at GND File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 1
-    Warning (13410): Pin "HEX2[3]" is stuck at GND File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 1
-    Warning (13410): Pin "HEX2[4]" is stuck at GND File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 1
-    Warning (13410): Pin "HEX2[5]" is stuck at GND File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 1
-    Warning (13410): Pin "HEX2[6]" is stuck at VCC File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 1
-    Warning (13410): Pin "HEX3[0]" is stuck at GND File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 1
-    Warning (13410): Pin "HEX3[1]" is stuck at GND File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 1
-    Warning (13410): Pin "HEX3[2]" is stuck at GND File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 1
-    Warning (13410): Pin "HEX3[3]" is stuck at GND File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 1
-    Warning (13410): Pin "HEX3[4]" is stuck at GND File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 1
-    Warning (13410): Pin "HEX3[5]" is stuck at GND File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 1
-    Warning (13410): Pin "HEX3[6]" is stuck at VCC File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 1
     Warning (13410): Pin "HEX4[0]" is stuck at GND File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 1
     Warning (13410): Pin "HEX4[1]" is stuck at GND File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 1
     Warning (13410): Pin "HEX4[2]" is stuck at GND File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 1
@@ -392,22 +397,21 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "HEX5[4]" is stuck at GND File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 1
     Warning (13410): Pin "HEX5[5]" is stuck at GND File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 1
     Warning (13410): Pin "HEX5[6]" is stuck at VCC File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 1
+Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/output_files/lab2Test.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 4 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "CLOCK_50" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 1
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[0]" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 1
-    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 1
-    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v Line: 1
-Info (21057): Implemented 46 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 178 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 42 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 56 warnings
-    Info: Peak virtual memory: 4803 megabytes
-    Info: Processing ended: Thu Feb 09 16:13:50 2023
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:14
+    Info (21061): Implemented 132 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 26 warnings
+    Info: Peak virtual memory: 4865 megabytes
+    Info: Processing ended: Fri Feb 10 02:33:59 2023
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:15
 
 
 +------------------------------------------+

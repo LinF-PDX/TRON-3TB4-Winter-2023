@@ -9,46 +9,46 @@ z2
 cModel Technology
 Z0 dC:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/simulation/qsim
 vlab2Test
-Z1 !s110 1675975292
+Z1 !s110 1676000513
 !i10b 1
 !s100 G15gPQY>3GEA;L5T>UbWP3
 IX64f6CL8<l7XVG]E;D>f`0
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1675975292
+Z3 w1676000512
 8lab2Test.vo
 Flab2Test.vo
 L0 31
-Z3 OV;L;10.5b;63
+Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1675975292.000000
+Z5 !s108 1676000513.000000
 !s107 lab2Test.vo|
 !s90 -work|work|lab2Test.vo|
 !i113 1
-Z5 o-work work
-Z6 tCvgOpt 0
+Z6 o-work work
+Z7 tCvgOpt 0
 nlab2@test
 vlab2Test_vlg_vec_tst
 R1
 !i10b 1
-!s100 DJkAh==QUEmEgg?IR9@j[3
-IP7iiVZ3Vc0l479JUFe^@`3
+!s100 VA]0R<Hl?4SgIk7E_4Enk1
+I:zghTn@HjCWnR<]<:d@MP3
 R2
 R0
-w1675975291
+R3
 8randomSim.vwf.vt
 FrandomSim.vwf.vt
 L0 29
-R3
+R4
 r1
 !s85 0
 31
-R4
+R5
 !s107 randomSim.vwf.vt|
 !s90 -work|work|randomSim.vwf.vt|
 !i113 1
-R5
 R6
+R7
 nlab2@test_vlg_vec_tst

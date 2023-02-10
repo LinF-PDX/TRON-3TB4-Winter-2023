@@ -1,5 +1,6 @@
 vendor_name = ModelSim
 source_file = 1, C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/lab2Test.v
+source_file = 1, C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/randomSim.vwf
 source_file = 1, C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/db/lab2Test.cbx.xml
 design_name = lab2Test
 instance = comp, \rand[0]~output , rand[0]~output, lab2Test, 1

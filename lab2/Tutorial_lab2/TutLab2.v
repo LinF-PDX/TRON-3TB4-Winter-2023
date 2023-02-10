@@ -6,7 +6,7 @@ module TutLab2 (input CLOCK_50, input [2:0] KEY, output [6:0] HEX0, HEX1, HEX2, 
 	
 	clock_divider(.Clock(CLOCK_50), .Reset_n(KEY[0]), .clk_ms(clk_en));
 	counter(.clk(clk_en), .reset_n(KEY[0]), .start_n(KEY[1]), .stop_n(KEY[2]), .ms_count(ms));
-	hex_to_bcd_converter(clk_en, KEY[0], ms, digit0, digit1, digit2, digit3, digit4, digit5);
+	hex_to_bcd_converter(KEY[0], ms, digit0, digit1, digit2, digit3, digit4, digit5);
 	seven_seg_decoder decoder0(digit0, HEX0);
 	seven_seg_decoder decoder1(digit1, HEX1);
 	seven_seg_decoder decoder2(digit2, HEX2);

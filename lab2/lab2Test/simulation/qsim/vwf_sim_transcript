@@ -25,7 +25,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Thu Feb 09 15:41:30 2023
+    Info: Processing started: Thu Feb 09 22:41:51 2023
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab2Test -c lab2Test --vector_source=C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/randomSim.vwf --testbench_file=C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/simulation/qsim/randomSim.vwf.vt
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
@@ -53,13 +53,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Thu Feb 09 15:41:31 2023
+    Info: Processing started: Thu Feb 09 22:41:52 2023
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/simulation/qsim/ lab2Test -c lab2Test
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file lab2Test.vo in folder "C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4717 megabytes
-    Info: Processing ended: Thu Feb 09 15:41:32 2023
+    Info: Peak virtual memory: 4719 megabytes
+    Info: Processing ended: Thu Feb 09 22:41:53 2023
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -82,27 +82,27 @@ Reading C:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
 # do lab2Test.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:41:32 on Feb 09,2023
+# Start time: 22:41:53 on Feb 09,2023
 # vlog -work work lab2Test.vo 
 
 # -- Compiling module lab2Test
 # 
 # Top level modules:
 # 	lab2Test
-# End time: 15:41:32 on Feb 09,2023, Elapsed time: 0:00:00
+# End time: 22:41:53 on Feb 09,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:41:32 on Feb 09,2023
+# Start time: 22:41:53 on Feb 09,2023
 # vlog -work work randomSim.vwf.vt 
 # -- Compiling module lab2Test_vlg_vec_tst
 # 
 # Top level modules:
 # 	lab2Test_vlg_vec_tst
-# End time: 15:41:32 on Feb 09,2023, Elapsed time: 0:00:00
+# End time: 22:41:53 on Feb 09,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.lab2Test_vlg_vec_tst 
-# Start time: 15:41:32 on Feb 09,2023
+# Start time: 22:41:53 on Feb 09,2023
 # Loading work.lab2Test_vlg_vec_tst
 # Loading work.lab2Test
 # Loading altera_ver.dffeas
@@ -110,7 +110,7 @@ Reading C:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
 # after#25
 # ** Note: $finish    : randomSim.vwf.vt(50)
 #    Time: 200 ns  Iteration: 0  Instance: /lab2Test_vlg_vec_tst
-# End time: 15:41:33 on Feb 09,2023, Elapsed time: 0:00:01
+# End time: 22:41:53 on Feb 09,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
@@ -123,7 +123,7 @@ Reading C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/simulation/qsim/lab2Test_20230209154133.sim.vwf
+Writing the resulting VWF to C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/simulation/qsim/lab2Test_20230209224153.sim.vwf
 
 Finished VCD to VWF conversion.
 

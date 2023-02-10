@@ -2,11 +2,14 @@ module lab2Test (input CLOCK_50, input [2:0] KEY, output [6:0] HEX0, HEX1, HEX2,
 
 	wire clk_en;
 	wire rand_ready;
+	wire [13:0] rand;
 	wire [3:0] digit0,digit1,digit2,digit3,digit4,digit5;
+	wire [19:0] counter_hex;
 	
 	clock_divider(.Clock(CLOCK_50), .Reset_n(KEY[1]), .Pulse_ms(clk_en));
-	random(.clk(clk_in), .reset_n(KEY[1]), .resume_n(KEY[2]), .random(rand), .rnd_ready(rand_ready));
-	hex_to_bcd_converter(CLOCK_50, KEY[1], rand, digit0, digit1, digit2, digit3, digit4, digit5);
+	counter(.clk(elk_en), .reset_n(KEY[1]), .resume_n(KEY[2]), .enable(1), .ms_count(counter_hex));
+	random(.clk(clk_en), .reset_n(KEY[1]), .resume_n(KEY[2]), .random(rand), .rnd_ready(rand_ready));
+	hex_to_bcd_converter(KEY[1], rand, digit0, digit1, digit2, digit3, digit4, digit5);
 	seven_seg_decoder decoder0(digit0, HEX0);
 	seven_seg_decoder decoder1(digit1, HEX1);
 	seven_seg_decoder decoder2(digit2, HEX2);
@@ -73,7 +76,7 @@ module random (input clk, reset_n, resume_n, output reg [13:0] random,
 	end
 endmodule
 
-module hex_to_bcd_converter (input wire clk, reset, input wire [19:0] hex_number,
+module hex_to_bcd_converter (input reset_n, input wire [19:0] hex_number,
 	output [3:0] bcd_digit_0, bcd_digit_1, bcd_digit_2, bcd_digit_3, bcd_digit_4, bcd_digit_5);
 	
 	//DE1-SoC has 6 7_seg_LEDs, 20 bits can represent decimal 999999.
@@ -92,12 +95,17 @@ module hex_to_bcd_converter (input wire clk, reset, input wire [19:0] hex_number
 	
 	always @ (*) begin
 		//set all 6 digits to 0
-		for (i=5; i>=0; i=i-1) begin
-			bcd_digit[i] = 4'b0;
+		if (!reset_n)begin
+			for (i=5; i>=0; i=i-1) begin
+				bcd_digit[i]=4'b0;		
+			end
 		end
+		for (i=5; i>=0; i=i-1) begin
+			bcd_digit[i]=4'b0;		
+		end	
 		//shift 20 times
 		for (i=19; i>=0; i=i-1) begin
-			bcd_digit[0] = bcd_digit[0] + hex_number1[i];
+			//bcd_digit[0] = bcd_digit[0] + hex_number1[i];
 			//check all 6 BCD tetrads, if >=5 then add 3
 			for (k=5; k>=0; k=k-1) begin
 				if (bcd_digit[k] >= 5) begin
@@ -111,8 +119,9 @@ module hex_to_bcd_converter (input wire clk, reset, input wire [19:0] hex_number
 			end
 			//shift one bit of BIN/HEX left, for the last tetrad
 			bcd_digit[0] = bcd_digit[0] << 1;
+			bcd_digit[0][0]=hex_number1[i];
 		end //end for loop
-		bcd_digit[0] = bcd_digit[0] + hex_number1[0];
+		//bcd_digit[0] = bcd_digit[0] + hex_number1[0];
 	end //end of always.
 endmodule
 
@@ -139,6 +148,21 @@ module clock_divider (input Clock, Reset_n, output reg Pulse_ms);
 			end	
 		end 
 	end
+endmodule
+
+module counter(input clk, input reset_n, resume_n, enable,  output reg [19:0] ms_count);
+	//since DE1-SoC board has only 6 HEX, for six digits of decimal , 20 bits on binary is enough.
+	//therefore declare ms_count as 20bits
+
+	always @ (posedge clk, negedge reset_n, negedge resume_n) begin 
+		if (!reset_n ||  !resume_n) begin
+			ms_count<=   20'h00000;
+		end
+		else begin 
+			if (enable)
+				ms_count<=ms_count+1;			
+		end
+	end // End of Block COUNTER
 endmodule
 
 module seven_seg_decoder(input [3:0] x, output reg [6:0] hex_LEDs);
