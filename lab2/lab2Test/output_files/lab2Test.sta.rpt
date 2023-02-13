@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for lab2Test
-Fri Feb 10 02:34:40 2023
+Mon Feb 13 12:11:40 2023
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -99,43 +99,42 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 20          ;
 ; Maximum allowed            ; 14          ;
 ;                            ;             ;
-; Average used               ; 1.22        ;
+; Average used               ; 1.23        ;
 ; Maximum used               ; 14          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   2.1%      ;
-;     Processor 3            ;   2.0%      ;
-;     Processor 4            ;   2.0%      ;
-;     Processor 5            ;   1.9%      ;
-;     Processor 6            ;   1.9%      ;
-;     Processor 7            ;   1.9%      ;
-;     Processor 8            ;   1.9%      ;
-;     Processor 9            ;   1.9%      ;
-;     Processor 10           ;   1.9%      ;
-;     Processor 11           ;   1.9%      ;
-;     Processors 12-14       ;   0.9%      ;
+;     Processor 2            ;   2.3%      ;
+;     Processor 3            ;   2.1%      ;
+;     Processor 4            ;   2.1%      ;
+;     Processor 5            ;   2.1%      ;
+;     Processor 6            ;   2.1%      ;
+;     Processor 7            ;   2.1%      ;
+;     Processor 8            ;   2.0%      ;
+;     Processor 9            ;   2.0%      ;
+;     Processor 10           ;   2.0%      ;
+;     Processors 11-14       ;   1.0%      ;
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Clocks                                                                                                                                                                                                                       ;
-+-------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------------------------------+
-; Clock Name                    ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                           ;
-+-------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------------------------------+
-; CLOCK_50                      ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { CLOCK_50 }                      ;
-; clock_divider:comb_3|Pulse_ms ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clock_divider:comb_3|Pulse_ms } ;
-+-------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                                                         ;
++--------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------------------------------+
+; Clock Name                     ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                            ;
++--------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------------------------------+
+; CLOCK_50                       ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { CLOCK_50 }                       ;
+; clock_divider:comb_10|Pulse_ms ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clock_divider:comb_10|Pulse_ms } ;
++--------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------------------------------+
 
 
-+---------------------------------------------------------------------+
-; Slow 1100mV 85C Model Fmax Summary                                  ;
-+------------+-----------------+-------------------------------+------+
-; Fmax       ; Restricted Fmax ; Clock Name                    ; Note ;
-+------------+-----------------+-------------------------------+------+
-; 262.05 MHz ; 262.05 MHz      ; CLOCK_50                      ;      ;
-; 300.93 MHz ; 300.93 MHz      ; clock_divider:comb_3|Pulse_ms ;      ;
-+------------+-----------------+-------------------------------+------+
++----------------------------------------------------------------------+
+; Slow 1100mV 85C Model Fmax Summary                                   ;
++------------+-----------------+--------------------------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name                     ; Note ;
++------------+-----------------+--------------------------------+------+
+; 259.2 MHz  ; 259.2 MHz       ; CLOCK_50                       ;      ;
+; 323.42 MHz ; 323.42 MHz      ; clock_divider:comb_10|Pulse_ms ;      ;
++------------+-----------------+--------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
@@ -145,24 +144,24 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 HTML report is unavailable in plain text report export.
 
 
++---------------------------------------------------------+
+; Slow 1100mV 85C Model Setup Summary                     ;
++--------------------------------+--------+---------------+
+; Clock                          ; Slack  ; End Point TNS ;
++--------------------------------+--------+---------------+
+; CLOCK_50                       ; -2.858 ; -124.627      ;
+; clock_divider:comb_10|Pulse_ms ; -2.092 ; -47.107       ;
++--------------------------------+--------+---------------+
+
+
 +--------------------------------------------------------+
-; Slow 1100mV 85C Model Setup Summary                    ;
-+-------------------------------+--------+---------------+
-; Clock                         ; Slack  ; End Point TNS ;
-+-------------------------------+--------+---------------+
-; CLOCK_50                      ; -2.816 ; -104.667      ;
-; clock_divider:comb_3|Pulse_ms ; -2.323 ; -48.700       ;
-+-------------------------------+--------+---------------+
-
-
-+-------------------------------------------------------+
-; Slow 1100mV 85C Model Hold Summary                    ;
-+-------------------------------+-------+---------------+
-; Clock                         ; Slack ; End Point TNS ;
-+-------------------------------+-------+---------------+
-; CLOCK_50                      ; 0.378 ; 0.000         ;
-; clock_divider:comb_3|Pulse_ms ; 0.830 ; 0.000         ;
-+-------------------------------+-------+---------------+
+; Slow 1100mV 85C Model Hold Summary                     ;
++--------------------------------+-------+---------------+
+; Clock                          ; Slack ; End Point TNS ;
++--------------------------------+-------+---------------+
+; CLOCK_50                       ; 0.397 ; 0.000         ;
+; clock_divider:comb_10|Pulse_ms ; 0.683 ; 0.000         ;
++--------------------------------+-------+---------------+
 
 
 ------------------------------------------
@@ -177,14 +176,14 @@ No paths to report.
 No paths to report.
 
 
-+--------------------------------------------------------+
-; Slow 1100mV 85C Model Minimum Pulse Width Summary      ;
-+-------------------------------+--------+---------------+
-; Clock                         ; Slack  ; End Point TNS ;
-+-------------------------------+--------+---------------+
-; CLOCK_50                      ; -0.451 ; -21.558       ;
-; clock_divider:comb_3|Pulse_ms ; -0.394 ; -18.113       ;
-+-------------------------------+--------+---------------+
++---------------------------------------------------------+
+; Slow 1100mV 85C Model Minimum Pulse Width Summary       ;
++--------------------------------+--------+---------------+
+; Clock                          ; Slack  ; End Point TNS ;
++--------------------------------+--------+---------------+
+; CLOCK_50                       ; -0.439 ; -24.181       ;
+; clock_divider:comb_10|Pulse_ms ; -0.394 ; -14.386       ;
++--------------------------------+--------+---------------+
 
 
 -----------------------------------------------
@@ -193,35 +192,35 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+---------------------------------------------------------------------+
-; Slow 1100mV 0C Model Fmax Summary                                   ;
-+------------+-----------------+-------------------------------+------+
-; Fmax       ; Restricted Fmax ; Clock Name                    ; Note ;
-+------------+-----------------+-------------------------------+------+
-; 250.25 MHz ; 250.25 MHz      ; CLOCK_50                      ;      ;
-; 305.16 MHz ; 305.16 MHz      ; clock_divider:comb_3|Pulse_ms ;      ;
-+------------+-----------------+-------------------------------+------+
++----------------------------------------------------------------------+
+; Slow 1100mV 0C Model Fmax Summary                                    ;
++------------+-----------------+--------------------------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name                     ; Note ;
++------------+-----------------+--------------------------------+------+
+; 265.6 MHz  ; 265.6 MHz       ; CLOCK_50                       ;      ;
+; 329.92 MHz ; 329.92 MHz      ; clock_divider:comb_10|Pulse_ms ;      ;
++------------+-----------------+--------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
++---------------------------------------------------------+
+; Slow 1100mV 0C Model Setup Summary                      ;
++--------------------------------+--------+---------------+
+; Clock                          ; Slack  ; End Point TNS ;
++--------------------------------+--------+---------------+
+; CLOCK_50                       ; -2.765 ; -119.914      ;
+; clock_divider:comb_10|Pulse_ms ; -2.031 ; -45.287       ;
++--------------------------------+--------+---------------+
+
+
 +--------------------------------------------------------+
-; Slow 1100mV 0C Model Setup Summary                     ;
-+-------------------------------+--------+---------------+
-; Clock                         ; Slack  ; End Point TNS ;
-+-------------------------------+--------+---------------+
-; CLOCK_50                      ; -2.996 ; -103.472      ;
-; clock_divider:comb_3|Pulse_ms ; -2.277 ; -46.957       ;
-+-------------------------------+--------+---------------+
-
-
-+-------------------------------------------------------+
-; Slow 1100mV 0C Model Hold Summary                     ;
-+-------------------------------+-------+---------------+
-; Clock                         ; Slack ; End Point TNS ;
-+-------------------------------+-------+---------------+
-; CLOCK_50                      ; 0.379 ; 0.000         ;
-; clock_divider:comb_3|Pulse_ms ; 0.782 ; 0.000         ;
-+-------------------------------+-------+---------------+
+; Slow 1100mV 0C Model Hold Summary                      ;
++--------------------------------+-------+---------------+
+; Clock                          ; Slack ; End Point TNS ;
++--------------------------------+-------+---------------+
+; CLOCK_50                       ; 0.393 ; 0.000         ;
+; clock_divider:comb_10|Pulse_ms ; 0.682 ; 0.000         ;
++--------------------------------+-------+---------------+
 
 
 -----------------------------------------
@@ -236,14 +235,14 @@ No paths to report.
 No paths to report.
 
 
-+--------------------------------------------------------+
-; Slow 1100mV 0C Model Minimum Pulse Width Summary       ;
-+-------------------------------+--------+---------------+
-; Clock                         ; Slack  ; End Point TNS ;
-+-------------------------------+--------+---------------+
-; CLOCK_50                      ; -0.431 ; -23.221       ;
-; clock_divider:comb_3|Pulse_ms ; -0.394 ; -18.994       ;
-+-------------------------------+--------+---------------+
++---------------------------------------------------------+
+; Slow 1100mV 0C Model Minimum Pulse Width Summary        ;
++--------------------------------+--------+---------------+
+; Clock                          ; Slack  ; End Point TNS ;
++--------------------------------+--------+---------------+
+; CLOCK_50                       ; -0.500 ; -26.387       ;
+; clock_divider:comb_10|Pulse_ms ; -0.394 ; -14.391       ;
++--------------------------------+--------+---------------+
 
 
 ----------------------------------------------
@@ -252,24 +251,24 @@ No paths to report.
 No synchronizer chains to report.
 
 
++---------------------------------------------------------+
+; Fast 1100mV 85C Model Setup Summary                     ;
++--------------------------------+--------+---------------+
+; Clock                          ; Slack  ; End Point TNS ;
++--------------------------------+--------+---------------+
+; CLOCK_50                       ; -1.382 ; -59.103       ;
+; clock_divider:comb_10|Pulse_ms ; -0.845 ; -19.527       ;
++--------------------------------+--------+---------------+
+
+
 +--------------------------------------------------------+
-; Fast 1100mV 85C Model Setup Summary                    ;
-+-------------------------------+--------+---------------+
-; Clock                         ; Slack  ; End Point TNS ;
-+-------------------------------+--------+---------------+
-; CLOCK_50                      ; -1.205 ; -43.548       ;
-; clock_divider:comb_3|Pulse_ms ; -0.951 ; -20.703       ;
-+-------------------------------+--------+---------------+
-
-
-+-------------------------------------------------------+
-; Fast 1100mV 85C Model Hold Summary                    ;
-+-------------------------------+-------+---------------+
-; Clock                         ; Slack ; End Point TNS ;
-+-------------------------------+-------+---------------+
-; CLOCK_50                      ; 0.200 ; 0.000         ;
-; clock_divider:comb_3|Pulse_ms ; 0.457 ; 0.000         ;
-+-------------------------------+-------+---------------+
+; Fast 1100mV 85C Model Hold Summary                     ;
++--------------------------------+-------+---------------+
+; Clock                          ; Slack ; End Point TNS ;
++--------------------------------+-------+---------------+
+; CLOCK_50                       ; 0.209 ; 0.000         ;
+; clock_divider:comb_10|Pulse_ms ; 0.286 ; 0.000         ;
++--------------------------------+-------+---------------+
 
 
 ------------------------------------------
@@ -284,14 +283,14 @@ No paths to report.
 No paths to report.
 
 
-+--------------------------------------------------------+
-; Fast 1100mV 85C Model Minimum Pulse Width Summary      ;
-+-------------------------------+--------+---------------+
-; Clock                         ; Slack  ; End Point TNS ;
-+-------------------------------+--------+---------------+
-; CLOCK_50                      ; -0.429 ; -4.045        ;
-; clock_divider:comb_3|Pulse_ms ; -0.127 ; -3.186        ;
-+-------------------------------+--------+---------------+
++---------------------------------------------------------+
+; Fast 1100mV 85C Model Minimum Pulse Width Summary       ;
++--------------------------------+--------+---------------+
+; Clock                          ; Slack  ; End Point TNS ;
++--------------------------------+--------+---------------+
+; CLOCK_50                       ; -0.520 ; -4.606        ;
+; clock_divider:comb_10|Pulse_ms ; 0.058  ; 0.000         ;
++--------------------------------+--------+---------------+
 
 
 -----------------------------------------------
@@ -300,24 +299,24 @@ No paths to report.
 No synchronizer chains to report.
 
 
++---------------------------------------------------------+
+; Fast 1100mV 0C Model Setup Summary                      ;
++--------------------------------+--------+---------------+
+; Clock                          ; Slack  ; End Point TNS ;
++--------------------------------+--------+---------------+
+; CLOCK_50                       ; -1.222 ; -49.845       ;
+; clock_divider:comb_10|Pulse_ms ; -0.726 ; -16.348       ;
++--------------------------------+--------+---------------+
+
+
 +--------------------------------------------------------+
-; Fast 1100mV 0C Model Setup Summary                     ;
-+-------------------------------+--------+---------------+
-; Clock                         ; Slack  ; End Point TNS ;
-+-------------------------------+--------+---------------+
-; CLOCK_50                      ; -1.137 ; -37.604       ;
-; clock_divider:comb_3|Pulse_ms ; -0.828 ; -17.614       ;
-+-------------------------------+--------+---------------+
-
-
-+-------------------------------------------------------+
-; Fast 1100mV 0C Model Hold Summary                     ;
-+-------------------------------+-------+---------------+
-; Clock                         ; Slack ; End Point TNS ;
-+-------------------------------+-------+---------------+
-; CLOCK_50                      ; 0.189 ; 0.000         ;
-; clock_divider:comb_3|Pulse_ms ; 0.406 ; 0.000         ;
-+-------------------------------+-------+---------------+
+; Fast 1100mV 0C Model Hold Summary                      ;
++--------------------------------+-------+---------------+
+; Clock                          ; Slack ; End Point TNS ;
++--------------------------------+-------+---------------+
+; CLOCK_50                       ; 0.199 ; 0.000         ;
+; clock_divider:comb_10|Pulse_ms ; 0.261 ; 0.000         ;
++--------------------------------+-------+---------------+
 
 
 -----------------------------------------
@@ -332,14 +331,14 @@ No paths to report.
 No paths to report.
 
 
-+--------------------------------------------------------+
-; Fast 1100mV 0C Model Minimum Pulse Width Summary       ;
-+-------------------------------+--------+---------------+
-; Clock                         ; Slack  ; End Point TNS ;
-+-------------------------------+--------+---------------+
-; CLOCK_50                      ; -0.405 ; -3.985        ;
-; clock_divider:comb_3|Pulse_ms ; -0.103 ; -2.621        ;
-+-------------------------------+--------+---------------+
++---------------------------------------------------------+
+; Fast 1100mV 0C Model Minimum Pulse Width Summary        ;
++--------------------------------+--------+---------------+
+; Clock                          ; Slack  ; End Point TNS ;
++--------------------------------+--------+---------------+
+; CLOCK_50                       ; -0.533 ; -4.542        ;
+; clock_divider:comb_10|Pulse_ms ; 0.079  ; 0.000         ;
++--------------------------------+--------+---------------+
 
 
 ----------------------------------------------
@@ -348,18 +347,18 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+----------------------------------------------------------------------------------------------+
-; Multicorner Timing Analysis Summary                                                          ;
-+--------------------------------+----------+-------+----------+---------+---------------------+
-; Clock                          ; Setup    ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
-+--------------------------------+----------+-------+----------+---------+---------------------+
-; Worst-case Slack               ; -2.996   ; 0.189 ; N/A      ; N/A     ; -0.451              ;
-;  CLOCK_50                      ; -2.996   ; 0.189 ; N/A      ; N/A     ; -0.451              ;
-;  clock_divider:comb_3|Pulse_ms ; -2.323   ; 0.406 ; N/A      ; N/A     ; -0.394              ;
-; Design-wide TNS                ; -153.367 ; 0.0   ; 0.0      ; 0.0     ; -42.215             ;
-;  CLOCK_50                      ; -104.667 ; 0.000 ; N/A      ; N/A     ; -23.221             ;
-;  clock_divider:comb_3|Pulse_ms ; -48.700  ; 0.000 ; N/A      ; N/A     ; -18.994             ;
-+--------------------------------+----------+-------+----------+---------+---------------------+
++-----------------------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                                           ;
++---------------------------------+----------+-------+----------+---------+---------------------+
+; Clock                           ; Setup    ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++---------------------------------+----------+-------+----------+---------+---------------------+
+; Worst-case Slack                ; -2.858   ; 0.199 ; N/A      ; N/A     ; -0.533              ;
+;  CLOCK_50                       ; -2.858   ; 0.199 ; N/A      ; N/A     ; -0.533              ;
+;  clock_divider:comb_10|Pulse_ms ; -2.092   ; 0.261 ; N/A      ; N/A     ; -0.394              ;
+; Design-wide TNS                 ; -171.734 ; 0.0   ; 0.0      ; 0.0     ; -40.778             ;
+;  CLOCK_50                       ; -124.627 ; 0.000 ; N/A      ; N/A     ; -26.387             ;
+;  clock_divider:comb_10|Pulse_ms ; -47.107  ; 0.000 ; N/A      ; N/A     ; -14.391             ;
++---------------------------------+----------+-------+----------+---------+---------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -624,25 +623,25 @@ No synchronizer chains to report.
 +---------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------+
-; Setup Transfers                                                                                           ;
-+-------------------------------+-------------------------------+----------+----------+----------+----------+
-; From Clock                    ; To Clock                      ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
-+-------------------------------+-------------------------------+----------+----------+----------+----------+
-; CLOCK_50                      ; CLOCK_50                      ; 1917     ; 0        ; 0        ; 0        ;
-; clock_divider:comb_3|Pulse_ms ; clock_divider:comb_3|Pulse_ms ; 184      ; 0        ; 0        ; 0        ;
-+-------------------------------+-------------------------------+----------+----------+----------+----------+
++-------------------------------------------------------------------------------------------------------------+
+; Setup Transfers                                                                                             ;
++--------------------------------+--------------------------------+----------+----------+----------+----------+
+; From Clock                     ; To Clock                       ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++--------------------------------+--------------------------------+----------+----------+----------+----------+
+; CLOCK_50                       ; CLOCK_50                       ; 2169     ; 0        ; 0        ; 0        ;
+; clock_divider:comb_10|Pulse_ms ; clock_divider:comb_10|Pulse_ms ; 195      ; 0        ; 0        ; 0        ;
++--------------------------------+--------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
-+-----------------------------------------------------------------------------------------------------------+
-; Hold Transfers                                                                                            ;
-+-------------------------------+-------------------------------+----------+----------+----------+----------+
-; From Clock                    ; To Clock                      ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
-+-------------------------------+-------------------------------+----------+----------+----------+----------+
-; CLOCK_50                      ; CLOCK_50                      ; 1917     ; 0        ; 0        ; 0        ;
-; clock_divider:comb_3|Pulse_ms ; clock_divider:comb_3|Pulse_ms ; 184      ; 0        ; 0        ; 0        ;
-+-------------------------------+-------------------------------+----------+----------+----------+----------+
++-------------------------------------------------------------------------------------------------------------+
+; Hold Transfers                                                                                              ;
++--------------------------------+--------------------------------+----------+----------+----------+----------+
+; From Clock                     ; To Clock                       ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++--------------------------------+--------------------------------+----------+----------+----------+----------+
+; CLOCK_50                       ; CLOCK_50                       ; 2169     ; 0        ; 0        ; 0        ;
+; clock_divider:comb_10|Pulse_ms ; clock_divider:comb_10|Pulse_ms ; 195      ; 0        ; 0        ; 0        ;
++--------------------------------+--------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
@@ -665,21 +664,21 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 2     ; 2    ;
-; Unconstrained Input Port Paths  ; 93    ; 93   ;
+; Unconstrained Input Ports       ; 3     ; 3    ;
+; Unconstrained Input Port Paths  ; 127   ; 127  ;
 ; Unconstrained Output Ports      ; 28    ; 28   ;
 ; Unconstrained Output Port Paths ; 293   ; 293  ;
 +---------------------------------+-------+------+
 
 
-+------------------------------------------------------------------------------------+
-; Clock Status Summary                                                               ;
-+-------------------------------+-------------------------------+------+-------------+
-; Target                        ; Clock                         ; Type ; Status      ;
-+-------------------------------+-------------------------------+------+-------------+
-; CLOCK_50                      ; CLOCK_50                      ; Base ; Constrained ;
-; clock_divider:comb_3|Pulse_ms ; clock_divider:comb_3|Pulse_ms ; Base ; Constrained ;
-+-------------------------------+-------------------------------+------+-------------+
++--------------------------------------------------------------------------------------+
+; Clock Status Summary                                                                 ;
++--------------------------------+--------------------------------+------+-------------+
+; Target                         ; Clock                          ; Type ; Status      ;
++--------------------------------+--------------------------------+------+-------------+
+; CLOCK_50                       ; CLOCK_50                       ; Base ; Constrained ;
+; clock_divider:comb_10|Pulse_ms ; clock_divider:comb_10|Pulse_ms ; Base ; Constrained ;
++--------------------------------+--------------------------------+------+-------------+
 
 
 +---------------------------------------------------------------------------------------------------+
@@ -687,6 +686,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +------------+--------------------------------------------------------------------------------------+
 ; Input Port ; Comment                                                                              ;
 +------------+--------------------------------------------------------------------------------------+
+; KEY[0]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; KEY[1]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; KEY[2]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +------------+--------------------------------------------------------------------------------------+
@@ -733,6 +733,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +------------+--------------------------------------------------------------------------------------+
 ; Input Port ; Comment                                                                              ;
 +------------+--------------------------------------------------------------------------------------+
+; KEY[0]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; KEY[1]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; KEY[2]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +------------+--------------------------------------------------------------------------------------+
@@ -780,7 +781,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Fri Feb 10 02:34:36 2023
+    Info: Processing started: Mon Feb 13 12:11:37 2023
 Info: Command: quartus_sta lab2Test -c lab2Test
 Info: qsta_default_script.tcl version: #3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -791,103 +792,103 @@ Critical Warning (332012): Synopsys Design Constraints File file not found: 'lab
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
 Info (332105): Deriving Clocks
     Info (332105): create_clock -period 1.000 -name CLOCK_50 CLOCK_50
-    Info (332105): create_clock -period 1.000 -name clock_divider:comb_3|Pulse_ms clock_divider:comb_3|Pulse_ms
+    Info (332105): create_clock -period 1.000 -name clock_divider:comb_10|Pulse_ms clock_divider:comb_10|Pulse_ms
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -2.816
+Info (332146): Worst-case setup slack is -2.858
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.816            -104.667 CLOCK_50 
-    Info (332119):    -2.323             -48.700 clock_divider:comb_3|Pulse_ms 
-Info (332146): Worst-case hold slack is 0.378
+    Info (332119):    -2.858            -124.627 CLOCK_50 
+    Info (332119):    -2.092             -47.107 clock_divider:comb_10|Pulse_ms 
+Info (332146): Worst-case hold slack is 0.397
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.378               0.000 CLOCK_50 
-    Info (332119):     0.830               0.000 clock_divider:comb_3|Pulse_ms 
+    Info (332119):     0.397               0.000 CLOCK_50 
+    Info (332119):     0.683               0.000 clock_divider:comb_10|Pulse_ms 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.451
+Info (332146): Worst-case minimum pulse width slack is -0.439
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.451             -21.558 CLOCK_50 
-    Info (332119):    -0.394             -18.113 clock_divider:comb_3|Pulse_ms 
+    Info (332119):    -0.439             -24.181 CLOCK_50 
+    Info (332119):    -0.394             -14.386 clock_divider:comb_10|Pulse_ms 
 Info: Analyzing Slow 1100mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -2.996
+Info (332146): Worst-case setup slack is -2.765
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.996            -103.472 CLOCK_50 
-    Info (332119):    -2.277             -46.957 clock_divider:comb_3|Pulse_ms 
-Info (332146): Worst-case hold slack is 0.379
+    Info (332119):    -2.765            -119.914 CLOCK_50 
+    Info (332119):    -2.031             -45.287 clock_divider:comb_10|Pulse_ms 
+Info (332146): Worst-case hold slack is 0.393
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.379               0.000 CLOCK_50 
-    Info (332119):     0.782               0.000 clock_divider:comb_3|Pulse_ms 
+    Info (332119):     0.393               0.000 CLOCK_50 
+    Info (332119):     0.682               0.000 clock_divider:comb_10|Pulse_ms 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.431
+Info (332146): Worst-case minimum pulse width slack is -0.500
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.431             -23.221 CLOCK_50 
-    Info (332119):    -0.394             -18.994 clock_divider:comb_3|Pulse_ms 
+    Info (332119):    -0.500             -26.387 CLOCK_50 
+    Info (332119):    -0.394             -14.391 clock_divider:comb_10|Pulse_ms 
 Info: Analyzing Fast 1100mV 85C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -1.205
+Info (332146): Worst-case setup slack is -1.382
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -1.205             -43.548 CLOCK_50 
-    Info (332119):    -0.951             -20.703 clock_divider:comb_3|Pulse_ms 
-Info (332146): Worst-case hold slack is 0.200
+    Info (332119):    -1.382             -59.103 CLOCK_50 
+    Info (332119):    -0.845             -19.527 clock_divider:comb_10|Pulse_ms 
+Info (332146): Worst-case hold slack is 0.209
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.200               0.000 CLOCK_50 
-    Info (332119):     0.457               0.000 clock_divider:comb_3|Pulse_ms 
+    Info (332119):     0.209               0.000 CLOCK_50 
+    Info (332119):     0.286               0.000 clock_divider:comb_10|Pulse_ms 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.429
+Info (332146): Worst-case minimum pulse width slack is -0.520
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.429              -4.045 CLOCK_50 
-    Info (332119):    -0.127              -3.186 clock_divider:comb_3|Pulse_ms 
+    Info (332119):    -0.520              -4.606 CLOCK_50 
+    Info (332119):     0.058               0.000 clock_divider:comb_10|Pulse_ms 
 Info: Analyzing Fast 1100mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -1.137
+Info (332146): Worst-case setup slack is -1.222
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -1.137             -37.604 CLOCK_50 
-    Info (332119):    -0.828             -17.614 clock_divider:comb_3|Pulse_ms 
-Info (332146): Worst-case hold slack is 0.189
+    Info (332119):    -1.222             -49.845 CLOCK_50 
+    Info (332119):    -0.726             -16.348 clock_divider:comb_10|Pulse_ms 
+Info (332146): Worst-case hold slack is 0.199
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.189               0.000 CLOCK_50 
-    Info (332119):     0.406               0.000 clock_divider:comb_3|Pulse_ms 
+    Info (332119):     0.199               0.000 CLOCK_50 
+    Info (332119):     0.261               0.000 clock_divider:comb_10|Pulse_ms 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.405
+Info (332146): Worst-case minimum pulse width slack is -0.533
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.405              -3.985 CLOCK_50 
-    Info (332119):    -0.103              -2.621 clock_divider:comb_3|Pulse_ms 
+    Info (332119):    -0.533              -4.542 CLOCK_50 
+    Info (332119):     0.079               0.000 clock_divider:comb_10|Pulse_ms 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 5258 megabytes
-    Info: Processing ended: Fri Feb 10 02:34:40 2023
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:05
+    Info: Peak virtual memory: 5256 megabytes
+    Info: Processing ended: Mon Feb 13 12:11:40 2023
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
 
 

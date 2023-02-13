@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab2
-Fri Feb 10 03:09:00 2023
+Mon Feb 13 11:35:53 2023
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -53,13 +53,13 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Feb 10 03:09:00 2023       ;
+; Analysis & Synthesis Status     ; Successful - Mon Feb 13 11:35:53 2023       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; lab2                                        ;
 ; Top-level Entity Name           ; lab2                                        ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 128                                         ;
+; Total registers                 ; 129                                         ;
 ; Total pins                      ; 57                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -198,16 +198,16 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+--------------+
 ; Resource                                    ; Usage        ;
 +---------------------------------------------+--------------+
-; Estimate of Logic utilization (ALMs needed) ; 378          ;
+; Estimate of Logic utilization (ALMs needed) ; 384          ;
 ;                                             ;              ;
-; Combinational ALUT usage for logic          ; 571          ;
-;     -- 7 input functions                    ; 7            ;
-;     -- 6 input functions                    ; 174          ;
-;     -- 5 input functions                    ; 103          ;
-;     -- 4 input functions                    ; 98           ;
-;     -- <=3 input functions                  ; 189          ;
+; Combinational ALUT usage for logic          ; 582          ;
+;     -- 7 input functions                    ; 6            ;
+;     -- 6 input functions                    ; 176          ;
+;     -- 5 input functions                    ; 110          ;
+;     -- 4 input functions                    ; 96           ;
+;     -- <=3 input functions                  ; 194          ;
 ;                                             ;              ;
-; Dedicated logic registers                   ; 128          ;
+; Dedicated logic registers                   ; 129          ;
 ;                                             ;              ;
 ; I/O pins                                    ; 57           ;
 ;                                             ;              ;
@@ -215,7 +215,7 @@ refer to the applicable agreement for further details.
 ;                                             ;              ;
 ; Maximum fan-out node                        ; KEY[1]~input ;
 ; Maximum fan-out                             ; 78           ;
-; Total fan-out                               ; 2988         ;
+; Total fan-out                               ; 3033         ;
 ; Average fan-out                             ; 3.68         ;
 +---------------------------------------------+--------------+
 
@@ -225,7 +225,7 @@ refer to the applicable agreement for further details.
 +---------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------+----------------------+--------------+
 ; Compilation Hierarchy Node      ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name              ; Entity Name          ; Library Name ;
 +---------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------+----------------------+--------------+
-; |lab2                           ; 571 (85)            ; 128 (16)                  ; 0                 ; 0          ; 57   ; 0            ; |lab2                            ; lab2                 ; work         ;
+; |lab2                           ; 582 (95)            ; 129 (16)                  ; 0                 ; 0          ; 57   ; 0            ; |lab2                            ; lab2                 ; work         ;
 ;    |blinkHEX:comb_44|           ; 17 (17)             ; 13 (13)                   ; 0                 ; 0          ; 0    ; 0            ; |lab2|blinkHEX:comb_44           ; blinkHEX             ; work         ;
 ;    |clock_divider:comb_40|      ; 43 (43)             ; 33 (33)                   ; 0                 ; 0          ; 0    ; 0            ; |lab2|clock_divider:comb_40      ; clock_divider        ; work         ;
 ;    |counter:comb_41|            ; 20 (20)             ; 20 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |lab2|counter:comb_41            ; counter              ; work         ;
@@ -238,7 +238,7 @@ refer to the applicable agreement for further details.
 ;    |mux4to1:comb_48|            ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab2|mux4to1:comb_48            ; mux4to1              ; work         ;
 ;    |mux4to1:comb_49|            ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab2|mux4to1:comb_49            ; mux4to1              ; work         ;
 ;    |mux4to1:comb_50|            ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab2|mux4to1:comb_50            ; mux4to1              ; work         ;
-;    |random:comb_43|             ; 20 (20)             ; 26 (26)                   ; 0                 ; 0          ; 0    ; 0            ; |lab2|random:comb_43             ; random               ; work         ;
+;    |random:comb_43|             ; 21 (21)             ; 27 (27)                   ; 0                 ; 0          ; 0    ; 0            ; |lab2|random:comb_43             ; random               ; work         ;
 ;    |seven_seg_decoder:decoder0| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab2|seven_seg_decoder:decoder0 ; seven_seg_decoder    ; work         ;
 ;    |seven_seg_decoder:decoder1| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab2|seven_seg_decoder:decoder1 ; seven_seg_decoder    ; work         ;
 ;    |seven_seg_decoder:decoder2| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab2|seven_seg_decoder:decoder2 ; seven_seg_decoder    ; work         ;
@@ -293,8 +293,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; blinkHEX:comb_44|d5[1..3]              ; Merged with blinkHEX:comb_44|d5[0]        ;
 ; random:comb_43|random[13]              ; Merged with random:comb_43|random[12]     ;
 ; random:comb_43|reg_values[13]          ; Merged with random:comb_43|reg_values[12] ;
-; random:comb_43|random[12]              ; Stuck at GND due to stuck port data_in    ;
-; Total Number of Removed Registers = 26 ;                                           ;
+; Total Number of Removed Registers = 25 ;                                           ;
 +----------------------------------------+-------------------------------------------+
 
 
@@ -303,12 +302,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 128   ;
+; Total registers                              ; 129   ;
 ; Number of registers using Synchronous Clear  ; 44    ;
 ; Number of registers using Synchronous Load   ; 1     ;
 ; Number of registers using Asynchronous Clear ; 116   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 58    ;
+; Number of registers using Clock Enable       ; 59    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -319,7 +318,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Inverted Register                       ; Fan out ;
 +-----------------------------------------+---------+
 ; random:comb_43|reg_values[3]            ; 2       ;
-; random:comb_43|reg_values[12]           ; 3       ;
+; random:comb_43|reg_values[12]           ; 4       ;
 ; random:comb_43|reg_values[11]           ; 3       ;
 ; random:comb_43|reg_values[10]           ; 3       ;
 ; random:comb_43|reg_values[4]            ; 4       ;
@@ -425,30 +424,30 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 128                         ;
+; arriav_ff             ; 129                         ;
 ;     CLR               ; 26                          ;
 ;     CLR SCLR          ; 44                          ;
-;     ENA               ; 12                          ;
+;     ENA               ; 13                          ;
 ;     ENA CLR           ; 45                          ;
 ;     ENA CLR SLD       ; 1                           ;
-; arriav_lcell_comb     ; 577                         ;
-;     arith             ; 92                          ;
-;         0 data inputs ; 2                           ;
-;         1 data inputs ; 87                          ;
-;         2 data inputs ; 3                           ;
-;     extend            ; 7                           ;
-;         7 data inputs ; 7                           ;
-;     normal            ; 478                         ;
-;         1 data inputs ; 20                          ;
-;         2 data inputs ; 37                          ;
-;         3 data inputs ; 46                          ;
-;         4 data inputs ; 98                          ;
-;         5 data inputs ; 103                         ;
-;         6 data inputs ; 174                         ;
+; arriav_lcell_comb     ; 588                         ;
+;     arith             ; 94                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 91                          ;
+;         2 data inputs ; 2                           ;
+;     extend            ; 6                           ;
+;         7 data inputs ; 6                           ;
+;     normal            ; 488                         ;
+;         1 data inputs ; 21                          ;
+;         2 data inputs ; 38                          ;
+;         3 data inputs ; 47                          ;
+;         4 data inputs ; 96                          ;
+;         5 data inputs ; 110                         ;
+;         6 data inputs ; 176                         ;
 ; boundary_port         ; 57                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 14.00                       ;
-; Average LUT depth     ; 7.89                        ;
+; Average LUT depth     ; 7.86                        ;
 +-----------------------+-----------------------------+
 
 
@@ -467,7 +466,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Fri Feb 10 03:08:49 2023
+    Info: Processing started: Mon Feb 13 11:35:42 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab2 -c lab2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 14 of the 14 processors detected
@@ -1159,13 +1158,13 @@ Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not
 Info (144001): Generated suppressed messages file C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2_restored/output_files/lab2.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 650 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 661 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
     Info (21059): Implemented 52 output pins
-    Info (21061): Implemented 593 logic cells
+    Info (21061): Implemented 604 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 639 warnings
-    Info: Peak virtual memory: 4873 megabytes
-    Info: Processing ended: Fri Feb 10 03:09:00 2023
+    Info: Peak virtual memory: 4863 megabytes
+    Info: Processing ended: Mon Feb 13 11:35:53 2023
     Info: Elapsed time: 00:00:11
     Info: Total CPU time (on all processors): 00:00:18
 

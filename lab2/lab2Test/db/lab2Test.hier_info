@@ -1,8 +1,8 @@
 |lab2Test
 CLOCK_50 => CLOCK_50.IN1
-KEY[0] => ~NO_FANOUT~
-KEY[1] => KEY[1].IN4
-KEY[2] => KEY[2].IN2
+KEY[0] => KEY[0].IN4
+KEY[1] => press.DATAA
+KEY[2] => press.OUTPUTSELECT
 HEX0[0] <= seven_seg_decoder:decoder0.port1
 HEX0[1] <= seven_seg_decoder:decoder0.port1
 HEX0[2] <= seven_seg_decoder:decoder0.port1
@@ -47,7 +47,7 @@ HEX5[5] <= seven_seg_decoder:decoder5.port1
 HEX5[6] <= seven_seg_decoder:decoder5.port1
 
 
-|lab2Test|clock_divider:comb_3
+|lab2Test|clock_divider:comb_10
 Clock => Pulse_ms~reg0.CLK
 Clock => countQ[0].CLK
 Clock => countQ[1].CLK
@@ -117,7 +117,7 @@ Reset_n => countQ[31].ACLR
 Pulse_ms <= Pulse_ms~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|lab2Test|counter:comb_4
+|lab2Test|counter:comb_11
 clk => ms_count[0]~reg0.CLK
 clk => ms_count[1]~reg0.CLK
 clk => ms_count[2]~reg0.CLK
@@ -182,7 +182,7 @@ ms_count[18] <= ms_count[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 ms_count[19] <= ms_count[19]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|lab2Test|random:comb_5
+|lab2Test|random:comb_12
 clk => random[0]~reg0.CLK
 clk => random[1]~reg0.CLK
 clk => random[2]~reg0.CLK
@@ -288,7 +288,7 @@ random[13] <= random[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 rnd_ready <= rnd_ready~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|lab2Test|hex_to_bcd_converter:comb_6
+|lab2Test|hex_to_bcd_converter:comb_13
 reset_n => ~NO_FANOUT~
 hex_number[0] => bcd_digit_0[0].DATAIN
 hex_number[1] => LessThan56.IN8

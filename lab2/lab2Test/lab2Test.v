@@ -5,11 +5,22 @@ module lab2Test (input CLOCK_50, input [2:0] KEY, output [6:0] HEX0, HEX1, HEX2,
 	wire [13:0] rand;
 	wire [3:0] digit0,digit1,digit2,digit3,digit4,digit5;
 	wire [19:0] counter_hex;
+	reg press;
 	
-	clock_divider(.Clock(CLOCK_50), .Reset_n(KEY[1]), .Pulse_ms(clk_en));
-	counter(.clk(elk_en), .reset_n(KEY[1]), .resume_n(KEY[2]), .enable(1), .ms_count(counter_hex));
-	random(.clk(clk_en), .reset_n(KEY[1]), .resume_n(KEY[2]), .random(rand), .rnd_ready(rand_ready));
-	hex_to_bcd_converter(KEY[1], rand, digit0, digit1, digit2, digit3, digit4, digit5);
+	always @ (posedge CLOCK_50, negedge KEY[1], negedge KEY[2]) begin
+		press = 0;
+		if (!KEY[2]) begin
+			press = 1;
+		end
+		else if(!KEY[1]) begin
+			press = 1;
+		end
+	end
+	
+	clock_divider(.Clock(CLOCK_50), .Reset_n(KEY[0]), .Pulse_ms(clk_en));
+	counter(.clk(elk_en), .reset_n(KEY[0]), .resume_n(press), .enable(1), .ms_count(counter_hex));
+	random(.clk(clk_en), .reset_n(KEY[0]), .resume_n(press), .random(rand), .rnd_ready(rand_ready));
+	hex_to_bcd_converter(KEY[0], rand, digit0, digit1, digit2, digit3, digit4, digit5);
 	seven_seg_decoder decoder0(digit0, HEX0);
 	seven_seg_decoder decoder1(digit1, HEX1);
 	seven_seg_decoder decoder2(digit2, HEX2);

@@ -188,7 +188,7 @@ module lab2(input CLOCK_50,  input [3:0] KEY,  output [6:0] HEX0,HEX1,HEX2,HEX3,
 				begin
 					hex_sel=2'b01;
 																			
-					if (ms>(5000+random_wait_time)) begin     //(7-5) seconds + random seconds)
+					if (ms>(3000+random_wait_time)) begin     //(7-5) seconds + random seconds)
 						next_state=TIMER_DISPLAY;	
 					end
 					

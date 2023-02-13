@@ -1,12 +1,12 @@
-Fitter Status : Successful - Fri Feb 10 02:34:29 2023
+Fitter Status : Successful - Mon Feb 13 12:11:31 2023
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 Revision Name : lab2Test
 Top-level Entity Name : lab2Test
 Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 74 / 32,070 ( < 1 % )
-Total registers : 67
+Logic utilization (in ALMs) : 75 / 32,070 ( < 1 % )
+Total registers : 73
 Total pins : 46 / 457 ( 10 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 4,065,280 ( 0 % )
