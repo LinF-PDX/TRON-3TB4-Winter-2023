@@ -1,5 +1,5 @@
 module clock_divider (input Clock, Reset_n, output reg clk_ms);
-	parameter factor=100000; //50000; // 32'h000061a7;
+	parameter factor=50000; //50000; // 32'h000061a7;
 	
 	reg [31:0] countQ;
 	

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for TutLab2
-Mon Feb 06 12:30:03 2023
+Fri Feb 10 02:52:05 2023
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -44,7 +44,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Feb 06 12:30:03 2023       ;
+; Analysis & Synthesis Status     ; Successful - Fri Feb 10 02:52:05 2023       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; TutLab2                                     ;
 ; Top-level Entity Name           ; TutLab2                                     ;
@@ -168,17 +168,17 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                           ;
-+----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                             ; Library ;
-+----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------+---------+
-; TutLab2.v                        ; yes             ; User Verilog HDL File  ; C:/Users/LinF/Documents/School/Winter2023/3TB4/lab2/Tutorial_lab2/TutLab2.v              ;         ;
-; seven_seg_decoder.v              ; yes             ; User Verilog HDL File  ; C:/Users/LinF/Documents/School/Winter2023/3TB4/lab2/Tutorial_lab2/seven_seg_decoder.v    ;         ;
-; clock_divider.v                  ; yes             ; User Verilog HDL File  ; C:/Users/LinF/Documents/School/Winter2023/3TB4/lab2/Tutorial_lab2/clock_divider.v        ;         ;
-; counter.v                        ; yes             ; User Verilog HDL File  ; C:/Users/LinF/Documents/School/Winter2023/3TB4/lab2/Tutorial_lab2/counter.v              ;         ;
-; hex_to_bcd_converter.v           ; yes             ; User Verilog HDL File  ; C:/Users/LinF/Documents/School/Winter2023/3TB4/lab2/Tutorial_lab2/hex_to_bcd_converter.v ;         ;
-+----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                 ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                                   ; Library ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------------------------------+---------+
+; TutLab2.v                        ; yes             ; User Verilog HDL File  ; C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/Tutorial_lab2/TutLab2.v              ;         ;
+; seven_seg_decoder.v              ; yes             ; User Verilog HDL File  ; C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/Tutorial_lab2/seven_seg_decoder.v    ;         ;
+; clock_divider.v                  ; yes             ; User Verilog HDL File  ; C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/Tutorial_lab2/clock_divider.v        ;         ;
+; counter.v                        ; yes             ; User Verilog HDL File  ; C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/Tutorial_lab2/counter.v              ;         ;
+; hex_to_bcd_converter.v           ; yes             ; User Verilog HDL File  ; C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/Tutorial_lab2/hex_to_bcd_converter.v ;         ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------------------------------+---------+
 
 
 +------------------------------------------------------------+
@@ -186,14 +186,14 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+--------------+
 ; Resource                                    ; Usage        ;
 +---------------------------------------------+--------------+
-; Estimate of Logic utilization (ALMs needed) ; 164          ;
+; Estimate of Logic utilization (ALMs needed) ; 154          ;
 ;                                             ;              ;
-; Combinational ALUT usage for logic          ; 256          ;
+; Combinational ALUT usage for logic          ; 236          ;
 ;     -- 7 input functions                    ; 0            ;
 ;     -- 6 input functions                    ; 71           ;
-;     -- 5 input functions                    ; 40           ;
-;     -- 4 input functions                    ; 71           ;
-;     -- <=3 input functions                  ; 74           ;
+;     -- 5 input functions                    ; 28           ;
+;     -- 4 input functions                    ; 69           ;
+;     -- <=3 input functions                  ; 68           ;
 ;                                             ;              ;
 ; Dedicated logic registers                   ; 54           ;
 ;                                             ;              ;
@@ -203,8 +203,8 @@ refer to the applicable agreement for further details.
 ;                                             ;              ;
 ; Maximum fan-out node                        ; KEY[0]~input ;
 ; Maximum fan-out                             ; 54           ;
-; Total fan-out                               ; 1369         ;
-; Average fan-out                             ; 3.41         ;
+; Total fan-out                               ; 1286         ;
+; Average fan-out                             ; 3.37         ;
 +---------------------------------------------+--------------+
 
 
@@ -213,10 +213,10 @@ refer to the applicable agreement for further details.
 +----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------+----------------------+--------------+
 ; Compilation Hierarchy Node       ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                  ; Entity Name          ; Library Name ;
 +----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------+----------------------+--------------+
-; |TutLab2                         ; 256 (0)             ; 54 (0)                    ; 0                 ; 0          ; 46   ; 0            ; |TutLab2                             ; TutLab2              ; work         ;
+; |TutLab2                         ; 236 (0)             ; 54 (0)                    ; 0                 ; 0          ; 46   ; 0            ; |TutLab2                             ; TutLab2              ; work         ;
 ;    |clock_divider:comb_3|        ; 44 (44)             ; 33 (33)                   ; 0                 ; 0          ; 0    ; 0            ; |TutLab2|clock_divider:comb_3        ; clock_divider        ; work         ;
 ;    |counter:comb_4|              ; 22 (22)             ; 21 (21)                   ; 0                 ; 0          ; 0    ; 0            ; |TutLab2|counter:comb_4              ; counter              ; work         ;
-;    |hex_to_bcd_converter:comb_5| ; 148 (148)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TutLab2|hex_to_bcd_converter:comb_5 ; hex_to_bcd_converter ; work         ;
+;    |hex_to_bcd_converter:comb_5| ; 128 (128)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TutLab2|hex_to_bcd_converter:comb_5 ; hex_to_bcd_converter ; work         ;
 ;    |seven_seg_decoder:decoder0|  ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TutLab2|seven_seg_decoder:decoder0  ; seven_seg_decoder    ; work         ;
 ;    |seven_seg_decoder:decoder1|  ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TutLab2|seven_seg_decoder:decoder1  ; seven_seg_decoder    ; work         ;
 ;    |seven_seg_decoder:decoder2|  ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TutLab2|seven_seg_decoder:decoder2  ; seven_seg_decoder    ; work         ;
@@ -244,11 +244,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 +-------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: clock_divider:comb_3 ;
-+----------------+--------+-----------------------------------------+
-; Parameter Name ; Value  ; Type                                    ;
-+----------------+--------+-----------------------------------------+
-; factor         ; 100000 ; Signed Integer                          ;
-+----------------+--------+-----------------------------------------+
++----------------+-------+------------------------------------------+
+; Parameter Name ; Value ; Type                                     ;
++----------------+-------+------------------------------------------+
+; factor         ; 50000 ; Signed Integer                           ;
++----------------+-------+------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -262,21 +262,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA               ; 1                           ;
 ;     ENA CLR           ; 20                          ;
 ;     ENA SCLR          ; 32                          ;
-; arriav_lcell_comb     ; 268                         ;
+; arriav_lcell_comb     ; 248                         ;
 ;     arith             ; 51                          ;
 ;         1 data inputs ; 50                          ;
 ;         2 data inputs ; 1                           ;
-;     normal            ; 217                         ;
+;     normal            ; 197                         ;
 ;         1 data inputs ; 13                          ;
-;         2 data inputs ; 11                          ;
-;         3 data inputs ; 11                          ;
-;         4 data inputs ; 71                          ;
-;         5 data inputs ; 40                          ;
+;         2 data inputs ; 8                           ;
+;         3 data inputs ; 8                           ;
+;         4 data inputs ; 69                          ;
+;         5 data inputs ; 28                          ;
 ;         6 data inputs ; 71                          ;
 ; boundary_port         ; 46                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 12.00                       ;
-; Average LUT depth     ; 7.99                        ;
+; Max LUT depth         ; 11.00                       ;
+; Average LUT depth     ; 7.20                        ;
 +-----------------------+-----------------------------+
 
 
@@ -295,48 +295,48 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Mon Feb 06 12:29:54 2023
+    Info: Processing started: Fri Feb 10 02:51:56 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TutLab2 -c TutLab2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 14 of the 14 processors detected
-Warning (10090): Verilog HDL syntax warning at TutLab2.v(29): extra block comment delimiter characters /* within block comment File: C:/Users/LinF/Documents/School/Winter2023/3TB4/lab2/Tutorial_lab2/TutLab2.v Line: 29
+Warning (10090): Verilog HDL syntax warning at TutLab2.v(29): extra block comment delimiter characters /* within block comment File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/Tutorial_lab2/TutLab2.v Line: 29
 Info (12021): Found 1 design units, including 1 entities, in source file tutlab2.v
-    Info (12023): Found entity 1: TutLab2 File: C:/Users/LinF/Documents/School/Winter2023/3TB4/lab2/Tutorial_lab2/TutLab2.v Line: 1
+    Info (12023): Found entity 1: TutLab2 File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/Tutorial_lab2/TutLab2.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file seven_seg_decoder.v
-    Info (12023): Found entity 1: seven_seg_decoder File: C:/Users/LinF/Documents/School/Winter2023/3TB4/lab2/Tutorial_lab2/seven_seg_decoder.v Line: 1
+    Info (12023): Found entity 1: seven_seg_decoder File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/Tutorial_lab2/seven_seg_decoder.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file clock_divider.v
-    Info (12023): Found entity 1: clock_divider File: C:/Users/LinF/Documents/School/Winter2023/3TB4/lab2/Tutorial_lab2/clock_divider.v Line: 1
+    Info (12023): Found entity 1: clock_divider File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/Tutorial_lab2/clock_divider.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file counter.v
-    Info (12023): Found entity 1: counter File: C:/Users/LinF/Documents/School/Winter2023/3TB4/lab2/Tutorial_lab2/counter.v Line: 1
+    Info (12023): Found entity 1: counter File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/Tutorial_lab2/counter.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file hex_to_bcd_converter.v
-    Info (12023): Found entity 1: hex_to_bcd_converter File: C:/Users/LinF/Documents/School/Winter2023/3TB4/lab2/Tutorial_lab2/hex_to_bcd_converter.v Line: 1
-Critical Warning (10846): Verilog HDL Instantiation warning at TutLab2.v(7): instance has no name File: C:/Users/LinF/Documents/School/Winter2023/3TB4/lab2/Tutorial_lab2/TutLab2.v Line: 7
-Critical Warning (10846): Verilog HDL Instantiation warning at TutLab2.v(8): instance has no name File: C:/Users/LinF/Documents/School/Winter2023/3TB4/lab2/Tutorial_lab2/TutLab2.v Line: 8
-Critical Warning (10846): Verilog HDL Instantiation warning at TutLab2.v(9): instance has no name File: C:/Users/LinF/Documents/School/Winter2023/3TB4/lab2/Tutorial_lab2/TutLab2.v Line: 9
+    Info (12023): Found entity 1: hex_to_bcd_converter File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/Tutorial_lab2/hex_to_bcd_converter.v Line: 1
+Critical Warning (10846): Verilog HDL Instantiation warning at TutLab2.v(7): instance has no name File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/Tutorial_lab2/TutLab2.v Line: 7
+Critical Warning (10846): Verilog HDL Instantiation warning at TutLab2.v(8): instance has no name File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/Tutorial_lab2/TutLab2.v Line: 8
+Critical Warning (10846): Verilog HDL Instantiation warning at TutLab2.v(9): instance has no name File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/Tutorial_lab2/TutLab2.v Line: 9
 Info (12127): Elaborating entity "TutLab2" for the top level hierarchy
-Info (12128): Elaborating entity "clock_divider" for hierarchy "clock_divider:comb_3" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/lab2/Tutorial_lab2/TutLab2.v Line: 7
-Warning (10230): Verilog HDL assignment warning at clock_divider.v(8): truncated value with size 32 to match size of target (1) File: C:/Users/LinF/Documents/School/Winter2023/3TB4/lab2/Tutorial_lab2/clock_divider.v Line: 8
-Info (12128): Elaborating entity "counter" for hierarchy "counter:comb_4" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/lab2/Tutorial_lab2/TutLab2.v Line: 8
-Info (12128): Elaborating entity "hex_to_bcd_converter" for hierarchy "hex_to_bcd_converter:comb_5" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/lab2/Tutorial_lab2/TutLab2.v Line: 9
-Info (12128): Elaborating entity "seven_seg_decoder" for hierarchy "seven_seg_decoder:decoder0" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/lab2/Tutorial_lab2/TutLab2.v Line: 10
+Info (12128): Elaborating entity "clock_divider" for hierarchy "clock_divider:comb_3" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/Tutorial_lab2/TutLab2.v Line: 7
+Warning (10230): Verilog HDL assignment warning at clock_divider.v(8): truncated value with size 32 to match size of target (1) File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/Tutorial_lab2/clock_divider.v Line: 8
+Info (12128): Elaborating entity "counter" for hierarchy "counter:comb_4" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/Tutorial_lab2/TutLab2.v Line: 8
+Info (12128): Elaborating entity "hex_to_bcd_converter" for hierarchy "hex_to_bcd_converter:comb_5" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/Tutorial_lab2/TutLab2.v Line: 9
+Info (12128): Elaborating entity "seven_seg_decoder" for hierarchy "seven_seg_decoder:decoder0" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/Tutorial_lab2/TutLab2.v Line: 10
 Info (286030): Timing-Driven Synthesis is running
-Info (144001): Generated suppressed messages file C:/Users/LinF/Documents/School/Winter2023/3TB4/lab2/Tutorial_lab2/output_files/TutLab2.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/Tutorial_lab2/output_files/TutLab2.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 302 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 282 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 42 output pins
-    Info (21061): Implemented 256 logic cells
+    Info (21061): Implemented 236 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4860 megabytes
-    Info: Processing ended: Mon Feb 06 12:30:03 2023
+    Info: Peak virtual memory: 4856 megabytes
+    Info: Processing ended: Fri Feb 10 02:52:05 2023
     Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:15
+    Info: Total CPU time (on all processors): 00:00:17
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/LinF/Documents/School/Winter2023/3TB4/lab2/Tutorial_lab2/output_files/TutLab2.map.smsg.
+The suppressed messages can be found in C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/Tutorial_lab2/output_files/TutLab2.map.smsg.
 
 

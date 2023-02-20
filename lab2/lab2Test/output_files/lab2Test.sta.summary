@@ -1,0 +1,101 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -2.858
+TNS   : -124.627
+
+Type  : Slow 1100mV 85C Model Setup 'clock_divider:comb_10|Pulse_ms'
+Slack : -2.092
+TNS   : -47.107
+
+Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.397
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'clock_divider:comb_10|Pulse_ms'
+Slack : 0.683
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.439
+TNS   : -24.181
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock_divider:comb_10|Pulse_ms'
+Slack : -0.394
+TNS   : -14.386
+
+Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -2.765
+TNS   : -119.914
+
+Type  : Slow 1100mV 0C Model Setup 'clock_divider:comb_10|Pulse_ms'
+Slack : -2.031
+TNS   : -45.287
+
+Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.393
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'clock_divider:comb_10|Pulse_ms'
+Slack : 0.682
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.500
+TNS   : -26.387
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock_divider:comb_10|Pulse_ms'
+Slack : -0.394
+TNS   : -14.391
+
+Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -1.382
+TNS   : -59.103
+
+Type  : Fast 1100mV 85C Model Setup 'clock_divider:comb_10|Pulse_ms'
+Slack : -0.845
+TNS   : -19.527
+
+Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.209
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'clock_divider:comb_10|Pulse_ms'
+Slack : 0.286
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.520
+TNS   : -4.606
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock_divider:comb_10|Pulse_ms'
+Slack : 0.058
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -1.222
+TNS   : -49.845
+
+Type  : Fast 1100mV 0C Model Setup 'clock_divider:comb_10|Pulse_ms'
+Slack : -0.726
+TNS   : -16.348
+
+Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.199
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'clock_divider:comb_10|Pulse_ms'
+Slack : 0.261
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.533
+TNS   : -4.542
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock_divider:comb_10|Pulse_ms'
+Slack : 0.079
+TNS   : 0.000
+
+------------------------------------------------------------

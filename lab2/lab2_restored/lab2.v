@@ -28,7 +28,7 @@
 module lab2(input CLOCK_50,  input [3:0] KEY,  output [6:0] HEX0,HEX1,HEX2,HEX3,HEX4,HEX5, output [9:0] LEDR);
 		
 
-	parameter [2:0] RESET=3'b000, RESUME=3'b001, BLINKING=3'b010, OFF=3'b011, TIMER_DISPLAY=3'b100, WINNER_TIME_DISPLAY=3'b101,
+	parameter [3:0] RESET=3'b000, RESUME=3'b001, BLINKING=3'b010, OFF=3'b011, TIMER_DISPLAY=3'b100, WINNER_TIME_DISPLAY=3'b101,
 							WIN1=3'b110, WIN2=3'b111;
 	
 	reg [2:0] state=RESET, next_state=RESET;
@@ -45,6 +45,7 @@ module lab2(input CLOCK_50,  input [3:0] KEY,  output [6:0] HEX0,HEX1,HEX2,HEX3,
 	
 	
 	wire [13:0] random_wait_time;
+	wire rand_ready;
 
 	
 	reg [1:0]  hex_sel=2'b00;  //whether blinking or not
@@ -61,7 +62,7 @@ module lab2(input CLOCK_50,  input [3:0] KEY,  output [6:0] HEX0,HEX1,HEX2,HEX3,
 
 	reg [19:0]temp;
 
-	reg [19:0] winner_time=8888;
+	reg [19:0] winner_time=20'b0;
 	wire [19:0] w_winner_time;
 	
 	wire conditioned_key0, conditioned_key3;
@@ -76,6 +77,9 @@ module lab2(input CLOCK_50,  input [3:0] KEY,  output [6:0] HEX0,HEX1,HEX2,HEX3,
 	
 	assign LEDR[4:0]=win1;
 	assign LEDR[9:5]={win2[0],win2[1],win2[2],win2[3],win2[4]} ;   
+	
+	wire [3:0] hex_off = 4'b1111;
+	reg cheat1, cheat2;
 
 	
 	clock_divider #(.factor(50000)) (.Clock(CLOCK_50), .Reset_n(KEY[1]), .Pulse_ms(clk_ms));
@@ -84,22 +88,22 @@ module lab2(input CLOCK_50,  input [3:0] KEY,  output [6:0] HEX0,HEX1,HEX2,HEX3,
 
 	counter (.clk(clk_ms), .reset_n(KEY[1]), .resume_n(KEY[2]), .enable(w_display_counter_start), .ms_count(display_ms));
 	
-
-
+	random (.clk(CLOCK_50), .reset_n(KEY[1]), .resume_n(KEY[2]), .random(random_wait_time), .rnd_ready(rand_ready));
 	
+	hex_to_bcd_converter h2b(.reset_n(KEY[1]), .hex_number(w_winner_time),
+									.bcd_digit_0(winner_ms0),.bcd_digit_1(winner_ms1),.bcd_digit_2(winner_ms2),.bcd_digit_3(winner_ms3),.bcd_digit_4(winner_ms4),.bcd_digit_5(winner_ms5));
+									
+	hex_to_bcd_converter h2b_2(.reset_n(KEY[1]), .hex_number(display_ms),
+									.bcd_digit_0(w_ms0),.bcd_digit_1(w_ms1),.bcd_digit_2(w_ms2),.bcd_digit_3(w_ms3),.bcd_digit_4(w_ms4),.bcd_digit_5(w_ms5));
+
 	blinkHEX #(.factor(200) ) (.ms_clk(clk_ms), .Reset_n(KEY[1]), .d0(w_blink0), .d1(w_blink1), .d2(w_blink2), .d3(w_blink3), .d4(w_blink4),.d5(w_blink5));
 	
-	
-
-	
-	
-	assign digit0=w_blink0;
-	assign digit1=w_blink1;
-	assign digit2=w_blink2;
-	assign digit3=w_blink3;
-	assign digit4=w_blink4;
-	assign digit5=w_blink5;
-	
+	mux4to1 (.sel(w_hex_sel), .a(w_blink0), .b(hex_off), .c(w_ms0), .d(winner_ms0), .q(digit0));
+	mux4to1 (.sel(w_hex_sel), .a(w_blink1), .b(hex_off), .c(w_ms1), .d(winner_ms1), .q(digit1));
+	mux4to1 (.sel(w_hex_sel), .a(w_blink2), .b(hex_off), .c(w_ms2), .d(winner_ms2), .q(digit2));
+	mux4to1 (.sel(w_hex_sel), .a(w_blink3), .b(hex_off), .c(w_ms3), .d(winner_ms3), .q(digit3));
+	mux4to1 (.sel(w_hex_sel), .a(w_blink4), .b(hex_off), .c(w_ms4), .d(winner_ms4), .q(digit4));
+	mux4to1 (.sel(w_hex_sel), .a(w_blink5), .b(hex_off), .c(w_ms5), .d(winner_ms5), .q(digit5));
 	
 	seven_seg_decoder  decoder0(digit0, HEX0);
 	seven_seg_decoder  decoder1(digit1, HEX1);
@@ -107,11 +111,6 @@ module lab2(input CLOCK_50,  input [3:0] KEY,  output [6:0] HEX0,HEX1,HEX2,HEX3,
 	seven_seg_decoder  decoder3(digit3, HEX3);
 	seven_seg_decoder  decoder4(digit4, HEX4);
 	seven_seg_decoder  decoder5(digit5, HEX5);
-
-	
-	assign random_wait_time=1000;
-	
-	
 	
 	always @ (posedge CLOCK_50, negedge KEY[1], negedge KEY[2])
 	begin
@@ -158,68 +157,80 @@ module lab2(input CLOCK_50,  input [3:0] KEY,  output [6:0] HEX0,HEX1,HEX2,HEX3,
 		
 		case (state)
 			RESET: 
-				begin					
+				begin		
+					hex_sel=2'b00;		
 					display_counter_start=0;
 					winner_time=0;					
 									
-					hex_sel=2'b00;
 					next_state=BLINKING;			
 				end
 			RESUME:
 				begin					
-					//hex_sel=2'b00;
+					hex_sel=2'b00;
 					display_counter_start=0;
 					winner_time=0;
 				
-					hex_sel=2'b00;
 					next_state=BLINKING;
 				end
 			BLINKING:
 				begin
-					//hex_sel=2'b00;
+					hex_sel=2'b00;
 					
-	
-					if (ms>=5000)        //blink for  about 5 second	
+					if (ms>=2000)        //blink for about 2 second	
 						begin
-							//hex_sel=2'b01;
+							hex_sel=2'b01;
 							next_state=OFF;
 						end
 					else 
 						next_state=BLINKING;
-						
 				end
-			
 			OFF:
 				begin
 					hex_sel=2'b01;
-					
-									
-					if (ms>(7000+random_wait_time)) begin     //(7-5) seconds + random seconds)
-						
+																			
+					if (ms>(3000+random_wait_time)) begin     //(7-5) seconds + random seconds)
 						next_state=TIMER_DISPLAY;	
-						
 					end
+					
+					if (!KEY[0]) begin //P1 cheat
+						cheat1 = 1'b1;
+						winner_time = 111111;
+						next_state=WINNER_TIME_DISPLAY;
+					end
+					else begin
+						cheat1 = 1'b0;
+					end
+					
+					if (!KEY[3]) begin //P2 cheat
+						cheat2 = 1'b1;
+						winner_time = 222222;
+						next_state=WINNER_TIME_DISPLAY;
+					end
+					else begin
+						cheat2 = 1'b0;
+					end
+						
 				end
 			TIMER_DISPLAY:
 				begin
 					display_counter_start=1;  
 					hex_sel=2'b10;	
 					
-				
-					if (display_ms>1000)
-					begin
-						player2_win=1;
+					if (!KEY[0]) begin //P1 win
+						player1_win = 1;
+						winner_time = display_ms;
 						next_state=WINNER_TIME_DISPLAY;
 					end
-				
+					else if (!KEY[3]) begin //P2 win
+						player2_win = 1;
+						winner_time = display_ms;
+						next_state=WINNER_TIME_DISPLAY;
+					end
 				end
-
-
 			WINNER_TIME_DISPLAY:
 				begin
 					hex_sel=2'b11;
 					winner_time=winner_time;
-					
 				end
 			
 			default: 
