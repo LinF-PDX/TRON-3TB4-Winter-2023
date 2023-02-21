@@ -1,5 +1,5 @@
 Fitter report for lab2Test
-Mon Feb 13 12:11:31 2023
+Tue Feb 21 00:43:50 2023
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -63,7 +63,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Mon Feb 13 12:11:31 2023       ;
+; Fitter Status                   ; Successful - Tue Feb 21 00:43:50 2023       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; lab2Test                                    ;
 ; Top-level Entity Name           ; lab2Test                                    ;
@@ -161,12 +161,12 @@ refer to the applicable agreement for further details.
 ;     Processor 2            ;   0.3%      ;
 ;     Processor 3            ;   0.3%      ;
 ;     Processor 4            ;   0.3%      ;
-;     Processor 5            ;   0.2%      ;
-;     Processor 6            ;   0.2%      ;
-;     Processor 7            ;   0.2%      ;
-;     Processor 8            ;   0.2%      ;
-;     Processor 9            ;   0.2%      ;
-;     Processor 10           ;   0.2%      ;
+;     Processor 5            ;   0.3%      ;
+;     Processor 6            ;   0.3%      ;
+;     Processor 7            ;   0.3%      ;
+;     Processor 8            ;   0.3%      ;
+;     Processor 9            ;   0.3%      ;
+;     Processor 10           ;   0.3%      ;
 ;     Processors 11-14       ;   0.2%      ;
 +----------------------------+-------------+
 
@@ -2415,7 +2415,7 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.25 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.26 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -2424,10 +2424,10 @@ Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:02
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab2/lab2Test/output_files/lab2Test.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 218 warnings
-    Info: Peak virtual memory: 7595 megabytes
-    Info: Processing ended: Mon Feb 13 12:11:32 2023
-    Info: Elapsed time: 00:00:23
-    Info: Total CPU time (on all processors): 00:01:40
+    Info: Peak virtual memory: 7600 megabytes
+    Info: Processing ended: Tue Feb 21 00:43:50 2023
+    Info: Elapsed time: 00:00:26
+    Info: Total CPU time (on all processors): 00:01:45
 
 
 +----------------------------+
