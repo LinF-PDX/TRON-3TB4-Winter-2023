@@ -21,7 +21,7 @@ fkill=2000*2/fs;
 % Determine the coefficients of the FIR filter that will remove that frequency.
 % Start off the following blank with the value 4, to numbers larger than 160.
 % Note: the following filter only works with EVEN numbers.
-coeff=firgr(18,[0,fkill-0.1, fkill, fkill+0.1, 1], [1,1,0,1,1],{'n','n','s','n','n'});
+coeff=firgr(12,[0,fkill-0.1, fkill, fkill+0.1, 1], [1,1,0,1,1],{'n','n','s','n','n'});
 % Plot the filter
 % Plot the frequency response of the designed filter to verify that it satisfies the
 % Requirements
@@ -35,12 +35,10 @@ freqz(coeff,1);
 % blown up or not, seek help from a TA.
 coeff*32768
 % Save these coefficients in a text file, You will need them when coding the FIR filter.
-fid=fopen(’ABSOLUTE_PATH_TO\Your_Text_File_Name’,’w’);
+fid=fopen('C:\Users\LinF\Documents\School\Winter2023\3TB4\TRON-3TB4-Winter-2023\lab3\lab3_sound\L01_Group1.wav','w');
 % If you make a typing error with the following for-end block, you need to start from the
-\for" line again.
-2
 for i=1:length(coeff)
-fprintf(fid,’coeff[%3.0f]=%10.0f;\n’,i-1,32768*coeff(i));
+    fprintf(fid,'coeff[%3.0f]=%10.0f;\n',i-1,32768*coeff(i));
 end
 fclose(fid);
 % Filter the input signal x(t) using the designed FIR filter to get y(t).
@@ -60,12 +58,12 @@ sound(3*y,fs);
 subplot(2,1,1);
 % The first plot shows the FFT of the original signal.
 plot(f,2*abs(X(1:NFFT/2+1)));
-xlabel(’frequency (Hz)’);
-ylabel(’|X(f)|’);
+xlabel('frequency (Hz)');
+ylabel('|X(f)|');
 % The second plot shows the FFT of the filtered signal.
 subplot(2,1,2);
 plot(f, 2*abs(Y(1:NFFT/2+1)));
-xlabel(’frequency(Hz)’);
+xlabel('frequency(Hz)');
 % Write the filtered audio file to disk.
-3
-audiowrite(’ABSOLUTE_PATH_TO\Your_Filtered.wav’,y,fs);
+audiowrite('C:\Users\LinF\Documents\School\Winter2023\3TB4\TRON-3TB4-Winter-2023\lab3\lab3_sound\Your_Filtered.wav',y,fs);
+
