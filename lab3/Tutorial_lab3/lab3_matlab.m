@@ -1,6 +1,6 @@
 % Read the .wav file (replace file_name by your group’s file
 % Variable x stores the wave and fs stores the sampling rate
-[x, fs]=audioread('C:\Users\LinF\Documents\School\Winter2023\3TB4\TRON-3TB4-Winter-2023\lab3\lab3_sound\L01_Group1.wav');
+[x, fs]=audioread('C:\Users\LinF\Documents\School\Winter 2023\3TB4\TRON-3TB4-Winter-2023\lab3\lab3_sound\L01_Group1.wav');
 % Perform FFT on the original signal to determine the frequency of the \noise"
 L=length(x);
 NFFT=2^nextpow2(L);
@@ -35,7 +35,7 @@ freqz(coeff,1);
 % blown up or not, seek help from a TA.
 coeff*32768
 % Save these coefficients in a text file, You will need them when coding the FIR filter.
-fid=fopen('C:\Users\LinF\Documents\School\Winter2023\3TB4\TRON-3TB4-Winter-2023\lab3\lab3_sound\L01_Group1.wav','w');
+fid=fopen('C:\Users\LinF\Documents\School\Winter 2023\3TB4\TRON-3TB4-Winter-2023\lab3\lab3_sound\L01_Group1.wav','w');
 % If you make a typing error with the following for-end block, you need to start from the
 for i=1:length(coeff)
     fprintf(fid,'coeff[%3.0f]=%10.0f;\n',i-1,32768*coeff(i));
@@ -65,5 +65,5 @@ subplot(2,1,2);
 plot(f, 2*abs(Y(1:NFFT/2+1)));
 xlabel('frequency(Hz)');
 % Write the filtered audio file to disk.
-audiowrite('C:\Users\LinF\Documents\School\Winter2023\3TB4\TRON-3TB4-Winter-2023\lab3\lab3_sound\Your_Filtered.wav',y,fs);
+audiowrite('C:\Users\LinF\Documents\School\Winter 2023\3TB4\TRON-3TB4-Winter-2023\lab3\lab3_sound\Your_Filtered.wav',y,fs);
 
