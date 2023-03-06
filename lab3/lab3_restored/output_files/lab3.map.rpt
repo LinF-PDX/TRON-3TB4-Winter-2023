@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab3
-Sun Mar 05 00:38:32 2023
+Mon Mar 06 12:11:13 2023
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -14,37 +14,20 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis RAM Summary
-  9. Analysis & Synthesis DSP Block Usage Summary
- 10. Analysis & Synthesis IP Cores Summary
- 11. Registers Removed During Synthesis
- 12. Removed Registers Triggering Further Register Optimizations
- 13. General Register Statistics
- 14. Inverted Register Statistics
- 15. Multiplexer Restructuring Statistics (Restructuring Performed)
- 16. Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|fir_filter:fir_filter
- 17. Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[0].mp|lpm_mult:lpm_mult_component
- 18. Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[1].mp|lpm_mult:lpm_mult_component
- 19. Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[2].mp|lpm_mult:lpm_mult_component
- 20. Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[3].mp|lpm_mult:lpm_mult_component
- 21. Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[4].mp|lpm_mult:lpm_mult_component
- 22. Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[5].mp|lpm_mult:lpm_mult_component
- 23. Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:mp_m|lpm_mult:lpm_mult_component
- 24. Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|echo_machine:echo|shiftregister:delay|altshift_taps:ALTSHIFT_TAPS_component
- 25. lpm_mult Parameter Settings by Entity Instance
- 26. altshift_taps Parameter Settings by Entity Instance
- 27. Port Connectivity Checks: "dsp_subsystem:dsp_instance|echo_machine:echo|shiftregister:delay"
- 28. Port Connectivity Checks: "dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:mp_m"
- 29. Port Connectivity Checks: "dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[5].mp"
- 30. Port Connectivity Checks: "dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[4].mp"
- 31. Port Connectivity Checks: "dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[3].mp"
- 32. Port Connectivity Checks: "dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[2].mp"
- 33. Port Connectivity Checks: "dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[1].mp"
- 34. Port Connectivity Checks: "dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[0].mp"
- 35. Port Connectivity Checks: "keytr:KEY_0"
- 36. Port Connectivity Checks: "i2c:b2v_inst"
- 37. Post-Synthesis Netlist Statistics for Top Partition
- 38. Elapsed Time Per Partition
- 39. Analysis & Synthesis Messages
+  9. Analysis & Synthesis IP Cores Summary
+ 10. Registers Removed During Synthesis
+ 11. Removed Registers Triggering Further Register Optimizations
+ 12. General Register Statistics
+ 13. Inverted Register Statistics
+ 14. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 15. Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|echo_machine:echo|shiftregister:delay|altshift_taps:ALTSHIFT_TAPS_component
+ 16. altshift_taps Parameter Settings by Entity Instance
+ 17. Port Connectivity Checks: "dsp_subsystem:dsp_instance|echo_machine:echo|shiftregister:delay"
+ 18. Port Connectivity Checks: "keytr:KEY_0"
+ 19. Port Connectivity Checks: "i2c:b2v_inst"
+ 20. Post-Synthesis Netlist Statistics for Top Partition
+ 21. Elapsed Time Per Partition
+ 22. Analysis & Synthesis Messages
 
 
 
@@ -70,17 +53,17 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Mar 05 00:38:32 2023       ;
+; Analysis & Synthesis Status     ; Successful - Mon Mar 06 12:11:13 2023       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; lab3                                        ;
 ; Top-level Entity Name           ; lab3                                        ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 327                                         ;
+; Total registers                 ; 135                                         ;
 ; Total pins                      ; 13                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
-; Total DSP Blocks                ; 7                                           ;
+; Total DSP Blocks                ; 0                                           ;
 ; Total HSSI RX PCSs              ; 0                                           ;
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
 ; Total HSSI TX PCSs              ; 0                                           ;
@@ -210,17 +193,8 @@ refer to the applicable agreement for further details.
 ; CLOCK_500.v                      ; yes             ; User Verilog HDL File        ; C:/Users/LinF/Documents/School/Winter 2023/3TB4/TRON-3TB4-Winter-2023/lab3/lab3_restored/CLOCK_500.v            ;         ;
 ; lab3.v                           ; yes             ; User Verilog HDL File        ; C:/Users/LinF/Documents/School/Winter 2023/3TB4/TRON-3TB4-Winter-2023/lab3/lab3_restored/lab3.v                 ;         ;
 ; MUX_3to1.v                       ; yes             ; User Verilog HDL File        ; C:/Users/LinF/Documents/School/Winter 2023/3TB4/TRON-3TB4-Winter-2023/lab3/lab3_restored/MUX_3to1.v             ;         ;
-; fir_filter.v                     ; yes             ; User Verilog HDL File        ; C:/Users/LinF/Documents/School/Winter 2023/3TB4/TRON-3TB4-Winter-2023/lab3/lab3_restored/fir_filter.v           ;         ;
-; multiplier.v                     ; yes             ; User Wizard-Generated File   ; C:/Users/LinF/Documents/School/Winter 2023/3TB4/TRON-3TB4-Winter-2023/lab3/lab3_restored/multiplier.v           ;         ;
 ; shiftregister.v                  ; yes             ; User Wizard-Generated File   ; C:/Users/LinF/Documents/School/Winter 2023/3TB4/TRON-3TB4-Winter-2023/lab3/lab3_restored/shiftregister.v        ;         ;
 ; echo_machine.v                   ; yes             ; User Verilog HDL File        ; C:/Users/LinF/Documents/School/Winter 2023/3TB4/TRON-3TB4-Winter-2023/lab3/lab3_restored/echo_machine.v         ;         ;
-; lpm_mult.tdf                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_mult.tdf                                             ;         ;
-; aglobal171.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/aglobal171.inc                                           ;         ;
-; lpm_add_sub.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_add_sub.inc                                          ;         ;
-; multcore.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/multcore.inc                                             ;         ;
-; bypassff.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/bypassff.inc                                             ;         ;
-; altshift.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altshift.inc                                             ;         ;
-; db/mult_91n.v                    ; yes             ; Auto-Generated Megafunction  ; C:/Users/LinF/Documents/School/Winter 2023/3TB4/TRON-3TB4-Winter-2023/lab3/lab3_restored/db/mult_91n.v          ;         ;
 ; altshift_taps.tdf                ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altshift_taps.tdf                                        ;         ;
 ; altdpram.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altdpram.inc                                             ;         ;
 ; lpm_counter.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_counter.inc                                          ;         ;
@@ -239,30 +213,30 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-------------------+
 ; Resource                                    ; Usage             ;
 +---------------------------------------------+-------------------+
-; Estimate of Logic utilization (ALMs needed) ; 1247              ;
+; Estimate of Logic utilization (ALMs needed) ; 1246              ;
 ;                                             ;                   ;
-; Combinational ALUT usage for logic          ; 912               ;
-;     -- 7 input functions                    ; 2                 ;
-;     -- 6 input functions                    ; 435               ;
-;     -- 5 input functions                    ; 40                ;
-;     -- 4 input functions                    ; 35                ;
-;     -- <=3 input functions                  ; 400               ;
-; Memory ALUT usage                           ; 1664              ;
+; Combinational ALUT usage for logic          ; 802               ;
+;     -- 7 input functions                    ; 1                 ;
+;     -- 6 input functions                    ; 469               ;
+;     -- 5 input functions                    ; 24                ;
+;     -- 4 input functions                    ; 33                ;
+;     -- <=3 input functions                  ; 275               ;
+; Memory ALUT usage                           ; 1792              ;
 ;     -- 64-address deep                      ; 0                 ;
-;     -- 32-address deep                      ; 1664              ;
+;     -- 32-address deep                      ; 1792              ;
 ;                                             ;                   ;
-; Dedicated logic registers                   ; 327               ;
+; Dedicated logic registers                   ; 135               ;
 ;                                             ;                   ;
 ; I/O pins                                    ; 13                ;
-; Total MLAB memory bits                      ; 53248             ;
+; Total MLAB memory bits                      ; 57344             ;
 ; Total block memory bits                     ; 0                 ;
 ;                                             ;                   ;
-; Total DSP Blocks                            ; 7                 ;
+; Total DSP Blocks                            ; 0                 ;
 ;                                             ;                   ;
 ; Maximum fan-out node                        ; AUD_ADCLRCK~input ;
-; Maximum fan-out                             ; 1884              ;
-; Total fan-out                               ; 18596             ;
-; Average fan-out                             ; 6.33              ;
+; Maximum fan-out                             ; 1820              ;
+; Total fan-out                               ; 18665             ;
+; Average fan-out                             ; 6.77              ;
 +---------------------------------------------+-------------------+
 
 
@@ -271,55 +245,21 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------+
 ; Compilation Hierarchy Node                          ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                ; Entity Name        ; Library Name ;
 +-----------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------+
-; |lab3                                               ; 912 (0)             ; 327 (0)                   ; 0                 ; 7          ; 13   ; 0            ; |lab3                                                                                                                                                                              ; lab3               ; work         ;
+; |lab3                                               ; 802 (0)             ; 135 (0)                   ; 0                 ; 0          ; 13   ; 0            ; |lab3                                                                                                                                                                              ; lab3               ; work         ;
 ;    |CLOCK_500:b2v_inst4|                            ; 47 (47)             ; 36 (36)                   ; 0                 ; 0          ; 0    ; 0            ; |lab3|CLOCK_500:b2v_inst4                                                                                                                                                          ; CLOCK_500          ; work         ;
-;    |dsp_subsystem:dsp_instance|                     ; 803 (0)             ; 216 (0)                   ; 0                 ; 7          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance                                                                                                                                                   ; dsp_subsystem      ; work         ;
-;       |MUX_3to1:mux|                                ; 16 (16)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|MUX_3to1:mux                                                                                                                                      ; MUX_3to1           ; work         ;
-;       |echo_machine:echo|                           ; 643 (16)            ; 24 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|echo_machine:echo                                                                                                                                 ; echo_machine       ; work         ;
-;          |shiftregister:delay|                      ; 627 (0)             ; 8 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|echo_machine:echo|shiftregister:delay                                                                                                             ; shiftregister      ; work         ;
-;             |altshift_taps:ALTSHIFT_TAPS_component| ; 627 (0)             ; 8 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|echo_machine:echo|shiftregister:delay|altshift_taps:ALTSHIFT_TAPS_component                                                                       ; altshift_taps      ; work         ;
-;                |shift_taps_pk51:auto_generated|     ; 627 (0)             ; 8 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|echo_machine:echo|shiftregister:delay|altshift_taps:ALTSHIFT_TAPS_component|shift_taps_pk51:auto_generated                                        ; shift_taps_pk51    ; work         ;
+;    |dsp_subsystem:dsp_instance|                     ; 691 (0)             ; 24 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance                                                                                                                                                   ; dsp_subsystem      ; work         ;
+;       |MUX_3to1:mux|                                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|MUX_3to1:mux                                                                                                                                      ; MUX_3to1           ; work         ;
+;       |echo_machine:echo|                           ; 690 (16)            ; 24 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|echo_machine:echo                                                                                                                                 ; echo_machine       ; work         ;
+;          |shiftregister:delay|                      ; 674 (0)             ; 8 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|echo_machine:echo|shiftregister:delay                                                                                                             ; shiftregister      ; work         ;
+;             |altshift_taps:ALTSHIFT_TAPS_component| ; 674 (0)             ; 8 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|echo_machine:echo|shiftregister:delay|altshift_taps:ALTSHIFT_TAPS_component                                                                       ; altshift_taps      ; work         ;
+;                |shift_taps_pk51:auto_generated|     ; 674 (0)             ; 8 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|echo_machine:echo|shiftregister:delay|altshift_taps:ALTSHIFT_TAPS_component|shift_taps_pk51:auto_generated                                        ; shift_taps_pk51    ; work         ;
 ;                   |cntr_8lf:cntr1|                  ; 8 (8)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|echo_machine:echo|shiftregister:delay|altshift_taps:ALTSHIFT_TAPS_component|shift_taps_pk51:auto_generated|cntr_8lf:cntr1                         ; cntr_8lf           ; work         ;
-;                   |dpram_l1o1:dpram2|               ; 619 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|echo_machine:echo|shiftregister:delay|altshift_taps:ALTSHIFT_TAPS_component|shift_taps_pk51:auto_generated|dpram_l1o1:dpram2                      ; dpram_l1o1         ; work         ;
+;                   |dpram_l1o1:dpram2|               ; 666 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|echo_machine:echo|shiftregister:delay|altshift_taps:ALTSHIFT_TAPS_component|shift_taps_pk51:auto_generated|dpram_l1o1:dpram2                      ; dpram_l1o1         ; work         ;
 ;                      |decode_dla:wr_decode|         ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|echo_machine:echo|shiftregister:delay|altshift_taps:ALTSHIFT_TAPS_component|shift_taps_pk51:auto_generated|dpram_l1o1:dpram2|decode_dla:wr_decode ; decode_dla         ; work         ;
-;                      |mux_2jb:rd_mux|               ; 611 (611)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|echo_machine:echo|shiftregister:delay|altshift_taps:ALTSHIFT_TAPS_component|shift_taps_pk51:auto_generated|dpram_l1o1:dpram2|mux_2jb:rd_mux       ; mux_2jb            ; work         ;
-;       |fir_filter:fir_filter|                       ; 144 (144)           ; 192 (0)                   ; 0                 ; 7          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|fir_filter:fir_filter                                                                                                                             ; fir_filter         ; work         ;
-;          |FIR_reg:reg_gen[0].fir_reg|               ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|fir_filter:fir_filter|FIR_reg:reg_gen[0].fir_reg                                                                                                  ; FIR_reg            ; work         ;
-;          |FIR_reg:reg_gen[10].fir_reg|              ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|fir_filter:fir_filter|FIR_reg:reg_gen[10].fir_reg                                                                                                 ; FIR_reg            ; work         ;
-;          |FIR_reg:reg_gen[11].fir_reg|              ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|fir_filter:fir_filter|FIR_reg:reg_gen[11].fir_reg                                                                                                 ; FIR_reg            ; work         ;
-;          |FIR_reg:reg_gen[1].fir_reg|               ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|fir_filter:fir_filter|FIR_reg:reg_gen[1].fir_reg                                                                                                  ; FIR_reg            ; work         ;
-;          |FIR_reg:reg_gen[2].fir_reg|               ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|fir_filter:fir_filter|FIR_reg:reg_gen[2].fir_reg                                                                                                  ; FIR_reg            ; work         ;
-;          |FIR_reg:reg_gen[3].fir_reg|               ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|fir_filter:fir_filter|FIR_reg:reg_gen[3].fir_reg                                                                                                  ; FIR_reg            ; work         ;
-;          |FIR_reg:reg_gen[4].fir_reg|               ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|fir_filter:fir_filter|FIR_reg:reg_gen[4].fir_reg                                                                                                  ; FIR_reg            ; work         ;
-;          |FIR_reg:reg_gen[5].fir_reg|               ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|fir_filter:fir_filter|FIR_reg:reg_gen[5].fir_reg                                                                                                  ; FIR_reg            ; work         ;
-;          |FIR_reg:reg_gen[6].fir_reg|               ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|fir_filter:fir_filter|FIR_reg:reg_gen[6].fir_reg                                                                                                  ; FIR_reg            ; work         ;
-;          |FIR_reg:reg_gen[7].fir_reg|               ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|fir_filter:fir_filter|FIR_reg:reg_gen[7].fir_reg                                                                                                  ; FIR_reg            ; work         ;
-;          |FIR_reg:reg_gen[8].fir_reg|               ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|fir_filter:fir_filter|FIR_reg:reg_gen[8].fir_reg                                                                                                  ; FIR_reg            ; work         ;
-;          |FIR_reg:reg_gen[9].fir_reg|               ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|fir_filter:fir_filter|FIR_reg:reg_gen[9].fir_reg                                                                                                  ; FIR_reg            ; work         ;
-;          |multiplier:main_wire_gen[0].mp|           ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[0].mp                                                                                              ; multiplier         ; work         ;
-;             |lpm_mult:lpm_mult_component|           ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[0].mp|lpm_mult:lpm_mult_component                                                                  ; lpm_mult           ; work         ;
-;                |mult_91n:auto_generated|            ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[0].mp|lpm_mult:lpm_mult_component|mult_91n:auto_generated                                          ; mult_91n           ; work         ;
-;          |multiplier:main_wire_gen[1].mp|           ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[1].mp                                                                                              ; multiplier         ; work         ;
-;             |lpm_mult:lpm_mult_component|           ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[1].mp|lpm_mult:lpm_mult_component                                                                  ; lpm_mult           ; work         ;
-;                |mult_91n:auto_generated|            ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[1].mp|lpm_mult:lpm_mult_component|mult_91n:auto_generated                                          ; mult_91n           ; work         ;
-;          |multiplier:main_wire_gen[2].mp|           ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[2].mp                                                                                              ; multiplier         ; work         ;
-;             |lpm_mult:lpm_mult_component|           ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[2].mp|lpm_mult:lpm_mult_component                                                                  ; lpm_mult           ; work         ;
-;                |mult_91n:auto_generated|            ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[2].mp|lpm_mult:lpm_mult_component|mult_91n:auto_generated                                          ; mult_91n           ; work         ;
-;          |multiplier:main_wire_gen[3].mp|           ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[3].mp                                                                                              ; multiplier         ; work         ;
-;             |lpm_mult:lpm_mult_component|           ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[3].mp|lpm_mult:lpm_mult_component                                                                  ; lpm_mult           ; work         ;
-;                |mult_91n:auto_generated|            ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[3].mp|lpm_mult:lpm_mult_component|mult_91n:auto_generated                                          ; mult_91n           ; work         ;
-;          |multiplier:main_wire_gen[4].mp|           ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[4].mp                                                                                              ; multiplier         ; work         ;
-;             |lpm_mult:lpm_mult_component|           ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[4].mp|lpm_mult:lpm_mult_component                                                                  ; lpm_mult           ; work         ;
-;                |mult_91n:auto_generated|            ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[4].mp|lpm_mult:lpm_mult_component|mult_91n:auto_generated                                          ; mult_91n           ; work         ;
-;          |multiplier:main_wire_gen[5].mp|           ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[5].mp                                                                                              ; multiplier         ; work         ;
-;             |lpm_mult:lpm_mult_component|           ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[5].mp|lpm_mult:lpm_mult_component                                                                  ; lpm_mult           ; work         ;
-;                |mult_91n:auto_generated|            ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[5].mp|lpm_mult:lpm_mult_component|mult_91n:auto_generated                                          ; mult_91n           ; work         ;
-;          |multiplier:mp_m|                          ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:mp_m                                                                                                             ; multiplier         ; work         ;
-;             |lpm_mult:lpm_mult_component|           ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:mp_m|lpm_mult:lpm_mult_component                                                                                 ; lpm_mult           ; work         ;
-;                |mult_91n:auto_generated|            ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:mp_m|lpm_mult:lpm_mult_component|mult_91n:auto_generated                                                         ; mult_91n           ; work         ;
+;                      |mux_2jb:rd_mux|               ; 658 (658)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|echo_machine:echo|shiftregister:delay|altshift_taps:ALTSHIFT_TAPS_component|shift_taps_pk51:auto_generated|dpram_l1o1:dpram2|mux_2jb:rd_mux       ; mux_2jb            ; work         ;
 ;    |i2c:b2v_inst|                                   ; 29 (29)             ; 20 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |lab3|i2c:b2v_inst                                                                                                                                                                 ; i2c                ; work         ;
 ;    |keytr:KEY_0|                                    ; 16 (16)             ; 12 (12)                   ; 0                 ; 0          ; 0    ; 0            ; |lab3|keytr:KEY_0                                                                                                                                                                  ; keytr              ; work         ;
-;    |parallel_to_serial:b2v_inst38|                  ; 12 (12)             ; 22 (22)                   ; 0                 ; 0          ; 0    ; 0            ; |lab3|parallel_to_serial:b2v_inst38                                                                                                                                                ; parallel_to_serial ; work         ;
+;    |parallel_to_serial:b2v_inst38|                  ; 14 (14)             ; 22 (22)                   ; 0                 ; 0          ; 0    ; 0            ; |lab3|parallel_to_serial:b2v_inst38                                                                                                                                                ; parallel_to_serial ; work         ;
 ;    |serial_to_parallel:b2v_inst37|                  ; 5 (5)               ; 21 (21)                   ; 0                 ; 0          ; 0    ; 0            ; |lab3|serial_to_parallel:b2v_inst37                                                                                                                                                ; serial_to_parallel ; work         ;
 +-----------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -334,33 +274,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+------+
 
 
-+-------------------------------------------------+
-; Analysis & Synthesis DSP Block Usage Summary    ;
-+-----------------------------------+-------------+
-; Statistic                         ; Number Used ;
-+-----------------------------------+-------------+
-; Two Independent 18x18             ; 7           ;
-; Total number of DSP blocks        ; 7           ;
-;                                   ;             ;
-; Fixed Point Signed Multiplier     ; 1           ;
-; Fixed Point Mixed Sign Multiplier ; 6           ;
-+-----------------------------------+-------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis IP Cores Summary                                                                                                                                                 ;
-+--------+----------------------------+---------+--------------+--------------+---------------------------------------------------------------------------------------+-----------------+
-; Vendor ; IP Core Name               ; Version ; Release Date ; License Type ; Entity Instance                                                                       ; IP Include File ;
-+--------+----------------------------+---------+--------------+--------------+---------------------------------------------------------------------------------------+-----------------+
-; Altera ; Shift register (RAM-based) ; 17.1    ; N/A          ; N/A          ; |lab3|dsp_subsystem:dsp_instance|echo_machine:echo|shiftregister:delay                ; shiftregister.v ;
-; Altera ; LPM_MULT                   ; 17.1    ; N/A          ; N/A          ; |lab3|dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[0].mp ; multiplier.v    ;
-; Altera ; LPM_MULT                   ; 17.1    ; N/A          ; N/A          ; |lab3|dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[1].mp ; multiplier.v    ;
-; Altera ; LPM_MULT                   ; 17.1    ; N/A          ; N/A          ; |lab3|dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[2].mp ; multiplier.v    ;
-; Altera ; LPM_MULT                   ; 17.1    ; N/A          ; N/A          ; |lab3|dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[3].mp ; multiplier.v    ;
-; Altera ; LPM_MULT                   ; 17.1    ; N/A          ; N/A          ; |lab3|dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[4].mp ; multiplier.v    ;
-; Altera ; LPM_MULT                   ; 17.1    ; N/A          ; N/A          ; |lab3|dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[5].mp ; multiplier.v    ;
-; Altera ; LPM_MULT                   ; 17.1    ; N/A          ; N/A          ; |lab3|dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:mp_m                ; multiplier.v    ;
-+--------+----------------------------+---------+--------------+--------------+---------------------------------------------------------------------------------------+-----------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                                  ;
++--------+----------------------------+---------+--------------+--------------+------------------------------------------------------------------------+-----------------+
+; Vendor ; IP Core Name               ; Version ; Release Date ; License Type ; Entity Instance                                                        ; IP Include File ;
++--------+----------------------------+---------+--------------+--------------+------------------------------------------------------------------------+-----------------+
+; Altera ; Shift register (RAM-based) ; 17.1    ; N/A          ; N/A          ; |lab3|dsp_subsystem:dsp_instance|echo_machine:echo|shiftregister:delay ; shiftregister.v ;
++--------+----------------------------+---------+--------------+--------------+------------------------------------------------------------------------+-----------------+
 
 
 +---------------------------------------------------------------------------------------------+
@@ -407,12 +327,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 327   ;
-; Number of registers using Synchronous Clear  ; 1     ;
-; Number of registers using Synchronous Load   ; 1     ;
-; Number of registers using Asynchronous Clear ; 266   ;
+; Total registers                              ; 135   ;
+; Number of registers using Synchronous Clear  ; 16    ;
+; Number of registers using Synchronous Load   ; 16    ;
+; Number of registers using Asynchronous Clear ; 74    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 53    ;
+; Number of registers using Clock Enable       ; 52    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -451,270 +371,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                                                          ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; 4:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; Yes        ; |lab3|parallel_to_serial:b2v_inst38|data_buffer[6]                                                                                                                                                  ;
+; 4:1                ; 15 bits   ; 30 LEs        ; 0 LEs                ; 30 LEs                 ; Yes        ; |lab3|parallel_to_serial:b2v_inst38|data_buffer[5]                                                                                                                                                  ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |lab3|CLOCK_500:b2v_inst4|vol[4]                                                                                                                                                                    ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |lab3|CLOCK_500:b2v_inst4|vol[7]                                                                                                                                                                    ;
-; 8:1                ; 3 bits    ; 15 LEs        ; 12 LEs               ; 3 LEs                  ; Yes        ; |lab3|CLOCK_500:b2v_inst4|DATA_A[3]                                                                                                                                                                 ;
-; 8:1                ; 2 bits    ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; Yes        ; |lab3|CLOCK_500:b2v_inst4|DATA_A[1]                                                                                                                                                                 ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |lab3|i2c:b2v_inst|SD_COUNTER[5]                                                                                                                                                                    ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |lab3|CLOCK_500:b2v_inst4|vol[5]                                                                                                                                                                    ;
-; 8:1                ; 208 bits  ; 1040 LEs      ; 1040 LEs             ; 0 LEs                  ; No         ; |lab3|dsp_subsystem:dsp_instance|echo_machine:echo|shiftregister:delay|altshift_taps:ALTSHIFT_TAPS_component|shift_taps_pk51:auto_generated|dpram_l1o1:dpram2|mux_2jb:rd_mux|l3_w253_n0_mux_dataout ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |lab3|CLOCK_500:b2v_inst4|vol[1]                                                                                                                                                                    ;
+; 8:1                ; 3 bits    ; 15 LEs        ; 12 LEs               ; 3 LEs                  ; Yes        ; |lab3|CLOCK_500:b2v_inst4|DATA_A[6]                                                                                                                                                                 ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; Yes        ; |lab3|CLOCK_500:b2v_inst4|DATA_A[2]                                                                                                                                                                 ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |lab3|i2c:b2v_inst|SD_COUNTER[1]                                                                                                                                                                    ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |lab3|CLOCK_500:b2v_inst4|vol[6]                                                                                                                                                                    ;
+; 8:1                ; 224 bits  ; 1120 LEs      ; 1120 LEs             ; 0 LEs                  ; No         ; |lab3|dsp_subsystem:dsp_instance|echo_machine:echo|shiftregister:delay|altshift_taps:ALTSHIFT_TAPS_component|shift_taps_pk51:auto_generated|dpram_l1o1:dpram2|mux_2jb:rd_mux|l3_w253_n0_mux_dataout ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|fir_filter:fir_filter ;
-+----------------+-------+----------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                 ;
-+----------------+-------+----------------------------------------------------------------------+
-; tap_num        ; 13    ; Signed Integer                                                       ;
-+----------------+-------+----------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[0].mp|lpm_mult:lpm_mult_component ;
-+------------------------------------------------+-----------+---------------------------------------------------------------------------------------------+
-; Parameter Name                                 ; Value     ; Type                                                                                        ;
-+------------------------------------------------+-----------+---------------------------------------------------------------------------------------------+
-; AUTO_CARRY_CHAINS                              ; ON        ; AUTO_CARRY                                                                                  ;
-; IGNORE_CARRY_BUFFERS                           ; OFF       ; IGNORE_CARRY                                                                                ;
-; AUTO_CASCADE_CHAINS                            ; ON        ; AUTO_CASCADE                                                                                ;
-; IGNORE_CASCADE_BUFFERS                         ; OFF       ; IGNORE_CASCADE                                                                              ;
-; LPM_WIDTHA                                     ; 16        ; Signed Integer                                                                              ;
-; LPM_WIDTHB                                     ; 16        ; Signed Integer                                                                              ;
-; LPM_WIDTHP                                     ; 16        ; Signed Integer                                                                              ;
-; LPM_WIDTHR                                     ; 0         ; Untyped                                                                                     ;
-; LPM_WIDTHS                                     ; 1         ; Untyped                                                                                     ;
-; LPM_REPRESENTATION                             ; SIGNED    ; Untyped                                                                                     ;
-; LPM_PIPELINE                                   ; 0         ; Untyped                                                                                     ;
-; LATENCY                                        ; 0         ; Untyped                                                                                     ;
-; INPUT_A_IS_CONSTANT                            ; NO        ; Untyped                                                                                     ;
-; INPUT_B_IS_CONSTANT                            ; NO        ; Untyped                                                                                     ;
-; USE_EAB                                        ; OFF       ; Untyped                                                                                     ;
-; MAXIMIZE_SPEED                                 ; 5         ; Untyped                                                                                     ;
-; DEVICE_FAMILY                                  ; Cyclone V ; Untyped                                                                                     ;
-; CARRY_CHAIN                                    ; MANUAL    ; Untyped                                                                                     ;
-; APEX20K_TECHNOLOGY_MAPPER                      ; LUT       ; TECH_MAPPER_APEX20K                                                                         ;
-; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO      ; Untyped                                                                                     ;
-; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0         ; Untyped                                                                                     ;
-; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0         ; Untyped                                                                                     ;
-; CBXI_PARAMETER                                 ; mult_91n  ; Untyped                                                                                     ;
-; INPUT_A_FIXED_VALUE                            ; Bx        ; Untyped                                                                                     ;
-; INPUT_B_FIXED_VALUE                            ; Bx        ; Untyped                                                                                     ;
-; USE_AHDL_IMPLEMENTATION                        ; OFF       ; Untyped                                                                                     ;
-+------------------------------------------------+-----------+---------------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[1].mp|lpm_mult:lpm_mult_component ;
-+------------------------------------------------+-----------+---------------------------------------------------------------------------------------------+
-; Parameter Name                                 ; Value     ; Type                                                                                        ;
-+------------------------------------------------+-----------+---------------------------------------------------------------------------------------------+
-; AUTO_CARRY_CHAINS                              ; ON        ; AUTO_CARRY                                                                                  ;
-; IGNORE_CARRY_BUFFERS                           ; OFF       ; IGNORE_CARRY                                                                                ;
-; AUTO_CASCADE_CHAINS                            ; ON        ; AUTO_CASCADE                                                                                ;
-; IGNORE_CASCADE_BUFFERS                         ; OFF       ; IGNORE_CASCADE                                                                              ;
-; LPM_WIDTHA                                     ; 16        ; Signed Integer                                                                              ;
-; LPM_WIDTHB                                     ; 16        ; Signed Integer                                                                              ;
-; LPM_WIDTHP                                     ; 16        ; Signed Integer                                                                              ;
-; LPM_WIDTHR                                     ; 0         ; Untyped                                                                                     ;
-; LPM_WIDTHS                                     ; 1         ; Untyped                                                                                     ;
-; LPM_REPRESENTATION                             ; SIGNED    ; Untyped                                                                                     ;
-; LPM_PIPELINE                                   ; 0         ; Untyped                                                                                     ;
-; LATENCY                                        ; 0         ; Untyped                                                                                     ;
-; INPUT_A_IS_CONSTANT                            ; NO        ; Untyped                                                                                     ;
-; INPUT_B_IS_CONSTANT                            ; NO        ; Untyped                                                                                     ;
-; USE_EAB                                        ; OFF       ; Untyped                                                                                     ;
-; MAXIMIZE_SPEED                                 ; 5         ; Untyped                                                                                     ;
-; DEVICE_FAMILY                                  ; Cyclone V ; Untyped                                                                                     ;
-; CARRY_CHAIN                                    ; MANUAL    ; Untyped                                                                                     ;
-; APEX20K_TECHNOLOGY_MAPPER                      ; LUT       ; TECH_MAPPER_APEX20K                                                                         ;
-; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO      ; Untyped                                                                                     ;
-; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0         ; Untyped                                                                                     ;
-; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0         ; Untyped                                                                                     ;
-; CBXI_PARAMETER                                 ; mult_91n  ; Untyped                                                                                     ;
-; INPUT_A_FIXED_VALUE                            ; Bx        ; Untyped                                                                                     ;
-; INPUT_B_FIXED_VALUE                            ; Bx        ; Untyped                                                                                     ;
-; USE_AHDL_IMPLEMENTATION                        ; OFF       ; Untyped                                                                                     ;
-+------------------------------------------------+-----------+---------------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[2].mp|lpm_mult:lpm_mult_component ;
-+------------------------------------------------+-----------+---------------------------------------------------------------------------------------------+
-; Parameter Name                                 ; Value     ; Type                                                                                        ;
-+------------------------------------------------+-----------+---------------------------------------------------------------------------------------------+
-; AUTO_CARRY_CHAINS                              ; ON        ; AUTO_CARRY                                                                                  ;
-; IGNORE_CARRY_BUFFERS                           ; OFF       ; IGNORE_CARRY                                                                                ;
-; AUTO_CASCADE_CHAINS                            ; ON        ; AUTO_CASCADE                                                                                ;
-; IGNORE_CASCADE_BUFFERS                         ; OFF       ; IGNORE_CASCADE                                                                              ;
-; LPM_WIDTHA                                     ; 16        ; Signed Integer                                                                              ;
-; LPM_WIDTHB                                     ; 16        ; Signed Integer                                                                              ;
-; LPM_WIDTHP                                     ; 16        ; Signed Integer                                                                              ;
-; LPM_WIDTHR                                     ; 0         ; Untyped                                                                                     ;
-; LPM_WIDTHS                                     ; 1         ; Untyped                                                                                     ;
-; LPM_REPRESENTATION                             ; SIGNED    ; Untyped                                                                                     ;
-; LPM_PIPELINE                                   ; 0         ; Untyped                                                                                     ;
-; LATENCY                                        ; 0         ; Untyped                                                                                     ;
-; INPUT_A_IS_CONSTANT                            ; NO        ; Untyped                                                                                     ;
-; INPUT_B_IS_CONSTANT                            ; NO        ; Untyped                                                                                     ;
-; USE_EAB                                        ; OFF       ; Untyped                                                                                     ;
-; MAXIMIZE_SPEED                                 ; 5         ; Untyped                                                                                     ;
-; DEVICE_FAMILY                                  ; Cyclone V ; Untyped                                                                                     ;
-; CARRY_CHAIN                                    ; MANUAL    ; Untyped                                                                                     ;
-; APEX20K_TECHNOLOGY_MAPPER                      ; LUT       ; TECH_MAPPER_APEX20K                                                                         ;
-; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO      ; Untyped                                                                                     ;
-; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0         ; Untyped                                                                                     ;
-; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0         ; Untyped                                                                                     ;
-; CBXI_PARAMETER                                 ; mult_91n  ; Untyped                                                                                     ;
-; INPUT_A_FIXED_VALUE                            ; Bx        ; Untyped                                                                                     ;
-; INPUT_B_FIXED_VALUE                            ; Bx        ; Untyped                                                                                     ;
-; USE_AHDL_IMPLEMENTATION                        ; OFF       ; Untyped                                                                                     ;
-+------------------------------------------------+-----------+---------------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[3].mp|lpm_mult:lpm_mult_component ;
-+------------------------------------------------+-----------+---------------------------------------------------------------------------------------------+
-; Parameter Name                                 ; Value     ; Type                                                                                        ;
-+------------------------------------------------+-----------+---------------------------------------------------------------------------------------------+
-; AUTO_CARRY_CHAINS                              ; ON        ; AUTO_CARRY                                                                                  ;
-; IGNORE_CARRY_BUFFERS                           ; OFF       ; IGNORE_CARRY                                                                                ;
-; AUTO_CASCADE_CHAINS                            ; ON        ; AUTO_CASCADE                                                                                ;
-; IGNORE_CASCADE_BUFFERS                         ; OFF       ; IGNORE_CASCADE                                                                              ;
-; LPM_WIDTHA                                     ; 16        ; Signed Integer                                                                              ;
-; LPM_WIDTHB                                     ; 16        ; Signed Integer                                                                              ;
-; LPM_WIDTHP                                     ; 16        ; Signed Integer                                                                              ;
-; LPM_WIDTHR                                     ; 0         ; Untyped                                                                                     ;
-; LPM_WIDTHS                                     ; 1         ; Untyped                                                                                     ;
-; LPM_REPRESENTATION                             ; SIGNED    ; Untyped                                                                                     ;
-; LPM_PIPELINE                                   ; 0         ; Untyped                                                                                     ;
-; LATENCY                                        ; 0         ; Untyped                                                                                     ;
-; INPUT_A_IS_CONSTANT                            ; NO        ; Untyped                                                                                     ;
-; INPUT_B_IS_CONSTANT                            ; NO        ; Untyped                                                                                     ;
-; USE_EAB                                        ; OFF       ; Untyped                                                                                     ;
-; MAXIMIZE_SPEED                                 ; 5         ; Untyped                                                                                     ;
-; DEVICE_FAMILY                                  ; Cyclone V ; Untyped                                                                                     ;
-; CARRY_CHAIN                                    ; MANUAL    ; Untyped                                                                                     ;
-; APEX20K_TECHNOLOGY_MAPPER                      ; LUT       ; TECH_MAPPER_APEX20K                                                                         ;
-; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO      ; Untyped                                                                                     ;
-; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0         ; Untyped                                                                                     ;
-; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0         ; Untyped                                                                                     ;
-; CBXI_PARAMETER                                 ; mult_91n  ; Untyped                                                                                     ;
-; INPUT_A_FIXED_VALUE                            ; Bx        ; Untyped                                                                                     ;
-; INPUT_B_FIXED_VALUE                            ; Bx        ; Untyped                                                                                     ;
-; USE_AHDL_IMPLEMENTATION                        ; OFF       ; Untyped                                                                                     ;
-+------------------------------------------------+-----------+---------------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[4].mp|lpm_mult:lpm_mult_component ;
-+------------------------------------------------+-----------+---------------------------------------------------------------------------------------------+
-; Parameter Name                                 ; Value     ; Type                                                                                        ;
-+------------------------------------------------+-----------+---------------------------------------------------------------------------------------------+
-; AUTO_CARRY_CHAINS                              ; ON        ; AUTO_CARRY                                                                                  ;
-; IGNORE_CARRY_BUFFERS                           ; OFF       ; IGNORE_CARRY                                                                                ;
-; AUTO_CASCADE_CHAINS                            ; ON        ; AUTO_CASCADE                                                                                ;
-; IGNORE_CASCADE_BUFFERS                         ; OFF       ; IGNORE_CASCADE                                                                              ;
-; LPM_WIDTHA                                     ; 16        ; Signed Integer                                                                              ;
-; LPM_WIDTHB                                     ; 16        ; Signed Integer                                                                              ;
-; LPM_WIDTHP                                     ; 16        ; Signed Integer                                                                              ;
-; LPM_WIDTHR                                     ; 0         ; Untyped                                                                                     ;
-; LPM_WIDTHS                                     ; 1         ; Untyped                                                                                     ;
-; LPM_REPRESENTATION                             ; SIGNED    ; Untyped                                                                                     ;
-; LPM_PIPELINE                                   ; 0         ; Untyped                                                                                     ;
-; LATENCY                                        ; 0         ; Untyped                                                                                     ;
-; INPUT_A_IS_CONSTANT                            ; NO        ; Untyped                                                                                     ;
-; INPUT_B_IS_CONSTANT                            ; NO        ; Untyped                                                                                     ;
-; USE_EAB                                        ; OFF       ; Untyped                                                                                     ;
-; MAXIMIZE_SPEED                                 ; 5         ; Untyped                                                                                     ;
-; DEVICE_FAMILY                                  ; Cyclone V ; Untyped                                                                                     ;
-; CARRY_CHAIN                                    ; MANUAL    ; Untyped                                                                                     ;
-; APEX20K_TECHNOLOGY_MAPPER                      ; LUT       ; TECH_MAPPER_APEX20K                                                                         ;
-; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO      ; Untyped                                                                                     ;
-; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0         ; Untyped                                                                                     ;
-; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0         ; Untyped                                                                                     ;
-; CBXI_PARAMETER                                 ; mult_91n  ; Untyped                                                                                     ;
-; INPUT_A_FIXED_VALUE                            ; Bx        ; Untyped                                                                                     ;
-; INPUT_B_FIXED_VALUE                            ; Bx        ; Untyped                                                                                     ;
-; USE_AHDL_IMPLEMENTATION                        ; OFF       ; Untyped                                                                                     ;
-+------------------------------------------------+-----------+---------------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[5].mp|lpm_mult:lpm_mult_component ;
-+------------------------------------------------+-----------+---------------------------------------------------------------------------------------------+
-; Parameter Name                                 ; Value     ; Type                                                                                        ;
-+------------------------------------------------+-----------+---------------------------------------------------------------------------------------------+
-; AUTO_CARRY_CHAINS                              ; ON        ; AUTO_CARRY                                                                                  ;
-; IGNORE_CARRY_BUFFERS                           ; OFF       ; IGNORE_CARRY                                                                                ;
-; AUTO_CASCADE_CHAINS                            ; ON        ; AUTO_CASCADE                                                                                ;
-; IGNORE_CASCADE_BUFFERS                         ; OFF       ; IGNORE_CASCADE                                                                              ;
-; LPM_WIDTHA                                     ; 16        ; Signed Integer                                                                              ;
-; LPM_WIDTHB                                     ; 16        ; Signed Integer                                                                              ;
-; LPM_WIDTHP                                     ; 16        ; Signed Integer                                                                              ;
-; LPM_WIDTHR                                     ; 0         ; Untyped                                                                                     ;
-; LPM_WIDTHS                                     ; 1         ; Untyped                                                                                     ;
-; LPM_REPRESENTATION                             ; SIGNED    ; Untyped                                                                                     ;
-; LPM_PIPELINE                                   ; 0         ; Untyped                                                                                     ;
-; LATENCY                                        ; 0         ; Untyped                                                                                     ;
-; INPUT_A_IS_CONSTANT                            ; NO        ; Untyped                                                                                     ;
-; INPUT_B_IS_CONSTANT                            ; NO        ; Untyped                                                                                     ;
-; USE_EAB                                        ; OFF       ; Untyped                                                                                     ;
-; MAXIMIZE_SPEED                                 ; 5         ; Untyped                                                                                     ;
-; DEVICE_FAMILY                                  ; Cyclone V ; Untyped                                                                                     ;
-; CARRY_CHAIN                                    ; MANUAL    ; Untyped                                                                                     ;
-; APEX20K_TECHNOLOGY_MAPPER                      ; LUT       ; TECH_MAPPER_APEX20K                                                                         ;
-; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO      ; Untyped                                                                                     ;
-; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0         ; Untyped                                                                                     ;
-; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0         ; Untyped                                                                                     ;
-; CBXI_PARAMETER                                 ; mult_91n  ; Untyped                                                                                     ;
-; INPUT_A_FIXED_VALUE                            ; Bx        ; Untyped                                                                                     ;
-; INPUT_B_FIXED_VALUE                            ; Bx        ; Untyped                                                                                     ;
-; USE_AHDL_IMPLEMENTATION                        ; OFF       ; Untyped                                                                                     ;
-+------------------------------------------------+-----------+---------------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:mp_m|lpm_mult:lpm_mult_component ;
-+------------------------------------------------+-----------+------------------------------------------------------------------------------+
-; Parameter Name                                 ; Value     ; Type                                                                         ;
-+------------------------------------------------+-----------+------------------------------------------------------------------------------+
-; AUTO_CARRY_CHAINS                              ; ON        ; AUTO_CARRY                                                                   ;
-; IGNORE_CARRY_BUFFERS                           ; OFF       ; IGNORE_CARRY                                                                 ;
-; AUTO_CASCADE_CHAINS                            ; ON        ; AUTO_CASCADE                                                                 ;
-; IGNORE_CASCADE_BUFFERS                         ; OFF       ; IGNORE_CASCADE                                                               ;
-; LPM_WIDTHA                                     ; 16        ; Signed Integer                                                               ;
-; LPM_WIDTHB                                     ; 16        ; Signed Integer                                                               ;
-; LPM_WIDTHP                                     ; 16        ; Signed Integer                                                               ;
-; LPM_WIDTHR                                     ; 0         ; Untyped                                                                      ;
-; LPM_WIDTHS                                     ; 1         ; Untyped                                                                      ;
-; LPM_REPRESENTATION                             ; SIGNED    ; Untyped                                                                      ;
-; LPM_PIPELINE                                   ; 0         ; Untyped                                                                      ;
-; LATENCY                                        ; 0         ; Untyped                                                                      ;
-; INPUT_A_IS_CONSTANT                            ; NO        ; Untyped                                                                      ;
-; INPUT_B_IS_CONSTANT                            ; NO        ; Untyped                                                                      ;
-; USE_EAB                                        ; OFF       ; Untyped                                                                      ;
-; MAXIMIZE_SPEED                                 ; 5         ; Untyped                                                                      ;
-; DEVICE_FAMILY                                  ; Cyclone V ; Untyped                                                                      ;
-; CARRY_CHAIN                                    ; MANUAL    ; Untyped                                                                      ;
-; APEX20K_TECHNOLOGY_MAPPER                      ; LUT       ; TECH_MAPPER_APEX20K                                                          ;
-; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO      ; Untyped                                                                      ;
-; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0         ; Untyped                                                                      ;
-; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0         ; Untyped                                                                      ;
-; CBXI_PARAMETER                                 ; mult_91n  ; Untyped                                                                      ;
-; INPUT_A_FIXED_VALUE                            ; Bx        ; Untyped                                                                      ;
-; INPUT_B_FIXED_VALUE                            ; Bx        ; Untyped                                                                      ;
-; USE_AHDL_IMPLEMENTATION                        ; OFF       ; Untyped                                                                      ;
-+------------------------------------------------+-----------+------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -730,92 +395,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; CBXI_PARAMETER ; shift_taps_pk51 ; Untyped                                                                                                          ;
 +----------------+-----------------+------------------------------------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; lpm_mult Parameter Settings by Entity Instance                                                                                                      ;
-+---------------------------------------+-------------------------------------------------------------------------------------------------------------+
-; Name                                  ; Value                                                                                                       ;
-+---------------------------------------+-------------------------------------------------------------------------------------------------------------+
-; Number of entity instances            ; 7                                                                                                           ;
-; Entity Instance                       ; dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[0].mp|lpm_mult:lpm_mult_component ;
-;     -- LPM_WIDTHA                     ; 16                                                                                                          ;
-;     -- LPM_WIDTHB                     ; 16                                                                                                          ;
-;     -- LPM_WIDTHP                     ; 16                                                                                                          ;
-;     -- LPM_REPRESENTATION             ; SIGNED                                                                                                      ;
-;     -- INPUT_A_IS_CONSTANT            ; NO                                                                                                          ;
-;     -- INPUT_B_IS_CONSTANT            ; NO                                                                                                          ;
-;     -- USE_EAB                        ; OFF                                                                                                         ;
-;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                                                                        ;
-;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                                                          ;
-;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                                                          ;
-; Entity Instance                       ; dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[1].mp|lpm_mult:lpm_mult_component ;
-;     -- LPM_WIDTHA                     ; 16                                                                                                          ;
-;     -- LPM_WIDTHB                     ; 16                                                                                                          ;
-;     -- LPM_WIDTHP                     ; 16                                                                                                          ;
-;     -- LPM_REPRESENTATION             ; SIGNED                                                                                                      ;
-;     -- INPUT_A_IS_CONSTANT            ; NO                                                                                                          ;
-;     -- INPUT_B_IS_CONSTANT            ; NO                                                                                                          ;
-;     -- USE_EAB                        ; OFF                                                                                                         ;
-;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                                                                        ;
-;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                                                          ;
-;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                                                          ;
-; Entity Instance                       ; dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[2].mp|lpm_mult:lpm_mult_component ;
-;     -- LPM_WIDTHA                     ; 16                                                                                                          ;
-;     -- LPM_WIDTHB                     ; 16                                                                                                          ;
-;     -- LPM_WIDTHP                     ; 16                                                                                                          ;
-;     -- LPM_REPRESENTATION             ; SIGNED                                                                                                      ;
-;     -- INPUT_A_IS_CONSTANT            ; NO                                                                                                          ;
-;     -- INPUT_B_IS_CONSTANT            ; NO                                                                                                          ;
-;     -- USE_EAB                        ; OFF                                                                                                         ;
-;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                                                                        ;
-;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                                                          ;
-;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                                                          ;
-; Entity Instance                       ; dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[3].mp|lpm_mult:lpm_mult_component ;
-;     -- LPM_WIDTHA                     ; 16                                                                                                          ;
-;     -- LPM_WIDTHB                     ; 16                                                                                                          ;
-;     -- LPM_WIDTHP                     ; 16                                                                                                          ;
-;     -- LPM_REPRESENTATION             ; SIGNED                                                                                                      ;
-;     -- INPUT_A_IS_CONSTANT            ; NO                                                                                                          ;
-;     -- INPUT_B_IS_CONSTANT            ; NO                                                                                                          ;
-;     -- USE_EAB                        ; OFF                                                                                                         ;
-;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                                                                        ;
-;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                                                          ;
-;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                                                          ;
-; Entity Instance                       ; dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[4].mp|lpm_mult:lpm_mult_component ;
-;     -- LPM_WIDTHA                     ; 16                                                                                                          ;
-;     -- LPM_WIDTHB                     ; 16                                                                                                          ;
-;     -- LPM_WIDTHP                     ; 16                                                                                                          ;
-;     -- LPM_REPRESENTATION             ; SIGNED                                                                                                      ;
-;     -- INPUT_A_IS_CONSTANT            ; NO                                                                                                          ;
-;     -- INPUT_B_IS_CONSTANT            ; NO                                                                                                          ;
-;     -- USE_EAB                        ; OFF                                                                                                         ;
-;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                                                                        ;
-;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                                                          ;
-;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                                                          ;
-; Entity Instance                       ; dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[5].mp|lpm_mult:lpm_mult_component ;
-;     -- LPM_WIDTHA                     ; 16                                                                                                          ;
-;     -- LPM_WIDTHB                     ; 16                                                                                                          ;
-;     -- LPM_WIDTHP                     ; 16                                                                                                          ;
-;     -- LPM_REPRESENTATION             ; SIGNED                                                                                                      ;
-;     -- INPUT_A_IS_CONSTANT            ; NO                                                                                                          ;
-;     -- INPUT_B_IS_CONSTANT            ; NO                                                                                                          ;
-;     -- USE_EAB                        ; OFF                                                                                                         ;
-;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                                                                        ;
-;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                                                          ;
-;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                                                          ;
-; Entity Instance                       ; dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:mp_m|lpm_mult:lpm_mult_component                ;
-;     -- LPM_WIDTHA                     ; 16                                                                                                          ;
-;     -- LPM_WIDTHB                     ; 16                                                                                                          ;
-;     -- LPM_WIDTHP                     ; 16                                                                                                          ;
-;     -- LPM_REPRESENTATION             ; SIGNED                                                                                                      ;
-;     -- INPUT_A_IS_CONSTANT            ; NO                                                                                                          ;
-;     -- INPUT_B_IS_CONSTANT            ; NO                                                                                                          ;
-;     -- USE_EAB                        ; OFF                                                                                                         ;
-;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                                                                        ;
-;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                                                          ;
-;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                                                          ;
-+---------------------------------------+-------------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------+
@@ -836,101 +415,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port           ; Type   ; Severity ; Details                                                                             ;
 +----------------+--------+----------+-------------------------------------------------------------------------------------+
-; shiftout[2..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; shiftout[1..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; taps           ; Output ; Info     ; Explicitly unconnected                                                              ;
 +----------------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:mp_m" ;
-+---------------+-------+----------+-----------------------------------------------------------+
-; Port          ; Type  ; Severity ; Details                                                   ;
-+---------------+-------+----------+-----------------------------------------------------------+
-; datab[14..13] ; Input ; Info     ; Stuck at VCC                                              ;
-; datab[11..9]  ; Input ; Info     ; Stuck at VCC                                              ;
-; datab[7..4]   ; Input ; Info     ; Stuck at VCC                                              ;
-; datab[1..0]   ; Input ; Info     ; Stuck at GND                                              ;
-; datab[15]     ; Input ; Info     ; Stuck at GND                                              ;
-; datab[12]     ; Input ; Info     ; Stuck at GND                                              ;
-; datab[8]      ; Input ; Info     ; Stuck at GND                                              ;
-; datab[3]      ; Input ; Info     ; Stuck at GND                                              ;
-; datab[2]      ; Input ; Info     ; Stuck at VCC                                              ;
-+---------------+-------+----------+-----------------------------------------------------------+
-
-
-+-------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[5].mp" ;
-+--------------+-------+----------+---------------------------------------------------------------------------+
-; Port         ; Type  ; Severity ; Details                                                                   ;
-+--------------+-------+----------+---------------------------------------------------------------------------+
-; datab[15..3] ; Input ; Info     ; Stuck at GND                                                              ;
-; datab[1..0]  ; Input ; Info     ; Stuck at GND                                                              ;
-; datab[2]     ; Input ; Info     ; Stuck at VCC                                                              ;
-+--------------+-------+----------+---------------------------------------------------------------------------+
-
-
-+-------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[4].mp" ;
-+---------------+-------+----------+--------------------------------------------------------------------------+
-; Port          ; Type  ; Severity ; Details                                                                  ;
-+---------------+-------+----------+--------------------------------------------------------------------------+
-; datab[1..0]   ; Input ; Info     ; Stuck at VCC                                                             ;
-; datab[15..13] ; Input ; Info     ; Stuck at GND                                                             ;
-; datab[11..7]  ; Input ; Info     ; Stuck at GND                                                             ;
-; datab[5..4]   ; Input ; Info     ; Stuck at GND                                                             ;
-; datab[12]     ; Input ; Info     ; Stuck at VCC                                                             ;
-; datab[6]      ; Input ; Info     ; Stuck at VCC                                                             ;
-; datab[3]      ; Input ; Info     ; Stuck at VCC                                                             ;
-; datab[2]      ; Input ; Info     ; Stuck at GND                                                             ;
-+---------------+-------+----------+--------------------------------------------------------------------------+
-
-
-+-------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[3].mp" ;
-+--------------+-------+----------+---------------------------------------------------------------------------+
-; Port         ; Type  ; Severity ; Details                                                                   ;
-+--------------+-------+----------+---------------------------------------------------------------------------+
-; datab[1..0]  ; Input ; Info     ; Stuck at VCC                                                              ;
-; datab[15..2] ; Input ; Info     ; Stuck at GND                                                              ;
-+--------------+-------+----------+---------------------------------------------------------------------------+
-
-
-+-------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[2].mp" ;
-+---------------+-------+----------+--------------------------------------------------------------------------+
-; Port          ; Type  ; Severity ; Details                                                                  ;
-+---------------+-------+----------+--------------------------------------------------------------------------+
-; datab[15..12] ; Input ; Info     ; Stuck at VCC                                                             ;
-; datab[8..7]   ; Input ; Info     ; Stuck at VCC                                                             ;
-; datab[5..3]   ; Input ; Info     ; Stuck at VCC                                                             ;
-; datab[11..9]  ; Input ; Info     ; Stuck at GND                                                             ;
-; datab[2..0]   ; Input ; Info     ; Stuck at GND                                                             ;
-; datab[6]      ; Input ; Info     ; Stuck at GND                                                             ;
-+---------------+-------+----------+--------------------------------------------------------------------------+
-
-
-+-------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[1].mp" ;
-+--------------+-------+----------+---------------------------------------------------------------------------+
-; Port         ; Type  ; Severity ; Details                                                                   ;
-+--------------+-------+----------+---------------------------------------------------------------------------+
-; datab[15..1] ; Input ; Info     ; Stuck at GND                                                              ;
-; datab[0]     ; Input ; Info     ; Stuck at VCC                                                              ;
-+--------------+-------+----------+---------------------------------------------------------------------------+
-
-
-+-------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[0].mp" ;
-+---------------+-------+----------+--------------------------------------------------------------------------+
-; Port          ; Type  ; Severity ; Details                                                                  ;
-+---------------+-------+----------+--------------------------------------------------------------------------+
-; datab[12..11] ; Input ; Info     ; Stuck at VCC                                                             ;
-; datab[7..5]   ; Input ; Info     ; Stuck at VCC                                                             ;
-; datab[2..0]   ; Input ; Info     ; Stuck at VCC                                                             ;
-; datab[15..13] ; Input ; Info     ; Stuck at GND                                                             ;
-; datab[10..8]  ; Input ; Info     ; Stuck at GND                                                             ;
-; datab[4..3]   ; Input ; Info     ; Stuck at GND                                                             ;
-+---------------+-------+----------+--------------------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------+
@@ -960,36 +447,34 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 327                         ;
-;     CLR               ; 224                         ;
+; arriav_ff             ; 135                         ;
+;     CLR               ; 33                          ;
 ;     ENA               ; 11                          ;
-;     ENA CLR           ; 42                          ;
+;     ENA CLR           ; 26                          ;
+;     ENA CLR SCLR SLD  ; 15                          ;
 ;     SCLR              ; 1                           ;
 ;     SLD               ; 1                           ;
 ;     plain             ; 48                          ;
 ; arriav_io_obuf        ; 1                           ;
-; arriav_lcell_comb     ; 912                         ;
-;     arith             ; 148                         ;
-;         1 data inputs ; 27                          ;
-;         2 data inputs ; 105                         ;
-;         4 data inputs ; 16                          ;
-;     extend            ; 2                           ;
-;         7 data inputs ; 2                           ;
-;     normal            ; 714                         ;
+; arriav_lcell_comb     ; 802                         ;
+;     arith             ; 52                          ;
+;         1 data inputs ; 29                          ;
+;         2 data inputs ; 9                           ;
+;         4 data inputs ; 14                          ;
+;     extend            ; 1                           ;
+;         7 data inputs ; 1                           ;
+;     normal            ; 749                         ;
 ;         1 data inputs ; 2                           ;
-;         2 data inputs ; 5                           ;
-;         3 data inputs ; 213                         ;
+;         2 data inputs ; 7                           ;
+;         3 data inputs ; 228                         ;
 ;         4 data inputs ; 19                          ;
-;         5 data inputs ; 40                          ;
-;         6 data inputs ; 435                         ;
-;     shared            ; 48                          ;
-;         3 data inputs ; 48                          ;
-; arriav_mac            ; 7                           ;
-; arriav_mlab_cell      ; 1664                        ;
+;         5 data inputs ; 24                          ;
+;         6 data inputs ; 469                         ;
+; arriav_mlab_cell      ; 1792                        ;
 ; boundary_port         ; 13                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.50                        ;
-; Average LUT depth     ; 2.17                        ;
+; Max LUT depth         ; 3.50                        ;
+; Average LUT depth     ; 2.03                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1008,7 +493,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Sun Mar 05 00:38:20 2023
+    Info: Processing started: Mon Mar 06 12:11:01 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab3 -c lab3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 14 of the 14 processors detected
@@ -1028,9 +513,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file lab3.v
     Info (12023): Found entity 1: lab3 File: C:/Users/LinF/Documents/School/Winter 2023/3TB4/TRON-3TB4-Winter-2023/lab3/lab3_restored/lab3.v Line: 13
 Info (12021): Found 1 design units, including 1 entities, in source file mux_3to1.v
     Info (12023): Found entity 1: MUX_3to1 File: C:/Users/LinF/Documents/School/Winter 2023/3TB4/TRON-3TB4-Winter-2023/lab3/lab3_restored/MUX_3to1.v Line: 1
-Info (12021): Found 2 design units, including 2 entities, in source file fir_filter.v
+Info (12021): Found 1 design units, including 1 entities, in source file fir_filter.v
     Info (12023): Found entity 1: fir_filter File: C:/Users/LinF/Documents/School/Winter 2023/3TB4/TRON-3TB4-Winter-2023/lab3/lab3_restored/fir_filter.v Line: 1
-    Info (12023): Found entity 2: FIR_reg File: C:/Users/LinF/Documents/School/Winter 2023/3TB4/TRON-3TB4-Winter-2023/lab3/lab3_restored/fir_filter.v Line: 53
 Info (12021): Found 1 design units, including 1 entities, in source file multiplier.v
     Info (12023): Found entity 1: multiplier File: C:/Users/LinF/Documents/School/Winter 2023/3TB4/TRON-3TB4-Winter-2023/lab3/lab3_restored/multiplier.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file shiftregister.v
@@ -1053,22 +537,6 @@ Warning (10230): Verilog HDL assignment warning at keytr.v(71): truncated value 
 Info (12128): Elaborating entity "serial_to_parallel" for hierarchy "serial_to_parallel:b2v_inst37" File: C:/Users/LinF/Documents/School/Winter 2023/3TB4/TRON-3TB4-Winter-2023/lab3/lab3_restored/lab3.v Line: 134
 Info (12128): Elaborating entity "dsp_subsystem" for hierarchy "dsp_subsystem:dsp_instance" File: C:/Users/LinF/Documents/School/Winter 2023/3TB4/TRON-3TB4-Winter-2023/lab3/lab3_restored/lab3.v Line: 145
 Info (12128): Elaborating entity "MUX_3to1" for hierarchy "dsp_subsystem:dsp_instance|MUX_3to1:mux" File: C:/Users/LinF/Documents/School/Winter 2023/3TB4/TRON-3TB4-Winter-2023/lab3/lab3_restored/dsp_subsystem.v Line: 5
-Info (12128): Elaborating entity "fir_filter" for hierarchy "dsp_subsystem:dsp_instance|fir_filter:fir_filter" File: C:/Users/LinF/Documents/School/Winter 2023/3TB4/TRON-3TB4-Winter-2023/lab3/lab3_restored/dsp_subsystem.v Line: 6
-Warning (10230): Verilog HDL assignment warning at fir_filter.v(18): truncated value with size 32 to match size of target (16) File: C:/Users/LinF/Documents/School/Winter 2023/3TB4/TRON-3TB4-Winter-2023/lab3/lab3_restored/fir_filter.v Line: 18
-Info (12128): Elaborating entity "FIR_reg" for hierarchy "dsp_subsystem:dsp_instance|fir_filter:fir_filter|FIR_reg:reg_gen[0].fir_reg" File: C:/Users/LinF/Documents/School/Winter 2023/3TB4/TRON-3TB4-Winter-2023/lab3/lab3_restored/fir_filter.v Line: 35
-Info (12128): Elaborating entity "multiplier" for hierarchy "dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[0].mp" File: C:/Users/LinF/Documents/School/Winter 2023/3TB4/TRON-3TB4-Winter-2023/lab3/lab3_restored/fir_filter.v Line: 40
-Info (12128): Elaborating entity "lpm_mult" for hierarchy "dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[0].mp|lpm_mult:lpm_mult_component" File: C:/Users/LinF/Documents/School/Winter 2023/3TB4/TRON-3TB4-Winter-2023/lab3/lab3_restored/multiplier.v Line: 59
-Info (12130): Elaborated megafunction instantiation "dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[0].mp|lpm_mult:lpm_mult_component" File: C:/Users/LinF/Documents/School/Winter 2023/3TB4/TRON-3TB4-Winter-2023/lab3/lab3_restored/multiplier.v Line: 59
-Info (12133): Instantiated megafunction "dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[0].mp|lpm_mult:lpm_mult_component" with the following parameter: File: C:/Users/LinF/Documents/School/Winter 2023/3TB4/TRON-3TB4-Winter-2023/lab3/lab3_restored/multiplier.v Line: 59
-    Info (12134): Parameter "lpm_hint" = "MAXIMIZE_SPEED=5"
-    Info (12134): Parameter "lpm_representation" = "SIGNED"
-    Info (12134): Parameter "lpm_type" = "LPM_MULT"
-    Info (12134): Parameter "lpm_widtha" = "16"
-    Info (12134): Parameter "lpm_widthb" = "16"
-    Info (12134): Parameter "lpm_widthp" = "16"
-Info (12021): Found 1 design units, including 1 entities, in source file db/mult_91n.v
-    Info (12023): Found entity 1: mult_91n File: C:/Users/LinF/Documents/School/Winter 2023/3TB4/TRON-3TB4-Winter-2023/lab3/lab3_restored/db/mult_91n.v Line: 28
-Info (12128): Elaborating entity "mult_91n" for hierarchy "dsp_subsystem:dsp_instance|fir_filter:fir_filter|multiplier:main_wire_gen[0].mp|lpm_mult:lpm_mult_component|mult_91n:auto_generated" File: c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_mult.tdf Line: 376
 Info (12128): Elaborating entity "echo_machine" for hierarchy "dsp_subsystem:dsp_instance|echo_machine:echo" File: C:/Users/LinF/Documents/School/Winter 2023/3TB4/TRON-3TB4-Winter-2023/lab3/lab3_restored/dsp_subsystem.v Line: 7
 Info (12128): Elaborating entity "shiftregister" for hierarchy "dsp_subsystem:dsp_instance|echo_machine:echo|shiftregister:delay" File: C:/Users/LinF/Documents/School/Winter 2023/3TB4/TRON-3TB4-Winter-2023/lab3/lab3_restored/echo_machine.v Line: 9
 Info (12128): Elaborating entity "altshift_taps" for hierarchy "dsp_subsystem:dsp_instance|echo_machine:echo|shiftregister:delay|altshift_taps:ALTSHIFT_TAPS_component" File: C:/Users/LinF/Documents/School/Winter 2023/3TB4/TRON-3TB4-Winter-2023/lab3/lab3_restored/shiftregister.v Line: 66
@@ -1672,17 +1140,16 @@ Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not
     Warning (20014): Assignment for entity set_instance_assignment -name D5_DELAY 2 -to HPS_DDR3_CK_P -entity DE1_SoC was ignored
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 2818 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2652 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 9 input pins
     Info (21059): Implemented 3 output pins
     Info (21060): Implemented 1 bidirectional pins
-    Info (21061): Implemented 1134 logic cells
-    Info (21064): Implemented 1664 RAM segments
-    Info (21062): Implemented 7 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 584 warnings
-    Info: Peak virtual memory: 5249 megabytes
-    Info: Processing ended: Sun Mar 05 00:38:32 2023
+    Info (21061): Implemented 847 logic cells
+    Info (21064): Implemented 1792 RAM segments
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 583 warnings
+    Info: Peak virtual memory: 5270 megabytes
+    Info: Processing ended: Mon Mar 06 12:11:13 2023
     Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:05
+    Info: Total CPU time (on all processors): 00:00:06
 
 

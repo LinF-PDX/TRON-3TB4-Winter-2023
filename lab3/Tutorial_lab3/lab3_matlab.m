@@ -5,7 +5,7 @@
 L=length(x);
 NFFT=2^nextpow2(L);
 X=fft(x,NFFT)/fs;
-1
+%1
 % Show the sampling rate
 fs
 % We know the sampling rate is 8000
@@ -21,7 +21,7 @@ fkill=2000*2/fs;
 % Determine the coefficients of the FIR filter that will remove that frequency.
 % Start off the following blank with the value 4, to numbers larger than 160.
 % Note: the following filter only works with EVEN numbers.
-coeff=firgr(12,[0,fkill-0.1, fkill, fkill+0.1, 1], [1,1,0,1,1],{'n','n','s','n','n'});
+coeff=firgr(64,[0,fkill-0.1, fkill, fkill+0.1, 1], [1,1,0,1,1],{'n','n','s','n','n'});
 % Plot the filter
 % Plot the frequency response of the designed filter to verify that it satisfies the
 % Requirements
@@ -35,7 +35,7 @@ freqz(coeff,1);
 % blown up or not, seek help from a TA.
 coeff*32768
 % Save these coefficients in a text file, You will need them when coding the FIR filter.
-fid=fopen('C:\Users\LinF\Documents\School\Winter 2023\3TB4\TRON-3TB4-Winter-2023\lab3\lab3_sound\L01_Group1.wav','w');
+fid=fopen('C:\Users\LinF\Documents\School\Winter 2023\3TB4\TRON-3TB4-Winter-2023\lab3\Tutorial_lab3\coeff.txt','w');
 % If you make a typing error with the following for-end block, you need to start from the
 for i=1:length(coeff)
     fprintf(fid,'coeff[%3.0f]=%10.0f;\n',i-1,32768*coeff(i));
