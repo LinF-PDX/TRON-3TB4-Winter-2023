@@ -8,7 +8,7 @@ module echo_machine(sample_clock,input_sample,output_sample);
 	
 	shiftregister delay(.clock(sample_clock),.shiftin(feedback),.shiftout(delay_signal),.taps());
 	always @(posedge sample_clock) begin
-		output_sample <= input_sample + (delay_signal >> 2);
+		output_sample <= input_sample + (delay_signal >> 8);
 	end
 	
 //	if(delay_signal[15] == 1'b1)begin
