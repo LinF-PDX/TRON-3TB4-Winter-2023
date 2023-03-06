@@ -1,0 +1,1 @@
+module echo_machine(sample_clock,input_sample,output_sample);
