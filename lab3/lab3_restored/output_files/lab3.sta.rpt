@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for lab3
-Mon Mar 06 13:23:52 2023
+Fri Mar 10 19:53:19 2023
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -101,24 +101,24 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 20          ;
 ; Maximum allowed            ; 14          ;
 ;                            ;             ;
-; Average used               ; 3.77        ;
+; Average used               ; 3.74        ;
 ; Maximum used               ; 14          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  23.5%      ;
-;     Processor 3            ;  22.6%      ;
-;     Processor 4            ;  22.5%      ;
-;     Processor 5            ;  21.0%      ;
-;     Processor 6            ;  21.0%      ;
-;     Processor 7            ;  21.0%      ;
-;     Processor 8            ;  20.9%      ;
-;     Processor 9            ;  20.9%      ;
-;     Processor 10           ;  20.8%      ;
-;     Processor 11           ;  20.8%      ;
-;     Processor 12           ;  20.8%      ;
-;     Processor 13           ;  20.8%      ;
-;     Processor 14           ;  20.7%      ;
+;     Processor 2            ;  23.0%      ;
+;     Processor 3            ;  22.3%      ;
+;     Processor 4            ;  22.2%      ;
+;     Processor 5            ;  20.8%      ;
+;     Processor 6            ;  20.8%      ;
+;     Processor 7            ;  20.7%      ;
+;     Processor 8            ;  20.7%      ;
+;     Processor 9            ;  20.7%      ;
+;     Processor 10           ;  20.7%      ;
+;     Processor 11           ;  20.7%      ;
+;     Processor 12           ;  20.6%      ;
+;     Processor 13           ;  20.6%      ;
+;     Processor 14           ;  20.6%      ;
 +----------------------------+-------------+
 
 
@@ -712,7 +712,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Mon Mar 06 13:23:44 2023
+    Info: Processing started: Fri Mar 10 19:53:11 2023
 Info: Command: quartus_sta lab3 -c lab3
 Info: qsta_default_script.tcl version: #3
 Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not exist in design
@@ -5573,9 +5573,9 @@ Info (332146): Worst-case minimum pulse width slack is -1.702
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 578 warnings
-    Info: Peak virtual memory: 5605 megabytes
-    Info: Processing ended: Mon Mar 06 13:23:51 2023
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:15
+    Info: Peak virtual memory: 5604 megabytes
+    Info: Processing ended: Fri Mar 10 19:53:19 2023
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:14
 
 

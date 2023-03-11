@@ -8,9 +8,9 @@ SW[0] => sel[0].IN1
 SW[1] => sel[1].IN1
 SW[2] => SELECT_MICROPHONE.IN1
 SW[3] => reset.IN2
-FPGA_I2C_SCLK << i2c:b2v_inst.I2C_SCLK
-AUD_XCK << CLOCK_500:b2v_inst4.CLOCK_2
-AUD_DACDAT << parallel_to_serial:b2v_inst38.data
+FPGA_I2C_SCLK <= i2c:b2v_inst.I2C_SCLK
+AUD_XCK <= CLOCK_500:b2v_inst4.CLOCK_2
+AUD_DACDAT <= parallel_to_serial:b2v_inst38.data
 FPGA_I2C_SDAT <> i2c:b2v_inst.I2C_SDAT
 
 
