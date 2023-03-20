@@ -96,7 +96,7 @@ module fir_filter (sample_clock,reset,input_sample,FIR_output_sample);
 			end
 		end
 		else begin
-			for (i = 1; i < N		; i = i+1) begin
+			for (i = 1; i < N; i = i+1) begin
 				z[N-i] = z[N-i-1];
 			end
 			z[0] = input_sample;

@@ -1,0 +1,67 @@
+21:29:04 **** Build of configuration Nios II for project blinky ****
+make all 
+Info: Building ../blinky_bsp/
+C:/intelFPGA_lite/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../blinky_bsp/
+Makefile not up to date.
+../../nios_system.sopcinfo has been modified since the BSP was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make[1]: *** [public.mk] Error 1
+make: *** [../blinky_bsp/-recurs-make-lib] Error 2
+21:29:05 **** Build of configuration Nios II for project blinky_bsp ****
+make all 
+Makefile not up to date.
+../../nios_system.sopcinfo has been modified since the BSP was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make: *** [public.mk] Error 1
+21:30:18 **** Incremental Build of configuration Nios II for project blinky ****
+make all 
+Info: Building ../blinky_bsp/
+C:/intelFPGA_lite/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../blinky_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../blinky_bsp//HAL/inc -I../blinky_bsp/ -I../blinky_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:23:18: warning: unused variable 'SW' [-Wunused-variable]
+  volatile char * SW =(char *) SWITCHES_BASE;
+                  ^
+Info: Linking blinky.elf
+nios2-elf-g++  -T'../blinky_bsp//linker.x' -msys-crt0='../blinky_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../blinky_bsp/  -msmallc  -Wl,-Map=blinky.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o blinky.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert blinky.elf --thread_model hal --cpu_name nios2_processor --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios_system --quartus_project_dir "C:/Users/LinF/Desktop/qsys_tut" --jdi ../..//output_files/lights.jdi --sopcinfo C:/Users/LinF/Desktop/qsys_tut/software/blinky_bsp/../../nios_system.sopcinfo
+Info: (blinky.elf) 7196 Bytes program size (code + initialized data).
+Info:              24 KBytes free for stack + heap.
+Info: Creating blinky.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source blinky.elf >blinky.objdump
+[blinky build complete]
+21:30:20 **** Incremental Build of configuration Nios II for project blinky_bsp ****
+make all 
+[BSP build complete]
+21:31:21 **** Build of configuration Nios II for project blinky ****
+make all 
+Info: Building ../blinky_bsp/
+C:/intelFPGA_lite/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../blinky_bsp/
+[BSP build complete]
+[blinky build complete]
+21:31:22 **** Incremental Build of configuration Nios II for project blinky ****
+make all 
+Info: Building ../blinky_bsp/
+C:/intelFPGA_lite/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../blinky_bsp/
+[BSP build complete]
+[blinky build complete]

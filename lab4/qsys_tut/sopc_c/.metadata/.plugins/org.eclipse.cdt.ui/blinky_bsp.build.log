@@ -1,0 +1,6 @@
+21:30:20 **** Incremental Build of configuration Nios II for project blinky_bsp ****
+make all 
+[BSP build complete]
+
+21:30:21 Build Finished (took 345ms)
+
