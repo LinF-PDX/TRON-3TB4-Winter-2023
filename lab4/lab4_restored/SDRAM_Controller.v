@@ -150,9 +150,13 @@ module SDRAM_Controller (  //the ports sequence follows the sequence of wires in
 		assign			DRAM_LDQM=DRAM_DQM_wire[0];
 
 	//  ==========Make  more  necessary connections=================		
-		
-	//
-    //	
+		assign DRAM_ADDR=DRAM_ADDR_wire;
+		assign DRAM_BA=DRAM_BA_wire;
+		assign DRAM_CKE=DRAM_CKE_wire;
+		assign DRAM_WE_N=DRAM_WE_N_wire;
+		assign DRAM_CAS_N=DRAM_CAS_N_wire;
+		assign DRAM_RAS_N=DRAM_RAS_N_wire;
+		assign DRAM_CS_N=DRAM_CS_N_wire;	
 	
  
 								  
