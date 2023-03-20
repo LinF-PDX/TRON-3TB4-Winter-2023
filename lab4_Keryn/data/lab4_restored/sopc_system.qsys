@@ -81,6 +81,14 @@
          type = "int";
       }
    }
+   element onchip_memory2_0.s1
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
    element sys_sdram_pll_0
    {
       datum _sortIndex
@@ -114,22 +122,22 @@
  <interface name="reset" internal="clk_0.clk_in_reset" type="reset" dir="end" />
  <interface
    name="sdram_addr"
-   internal="SDRAM_Controller_0.conduit_end_1"
+   internal="SDRAM_Controller_0.conduit_end"
    type="conduit"
    dir="end" />
  <interface
    name="sdram_ba"
-   internal="SDRAM_Controller_0.conduit_end_4"
+   internal="SDRAM_Controller_0.conduit_end_1"
    type="conduit"
    dir="end" />
  <interface
    name="sdram_cas_n"
-   internal="SDRAM_Controller_0.conduit_end_6"
+   internal="SDRAM_Controller_0.conduit_end_2"
    type="conduit"
    dir="end" />
  <interface
    name="sdram_cke"
-   internal="SDRAM_Controller_0.conduit_end_9"
+   internal="SDRAM_Controller_0.conduit_end_3"
    type="conduit"
    dir="end" />
  <interface
@@ -139,32 +147,32 @@
    dir="start" />
  <interface
    name="sdram_cs_n"
-   internal="SDRAM_Controller_0.conduit_end_2"
+   internal="SDRAM_Controller_0.conduit_end_4"
    type="conduit"
    dir="end" />
  <interface
    name="sdram_dq"
-   internal="SDRAM_Controller_0.conduit_end"
-   type="conduit"
-   dir="end" />
- <interface
-   name="sdram_ldaqm"
-   internal="SDRAM_Controller_0.conduit_end_8"
-   type="conduit"
-   dir="end" />
- <interface
-   name="sdram_ras_n"
    internal="SDRAM_Controller_0.conduit_end_5"
    type="conduit"
    dir="end" />
  <interface
-   name="sdram_udqm"
+   name="sdram_ldqm"
+   internal="SDRAM_Controller_0.conduit_end_6"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="sdram_ras_n"
    internal="SDRAM_Controller_0.conduit_end_7"
    type="conduit"
    dir="end" />
  <interface
+   name="sdram_udqm"
+   internal="SDRAM_Controller_0.conduit_end_8"
+   type="conduit"
+   dir="end" />
+ <interface
    name="sdram_we_n"
-   internal="SDRAM_Controller_0.conduit_end_3"
+   internal="SDRAM_Controller_0.conduit_end_9"
    type="conduit"
    dir="end" />
  <module

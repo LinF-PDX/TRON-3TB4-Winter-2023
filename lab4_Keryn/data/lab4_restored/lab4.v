@@ -47,6 +47,16 @@ sopc_system  controller (
 		.reset_reset_n(KEY[0]),         //         reset.reset_n
 		.sdram_clk_clk(DRAM_CLK),
 		// more ports
+		.sdram_addr_export(DRAM_ADDR),
+		.sdram_ba_export(DRAM_BA),
+		.sdram_cas_n_export(DRAM_CAS_N),
+		.sdram_cke_export(DRAM_CKE),
+		.sdram_cs_n_export(DRAM_CS_N),
+		.sdram_dq_export(DRAM_DQ),
+		.sdram_ldqm_export(DRAM_LDQM),
+		.sdram_ras_n_export(DRAM_RAS_N),
+		.sdram_udqm_export(DRAM_UDQM),
+		.sdram_we_n_export(DRAM_WE_N),
 		
 	);
 

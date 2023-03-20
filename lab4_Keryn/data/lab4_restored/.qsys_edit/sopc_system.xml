@@ -1312,7 +1312,7 @@
 									</backup-path>
 								</property>
 								<property factory="StackDockPropertyFactory">
-									<index>7</index>
+									<index>3</index>
 									<placeholder>dock.single.Schematic</placeholder>
 								</property>
 							</location>
