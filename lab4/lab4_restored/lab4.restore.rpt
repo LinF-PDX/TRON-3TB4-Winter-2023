@@ -1,5 +1,5 @@
 Restore Archived Project report for lab4
-Mon Mar 13 00:05:09 2023
+Mon Mar 20 10:08:34 2023
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------+
 ; Restore Archived Project Summary                                        ;
 +---------------------------------+---------------------------------------+
-; Restore Archived Project Status ; Successful - Mon Mar 13 00:05:09 2023 ;
+; Restore Archived Project Status ; Successful - Mon Mar 20 10:08:34 2023 ;
 ; Revision Name                   ; lab4                                  ;
 ; Top-level Entity Name           ; lab4                                  ;
 ; Family                          ; Cyclone V                             ;
@@ -46,12 +46,12 @@ refer to the applicable agreement for further details.
 +-----------------------------------+
 ; Restore Archived Project Messages ;
 +-----------------------------------+
-Info: Successfully restored 'C:/Users/LinF/Documents/School/Winter 2023/3TB4/TRON-3TB4-Winter-2023/lab4/data/lab4.qar' into the 'C:\\Users\\LinF\\Documents\\School\\Winter 2023\\3TB4\\TRON-3TB4-Winter-2023\\lab4\\lab4_restored/' directory
+Info: Successfully restored 'C:/Users/keryn/OneDrive/Desktop/2023_Winter/3TB4/Lab4/lab4/data/lab4.qar' into the 'C:/Users/keryn/OneDrive/Desktop/2023_Winter/3TB4/Lab4/lab4/data/lab4_restored/' directory
 Info: Generated report 'lab4.restore.rpt'
 Info (23030): Evaluation of Tcl script c:/intelfpga_lite/17.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
 Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4825 megabytes
-    Info: Processing ended: Mon Mar 13 00:05:09 2023
+    Info: Peak virtual memory: 4854 megabytes
+    Info: Processing ended: Mon Mar 20 10:08:34 2023
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
