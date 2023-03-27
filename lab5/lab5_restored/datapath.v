@@ -24,7 +24,7 @@ wire [7:0] delay /*synthesis keep*/;
 wire [7:0] register0 /*synthesis keep*/;
 wire [7:0] result_mux_out /*synthesis keep*/;
 wire [7:0] Q_wire /*synthesis keep*/;
-wire [2:0] write_address_select_out /*synthesis keep*/;
+wire [1:0] write_address_select_out /*synthesis keep*/;
 wire [7:0] selected0_wire /*synthesis keep*/;
 wire [7:0] selected1_wire /*synthesis keep*/;
 wire [7:0] pc_wire /*synthesis keep*/;
