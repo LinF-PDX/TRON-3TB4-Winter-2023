@@ -1,4 +1,4 @@
-module branch_logic (input [7:0] register0, output branch);
+module branch_logic (input [7:0] register0, output reg branch);
 
 always @(*)
 begin

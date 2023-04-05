@@ -8,8 +8,11 @@ begin
 	2'b00: write_address = 2'b00;
 	2'b01: write_address = reg_field0;
 	2'b10: write_address = reg_field1;
-	default: write_addres = 2'b10;
+	default: write_address = 2'b10;
 	
 	endcase
 
+	
+end
+	
 endmodule

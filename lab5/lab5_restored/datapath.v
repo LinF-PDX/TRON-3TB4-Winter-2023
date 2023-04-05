@@ -65,6 +65,8 @@ regfile the_regfile(
 	.delay (delay),
 	.position (position),
 	.register0 (register0)
+	
+);
 
 op1_mux the_op1_mux(
 	// Inputs
