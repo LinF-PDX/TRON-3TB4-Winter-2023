@@ -1,5 +1,5 @@
 Assembler report for lab5
-Wed Apr 05 23:04:10 2023
+Thu Apr 06 00:51:38 2023
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -11,7 +11,7 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
   3. Assembler Settings
   4. Assembler Encrypted IP Cores Summary
   5. Assembler Generated Files
-  6. Assembler Device Options: C:/Users/LinF/Desktop/lab5/lab5_restored/output_files/lab5.sof
+  6. Assembler Device Options: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/output_files/lab5.sof
   7. Assembler Messages
 
 
@@ -38,7 +38,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Wed Apr 05 23:04:10 2023 ;
+; Assembler Status      ; Successful - Thu Apr 06 00:51:38 2023 ;
 ; Revision Name         ; lab5                                  ;
 ; Top-level Entity Name ; lab5                                  ;
 ; Family                ; Cyclone V                             ;
@@ -63,23 +63,23 @@ refer to the applicable agreement for further details.
 +--------+------------------------+--------------+
 
 
-+----------------------------------------------------------------+
-; Assembler Generated Files                                      ;
-+----------------------------------------------------------------+
-; File Name                                                      ;
-+----------------------------------------------------------------+
-; C:/Users/LinF/Desktop/lab5/lab5_restored/output_files/lab5.sof ;
-+----------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                                     ;
++---------------------------------------------------------------------------------------------------------------+
+; File Name                                                                                                     ;
++---------------------------------------------------------------------------------------------------------------+
+; C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/output_files/lab5.sof ;
++---------------------------------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/LinF/Desktop/lab5/lab5_restored/output_files/lab5.sof ;
-+----------------+-------------------------------------------------------------------------+
-; Option         ; Setting                                                                 ;
-+----------------+-------------------------------------------------------------------------+
-; JTAG usercode  ; 0x00D2ADA9                                                              ;
-; Checksum       ; 0x00D2ADA9                                                              ;
-+----------------+-------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/output_files/lab5.sof ;
++----------------+------------------------------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                                                ;
++----------------+------------------------------------------------------------------------------------------------------------------------+
+; JTAG usercode  ; 0x00D2ADA9                                                                                                             ;
+; Checksum       ; 0x00D2ADA9                                                                                                             ;
++----------------+------------------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -88,13 +88,13 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Wed Apr 05 23:04:05 2023
+    Info: Processing started: Thu Apr 06 00:51:33 2023
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off lab5 -c lab5
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4842 megabytes
-    Info: Processing ended: Wed Apr 05 23:04:10 2023
+    Info: Processing ended: Thu Apr 06 00:51:38 2023
     Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:02
 

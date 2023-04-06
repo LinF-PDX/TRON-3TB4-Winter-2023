@@ -93,13 +93,13 @@ R13
 R10
 R11
 vdatapath
-Z14 !s110 1648748864
+Z14 !s110 1680755928
 !i10b 1
-!s100 cSlKGdT5z][<ZP7EAfIkH0
-IFB>Q1Zn?c6S;?R<Ki3;bG1
+!s100 WKRJ_FSBkGI<[6Tb5jXo13
+I6?o469mUbgW<3j3`CNh1U1
 R2
-R0
-w1648748863
+Z15 dC:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/simulation/qsim
+w1680755927
 R3
 R4
 R5
@@ -107,7 +107,7 @@ R6
 r1
 !s85 0
 31
-Z15 !s108 1648748864.000000
+Z16 !s108 1680755928.000000
 R8
 R9
 !i113 1
@@ -119,8 +119,8 @@ R14
 !s100 L<_7okzG:if?E>8jZ;KVm0
 I<`ogNk=]3_jN9T9B]^kd]2
 R2
-R0
-w1648748859
+R15
+w1680755926
 8datapath_simulation_movr.vwf.vt
 Fdatapath_simulation_movr.vwf.vt
 R12
@@ -128,14 +128,14 @@ R6
 r1
 !s85 0
 31
-R15
+R16
 !s107 datapath_simulation_movr.vwf.vt|
 !s90 -work|work|datapath_simulation_movr.vwf.vt|
 !i113 1
 R10
 R11
 vdecoder
-Z16 !s110 1648516102
+Z17 !s110 1648516102
 !i10b 1
 !s100 eT]ZLBdOl0]H`F7@>_<Bn0
 IH<6<;cY6[`kz^O0mz;1MQ1
@@ -149,14 +149,14 @@ R6
 r1
 !s85 0
 31
-Z17 !s108 1648516102.000000
+Z18 !s108 1648516102.000000
 R8
 R9
 !i113 1
 R10
 R11
 vdecoder_vlg_vec_tst
-R16
+R17
 !i10b 1
 !s100 E=B9@J0=^[]V91nhi==m^1
 I:LeelIYEX<IdS1?D6O=^40
@@ -170,7 +170,7 @@ R6
 r1
 !s85 0
 31
-R17
+R18
 !s107 decoder_simulation.vwf.vt|
 !s90 -work|work|decoder_simulation.vwf.vt|
 !i113 1
@@ -219,7 +219,7 @@ r1
 R10
 R11
 vimmediate_extractor
-Z18 !s110 1648517259
+Z19 !s110 1648517259
 !i10b 1
 !s100 k:A`f8Z0K_C6bjoF;cBmE1
 I4Q_EMLW46aodPDd]g?I8G1
@@ -233,14 +233,14 @@ R6
 r1
 !s85 0
 31
-Z19 !s108 1648517259.000000
+Z20 !s108 1648517259.000000
 R8
 R9
 !i113 1
 R10
 R11
 vimmediate_extractor_vlg_vec_tst
-R18
+R19
 !i10b 1
 !s100 _VK<BSMILFSYfbFjjjQT02
 ID93HXOIakaToMV]LfL[3V2
@@ -254,20 +254,20 @@ R6
 r1
 !s85 0
 31
-R19
+R20
 !s107 immediate_extractor_simulation.vwf.vt|
 !s90 -work|work|immediate_extractor_simulation.vwf.vt|
 !i113 1
 R10
 R11
 vlab5
-Z20 !s110 1680648022
+Z21 !s110 1680752315
 !i10b 1
-!s100 3WdX3A^jmOZe:U2Y1fR982
-I7V9^9D7QC_4:OSDMB^2am2
+!s100 =3MfH70iod^`cHV_LXSnG3
+IO@l@P_60?TER26KADb>9T0
 R2
-Z21 dC:/Users/LinF/Desktop/lab5/lab5_restored/simulation/qsim
-w1680648022
+R15
+w1680752314
 R3
 R4
 R5
@@ -275,35 +275,35 @@ R6
 r1
 !s85 0
 31
-Z22 !s108 1680648022.000000
+Z22 !s108 1680752315.000000
 R8
 R9
 !i113 1
 R10
 R11
 vlab5_vlg_vec_tst
-R20
+R21
 !i10b 1
 !s100 acYPR]B1`HGiSgNPeTD`d0
-ICE=PM[SHI[5Ki4f39N_JC0
+IU`3k7Y]^RjOT6LnO^^g:H2
 R2
-R21
-w1680648020
-Z23 8pc_simulation.vwf.vt
-Z24 Fpc_simulation.vwf.vt
+R15
+w1680752313
+8datapath_simulation.vwf.vt
+Fdatapath_simulation.vwf.vt
 R12
 R6
 r1
 !s85 0
 31
 R22
-!s107 pc_simulation.vwf.vt|
-Z25 !s90 -work|work|pc_simulation.vwf.vt|
+!s107 datapath_simulation.vwf.vt|
+!s90 -work|work|datapath_simulation.vwf.vt|
 !i113 1
 R10
 R11
 vpc
-Z26 !s110 1648514744
+Z23 !s110 1648514744
 !i10b 1
 !s100 nW5lcz=l`ek<b3]17k<d22
 IoSnVg]19lWe4GICMV;=RC2
@@ -317,35 +317,35 @@ R6
 r1
 !s85 0
 31
-Z27 !s108 1648514744.000000
+Z24 !s108 1648514744.000000
 R8
 R9
 !i113 1
 R10
 R11
 vpc_vlg_vec_tst
-R26
+R23
 !i10b 1
 !s100 VKmW?QdRYYjj<PFC5z:oC2
 IV6Y8>COm=Hjm<zIa1_GPQ2
 R2
 R0
 w1648514740
-R23
-R24
+8pc_simulation.vwf.vt
+Fpc_simulation.vwf.vt
 R12
 R6
 r1
 !s85 0
 31
-R27
+R24
 !s107 pc_simulation.vwf.vt|
-R25
+!s90 -work|work|pc_simulation.vwf.vt|
 !i113 1
 R10
 R11
 vregfile
-Z28 !s110 1648516856
+Z25 !s110 1648516856
 !i10b 1
 !s100 cR1VCGE19SoNT[N[5[0;63
 IJfeKF=2k7FdnD:zD<A;^>0
@@ -359,14 +359,14 @@ R6
 r1
 !s85 0
 31
-Z29 !s108 1648516856.000000
+Z26 !s108 1648516856.000000
 R8
 R9
 !i113 1
 R10
 R11
 vregfile_vlg_vec_tst
-R28
+R25
 !i10b 1
 !s100 ?^9:JBgZojdETczREo5X`3
 Injk9^YK;?fK7O9:E`UmQH3
@@ -380,14 +380,14 @@ R6
 r1
 !s85 0
 31
-R29
+R26
 !s107 regfile_simulation.vwf.vt|
 !s90 -work|work|regfile_simulation.vwf.vt|
 !i113 1
 R10
 R11
 vtemp_register
-Z30 !s110 1648521734
+Z27 !s110 1648521734
 !i10b 1
 !s100 ]Wl5QOfU_hB;d:6ZgB3l=0
 I7I6Ukbc3X>oYSFVo3le[X2
@@ -401,14 +401,14 @@ R6
 r1
 !s85 0
 31
-Z31 !s108 1648521734.000000
+Z28 !s108 1648521734.000000
 R8
 R9
 !i113 1
 R10
 R11
 vtemp_register_vlg_vec_tst
-R30
+R27
 !i10b 1
 !s100 W@8Eo0mg_WTSQ619nW;f21
 I^>f]T>0=hf3d0cdo^Med<2
@@ -422,7 +422,7 @@ R6
 r1
 !s85 0
 31
-R31
+R28
 !s107 temp_register_simulation.vwf.vt|
 !s90 -work|work|temp_register_simulation.vwf.vt|
 !i113 1

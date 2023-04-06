@@ -1,5 +1,5 @@
 EDA Netlist Writer report for lab5
-Tue Apr 04 18:40:22 2023
+Thu Apr 06 00:38:47 2023
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -36,9 +36,9 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue Apr 04 18:40:22 2023 ;
+; EDA Netlist Writer Status ; Successful - Thu Apr 06 00:38:47 2023 ;
 ; Revision Name             ; lab5                                  ;
-; Top-level Entity Name     ; lab5                                  ;
+; Top-level Entity Name     ; datapath                              ;
 ; Family                    ; Cyclone V                             ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
@@ -65,13 +65,13 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+-------------------------------------------------------------------+
-; Simulation Generated Files                                        ;
-+-------------------------------------------------------------------+
-; Generated Files                                                   ;
-+-------------------------------------------------------------------+
-; C:/Users/LinF/Desktop/lab5/lab5_restored/simulation/qsim//lab5.vo ;
-+-------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                                       ;
++------------------------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                                  ;
++------------------------------------------------------------------------------------------------------------------+
+; C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/simulation/qsim//lab5.vo ;
++------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -93,8 +93,8 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Tue Apr 04 18:40:21 2023
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/LinF/Desktop/lab5/lab5_restored/simulation/qsim/ lab5 -c lab5
+    Info: Processing started: Thu Apr 06 00:38:46 2023
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/simulation/qsim/ lab5 -c lab5
 Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to HPS_DDR3_ADDR[0] -entity DE1_SoC was ignored
     Warning (20014): Assignment for entity set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to HPS_DDR3_ADDR[10] -entity DE1_SoC was ignored
@@ -668,11 +668,11 @@ Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not
     Warning (20014): Assignment for entity set_instance_assignment -name D5_DELAY 2 -to HPS_DDR3_CK_N -entity DE1_SoC was ignored
     Warning (20014): Assignment for entity set_instance_assignment -name D5_DELAY 2 -to HPS_DDR3_CK_P -entity DE1_SoC was ignored
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file lab5.vo in folder "C:/Users/LinF/Desktop/lab5/lab5_restored/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file lab5.vo in folder "C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 573 warnings
-    Info: Peak virtual memory: 4734 megabytes
-    Info: Processing ended: Tue Apr 04 18:40:22 2023
+    Info: Peak virtual memory: 4732 megabytes
+    Info: Processing ended: Thu Apr 06 00:38:47 2023
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
 
 

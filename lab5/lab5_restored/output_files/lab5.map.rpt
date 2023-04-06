@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab5
-Wed Apr 05 23:02:06 2023
+Thu Apr 06 00:49:44 2023
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Apr 05 23:02:06 2023       ;
+; Analysis & Synthesis Status     ; Successful - Thu Apr 06 00:49:44 2023       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; lab5                                        ;
 ; Top-level Entity Name           ; lab5                                        ;
@@ -191,91 +191,91 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                          ;
-+--------------------------------------------------------------------+-----------------+----------------------------------------------+-------------------------------------------------------------------------------------------------------------+-------------+
-; File Name with User-Entered Path                                   ; Used in Netlist ; File Type                                    ; File Name with Absolute Path                                                                                ; Library     ;
-+--------------------------------------------------------------------+-----------------+----------------------------------------------+-------------------------------------------------------------------------------------------------------------+-------------+
-; write_address_select.v                                             ; yes             ; User Verilog HDL File                        ; C:/Users/LinF/Desktop/lab5/lab5_restored/write_address_select.v                                             ;             ;
-; temp_register.v                                                    ; yes             ; User Verilog HDL File                        ; C:/Users/LinF/Desktop/lab5/lab5_restored/temp_register.v                                                    ;             ;
-; result_mux.v                                                       ; yes             ; User Verilog HDL File                        ; C:/Users/LinF/Desktop/lab5/lab5_restored/result_mux.v                                                       ;             ;
-; regfile.v                                                          ; yes             ; User Verilog HDL File                        ; C:/Users/LinF/Desktop/lab5/lab5_restored/regfile.v                                                          ;             ;
-; pc.v                                                               ; yes             ; User Verilog HDL File                        ; C:/Users/LinF/Desktop/lab5/lab5_restored/pc.v                                                               ;             ;
-; op2_mux.v                                                          ; yes             ; User Verilog HDL File                        ; C:/Users/LinF/Desktop/lab5/lab5_restored/op2_mux.v                                                          ;             ;
-; op1_mux.v                                                          ; yes             ; User Verilog HDL File                        ; C:/Users/LinF/Desktop/lab5/lab5_restored/op1_mux.v                                                          ;             ;
-; lab5.v                                                             ; yes             ; User Verilog HDL File                        ; C:/Users/LinF/Desktop/lab5/lab5_restored/lab5.v                                                             ;             ;
-; immediate_extractor.v                                              ; yes             ; User Verilog HDL File                        ; C:/Users/LinF/Desktop/lab5/lab5_restored/immediate_extractor.v                                              ;             ;
-; delay_counter.v                                                    ; yes             ; User Verilog HDL File                        ; C:/Users/LinF/Desktop/lab5/lab5_restored/delay_counter.v                                                    ;             ;
-; decoder.v                                                          ; yes             ; User Verilog HDL File                        ; C:/Users/LinF/Desktop/lab5/lab5_restored/decoder.v                                                          ;             ;
-; datapath.v                                                         ; yes             ; User Verilog HDL File                        ; C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v                                                         ;             ;
-; control_fsm.v                                                      ; yes             ; User Verilog HDL File                        ; C:/Users/LinF/Desktop/lab5/lab5_restored/control_fsm.v                                                      ;             ;
-; branch_logic.v                                                     ; yes             ; User Verilog HDL File                        ; C:/Users/LinF/Desktop/lab5/lab5_restored/branch_logic.v                                                     ;             ;
-; alu.v                                                              ; yes             ; User Verilog HDL File                        ; C:/Users/LinF/Desktop/lab5/lab5_restored/alu.v                                                              ;             ;
-; instruction_rom.mif                                                ; yes             ; User Memory Initialization File              ; C:/Users/LinF/Desktop/lab5/lab5_restored/instruction_rom.mif                                                ;             ;
-; instruction_rom.v                                                  ; yes             ; User Wizard-Generated File                   ; C:/Users/LinF/Desktop/lab5/lab5_restored/instruction_rom.v                                                  ;             ;
-; stepper_rom.mif                                                    ; yes             ; User Memory Initialization File              ; C:/Users/LinF/Desktop/lab5/lab5_restored/stepper_rom.mif                                                    ;             ;
-; stepper_rom.v                                                      ; yes             ; User Wizard-Generated File                   ; C:/Users/LinF/Desktop/lab5/lab5_restored/stepper_rom.v                                                      ;             ;
-; altsyncram.tdf                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altsyncram.tdf                                       ;             ;
-; stratix_ram_block.inc                                              ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                ;             ;
-; lpm_mux.inc                                                        ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_mux.inc                                          ;             ;
-; lpm_decode.inc                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_decode.inc                                       ;             ;
-; aglobal171.inc                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/aglobal171.inc                                       ;             ;
-; a_rdenreg.inc                                                      ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/a_rdenreg.inc                                        ;             ;
-; altrom.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altrom.inc                                           ;             ;
-; altram.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altram.inc                                           ;             ;
-; altdpram.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altdpram.inc                                         ;             ;
-; db/altsyncram_4dp1.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; C:/Users/LinF/Desktop/lab5/lab5_restored/db/altsyncram_4dp1.tdf                                             ;             ;
-; db/altsyncram_nro1.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; C:/Users/LinF/Desktop/lab5/lab5_restored/db/altsyncram_nro1.tdf                                             ;             ;
-; sld_signaltap.vhd                                                  ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/sld_signaltap.vhd                                    ;             ;
-; sld_signaltap_impl.vhd                                             ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/sld_signaltap_impl.vhd                               ;             ;
-; sld_ela_control.vhd                                                ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/sld_ela_control.vhd                                  ;             ;
-; lpm_shiftreg.tdf                                                   ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_shiftreg.tdf                                     ;             ;
-; lpm_constant.inc                                                   ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_constant.inc                                     ;             ;
-; dffeea.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/dffeea.inc                                           ;             ;
-; sld_mbpmg.vhd                                                      ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/sld_mbpmg.vhd                                        ;             ;
-; sld_ela_trigger_flow_sel.tdf                                       ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/sld_ela_trigger_flow_sel.tdf                         ;             ;
-; db/sld_ela_trigger_flow_sel_3831.tdf                               ; yes             ; Auto-Generated Megafunction                  ; C:/Users/LinF/Desktop/lab5/lab5_restored/db/sld_ela_trigger_flow_sel_3831.tdf                               ;             ;
-; db/sld_reserved_lab5_auto_signaltap_0_flow_mgr_c90c.v              ; yes             ; Encrypted Auto-Generated Megafunction        ; C:/Users/LinF/Desktop/lab5/lab5_restored/db/sld_reserved_lab5_auto_signaltap_0_flow_mgr_c90c.v              ;             ;
-; sld_buffer_manager.vhd                                             ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/sld_buffer_manager.vhd                               ;             ;
-; db/altsyncram_2c84.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; C:/Users/LinF/Desktop/lab5/lab5_restored/db/altsyncram_2c84.tdf                                             ;             ;
-; altdpram.tdf                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altdpram.tdf                                         ;             ;
-; memmodes.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/others/maxplus2/memmodes.inc                                       ;             ;
-; a_hdffe.inc                                                        ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/a_hdffe.inc                                          ;             ;
-; alt_le_rden_reg.inc                                                ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/alt_le_rden_reg.inc                                  ;             ;
-; altsyncram.inc                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altsyncram.inc                                       ;             ;
-; lpm_mux.tdf                                                        ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_mux.tdf                                          ;             ;
-; muxlut.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/muxlut.inc                                           ;             ;
-; bypassff.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/bypassff.inc                                         ;             ;
-; altshift.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altshift.inc                                         ;             ;
-; db/mux_elc.tdf                                                     ; yes             ; Auto-Generated Megafunction                  ; C:/Users/LinF/Desktop/lab5/lab5_restored/db/mux_elc.tdf                                                     ;             ;
-; lpm_decode.tdf                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_decode.tdf                                       ;             ;
-; declut.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/declut.inc                                           ;             ;
-; lpm_compare.inc                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_compare.inc                                      ;             ;
-; db/decode_vnf.tdf                                                  ; yes             ; Auto-Generated Megafunction                  ; C:/Users/LinF/Desktop/lab5/lab5_restored/db/decode_vnf.tdf                                                  ;             ;
-; lpm_counter.tdf                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_counter.tdf                                      ;             ;
-; lpm_add_sub.inc                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_add_sub.inc                                      ;             ;
-; cmpconst.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/cmpconst.inc                                         ;             ;
-; lpm_counter.inc                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_counter.inc                                      ;             ;
-; alt_counter_stratix.inc                                            ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/alt_counter_stratix.inc                              ;             ;
-; db/cntr_a9i.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/LinF/Desktop/lab5/lab5_restored/db/cntr_a9i.tdf                                                    ;             ;
-; db/cmpr_e9c.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/LinF/Desktop/lab5/lab5_restored/db/cmpr_e9c.tdf                                                    ;             ;
-; db/cntr_4vi.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/LinF/Desktop/lab5/lab5_restored/db/cntr_4vi.tdf                                                    ;             ;
-; db/cntr_09i.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/LinF/Desktop/lab5/lab5_restored/db/cntr_09i.tdf                                                    ;             ;
-; db/cmpr_c9c.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/LinF/Desktop/lab5/lab5_restored/db/cmpr_c9c.tdf                                                    ;             ;
-; db/cntr_kri.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/LinF/Desktop/lab5/lab5_restored/db/cntr_kri.tdf                                                    ;             ;
-; db/cmpr_99c.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/LinF/Desktop/lab5/lab5_restored/db/cmpr_99c.tdf                                                    ;             ;
-; sld_rom_sr.vhd                                                     ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/sld_rom_sr.vhd                                       ;             ;
-; sld_jtag_endpoint_adapter.vhd                                      ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd                        ;             ;
-; sld_jtag_endpoint_adapter_impl.sv                                  ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter_impl.sv                    ;             ;
-; sld_hub.vhd                                                        ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/sld_hub.vhd                                          ; altera_sld  ;
-; db/ip/sld2dead247/alt_sld_fab.v                                    ; yes             ; Encrypted Auto-Found Verilog HDL File        ; C:/Users/LinF/Desktop/lab5/lab5_restored/db/ip/sld2dead247/alt_sld_fab.v                                    ; alt_sld_fab ;
-; db/ip/sld2dead247/submodules/alt_sld_fab_alt_sld_fab.v             ; yes             ; Encrypted Auto-Found Verilog HDL File        ; C:/Users/LinF/Desktop/lab5/lab5_restored/db/ip/sld2dead247/submodules/alt_sld_fab_alt_sld_fab.v             ; alt_sld_fab ;
-; db/ip/sld2dead247/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; yes             ; Auto-Found SystemVerilog HDL File            ; C:/Users/LinF/Desktop/lab5/lab5_restored/db/ip/sld2dead247/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; alt_sld_fab ;
-; db/ip/sld2dead247/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; C:/Users/LinF/Desktop/lab5/lab5_restored/db/ip/sld2dead247/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; alt_sld_fab ;
-; db/ip/sld2dead247/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; yes             ; Encrypted Auto-Found VHDL File               ; C:/Users/LinF/Desktop/lab5/lab5_restored/db/ip/sld2dead247/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; alt_sld_fab ;
-; db/ip/sld2dead247/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; C:/Users/LinF/Desktop/lab5/lab5_restored/db/ip/sld2dead247/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; alt_sld_fab ;
-; sld_jtag_hub.vhd                                                   ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/sld_jtag_hub.vhd                                     ;             ;
-+--------------------------------------------------------------------+-----------------+----------------------------------------------+-------------------------------------------------------------------------------------------------------------+-------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                                                         ;
++--------------------------------------------------------------------+-----------------+----------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+
+; File Name with User-Entered Path                                   ; Used in Netlist ; File Type                                    ; File Name with Absolute Path                                                                                                                               ; Library     ;
++--------------------------------------------------------------------+-----------------+----------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+
+; write_address_select.v                                             ; yes             ; User Verilog HDL File                        ; C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/write_address_select.v                                             ;             ;
+; temp_register.v                                                    ; yes             ; User Verilog HDL File                        ; C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/temp_register.v                                                    ;             ;
+; result_mux.v                                                       ; yes             ; User Verilog HDL File                        ; C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/result_mux.v                                                       ;             ;
+; regfile.v                                                          ; yes             ; User Verilog HDL File                        ; C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/regfile.v                                                          ;             ;
+; pc.v                                                               ; yes             ; User Verilog HDL File                        ; C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/pc.v                                                               ;             ;
+; op2_mux.v                                                          ; yes             ; User Verilog HDL File                        ; C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/op2_mux.v                                                          ;             ;
+; op1_mux.v                                                          ; yes             ; User Verilog HDL File                        ; C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/op1_mux.v                                                          ;             ;
+; lab5.v                                                             ; yes             ; User Verilog HDL File                        ; C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/lab5.v                                                             ;             ;
+; immediate_extractor.v                                              ; yes             ; User Verilog HDL File                        ; C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/immediate_extractor.v                                              ;             ;
+; delay_counter.v                                                    ; yes             ; User Verilog HDL File                        ; C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/delay_counter.v                                                    ;             ;
+; decoder.v                                                          ; yes             ; User Verilog HDL File                        ; C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/decoder.v                                                          ;             ;
+; datapath.v                                                         ; yes             ; User Verilog HDL File                        ; C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v                                                         ;             ;
+; control_fsm.v                                                      ; yes             ; User Verilog HDL File                        ; C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/control_fsm.v                                                      ;             ;
+; branch_logic.v                                                     ; yes             ; User Verilog HDL File                        ; C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/branch_logic.v                                                     ;             ;
+; alu.v                                                              ; yes             ; User Verilog HDL File                        ; C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/alu.v                                                              ;             ;
+; instruction_rom.mif                                                ; yes             ; User Memory Initialization File              ; C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/instruction_rom.mif                                                ;             ;
+; instruction_rom.v                                                  ; yes             ; User Wizard-Generated File                   ; C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/instruction_rom.v                                                  ;             ;
+; stepper_rom.mif                                                    ; yes             ; User Memory Initialization File              ; C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/stepper_rom.mif                                                    ;             ;
+; stepper_rom.v                                                      ; yes             ; User Wizard-Generated File                   ; C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/stepper_rom.v                                                      ;             ;
+; altsyncram.tdf                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altsyncram.tdf                                                                                      ;             ;
+; stratix_ram_block.inc                                              ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                                               ;             ;
+; lpm_mux.inc                                                        ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_mux.inc                                                                                         ;             ;
+; lpm_decode.inc                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_decode.inc                                                                                      ;             ;
+; aglobal171.inc                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/aglobal171.inc                                                                                      ;             ;
+; a_rdenreg.inc                                                      ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/a_rdenreg.inc                                                                                       ;             ;
+; altrom.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altrom.inc                                                                                          ;             ;
+; altram.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altram.inc                                                                                          ;             ;
+; altdpram.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altdpram.inc                                                                                        ;             ;
+; db/altsyncram_4dp1.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/db/altsyncram_4dp1.tdf                                             ;             ;
+; db/altsyncram_nro1.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/db/altsyncram_nro1.tdf                                             ;             ;
+; sld_signaltap.vhd                                                  ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/sld_signaltap.vhd                                                                                   ;             ;
+; sld_signaltap_impl.vhd                                             ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/sld_signaltap_impl.vhd                                                                              ;             ;
+; sld_ela_control.vhd                                                ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/sld_ela_control.vhd                                                                                 ;             ;
+; lpm_shiftreg.tdf                                                   ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_shiftreg.tdf                                                                                    ;             ;
+; lpm_constant.inc                                                   ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_constant.inc                                                                                    ;             ;
+; dffeea.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/dffeea.inc                                                                                          ;             ;
+; sld_mbpmg.vhd                                                      ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/sld_mbpmg.vhd                                                                                       ;             ;
+; sld_ela_trigger_flow_sel.tdf                                       ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/sld_ela_trigger_flow_sel.tdf                                                                        ;             ;
+; db/sld_ela_trigger_flow_sel_3831.tdf                               ; yes             ; Auto-Generated Megafunction                  ; C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/db/sld_ela_trigger_flow_sel_3831.tdf                               ;             ;
+; db/sld_reserved_lab5_auto_signaltap_0_flow_mgr_c90c.v              ; yes             ; Encrypted Auto-Generated Megafunction        ; C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/db/sld_reserved_lab5_auto_signaltap_0_flow_mgr_c90c.v              ;             ;
+; sld_buffer_manager.vhd                                             ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/sld_buffer_manager.vhd                                                                              ;             ;
+; db/altsyncram_2c84.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/db/altsyncram_2c84.tdf                                             ;             ;
+; altdpram.tdf                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altdpram.tdf                                                                                        ;             ;
+; memmodes.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/others/maxplus2/memmodes.inc                                                                                      ;             ;
+; a_hdffe.inc                                                        ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/a_hdffe.inc                                                                                         ;             ;
+; alt_le_rden_reg.inc                                                ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/alt_le_rden_reg.inc                                                                                 ;             ;
+; altsyncram.inc                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altsyncram.inc                                                                                      ;             ;
+; lpm_mux.tdf                                                        ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_mux.tdf                                                                                         ;             ;
+; muxlut.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/muxlut.inc                                                                                          ;             ;
+; bypassff.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/bypassff.inc                                                                                        ;             ;
+; altshift.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altshift.inc                                                                                        ;             ;
+; db/mux_elc.tdf                                                     ; yes             ; Auto-Generated Megafunction                  ; C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/db/mux_elc.tdf                                                     ;             ;
+; lpm_decode.tdf                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_decode.tdf                                                                                      ;             ;
+; declut.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/declut.inc                                                                                          ;             ;
+; lpm_compare.inc                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_compare.inc                                                                                     ;             ;
+; db/decode_vnf.tdf                                                  ; yes             ; Auto-Generated Megafunction                  ; C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/db/decode_vnf.tdf                                                  ;             ;
+; lpm_counter.tdf                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_counter.tdf                                                                                     ;             ;
+; lpm_add_sub.inc                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_add_sub.inc                                                                                     ;             ;
+; cmpconst.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/cmpconst.inc                                                                                        ;             ;
+; lpm_counter.inc                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_counter.inc                                                                                     ;             ;
+; alt_counter_stratix.inc                                            ; yes             ; Megafunction                                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/alt_counter_stratix.inc                                                                             ;             ;
+; db/cntr_a9i.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/db/cntr_a9i.tdf                                                    ;             ;
+; db/cmpr_e9c.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/db/cmpr_e9c.tdf                                                    ;             ;
+; db/cntr_4vi.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/db/cntr_4vi.tdf                                                    ;             ;
+; db/cntr_09i.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/db/cntr_09i.tdf                                                    ;             ;
+; db/cmpr_c9c.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/db/cmpr_c9c.tdf                                                    ;             ;
+; db/cntr_kri.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/db/cntr_kri.tdf                                                    ;             ;
+; db/cmpr_99c.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/db/cmpr_99c.tdf                                                    ;             ;
+; sld_rom_sr.vhd                                                     ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/sld_rom_sr.vhd                                                                                      ;             ;
+; sld_jtag_endpoint_adapter.vhd                                      ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd                                                                       ;             ;
+; sld_jtag_endpoint_adapter_impl.sv                                  ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter_impl.sv                                                                   ;             ;
+; sld_hub.vhd                                                        ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/sld_hub.vhd                                                                                         ; altera_sld  ;
+; db/ip/sld2dead247/alt_sld_fab.v                                    ; yes             ; Encrypted Auto-Found Verilog HDL File        ; C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/db/ip/sld2dead247/alt_sld_fab.v                                    ; alt_sld_fab ;
+; db/ip/sld2dead247/submodules/alt_sld_fab_alt_sld_fab.v             ; yes             ; Encrypted Auto-Found Verilog HDL File        ; C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/db/ip/sld2dead247/submodules/alt_sld_fab_alt_sld_fab.v             ; alt_sld_fab ;
+; db/ip/sld2dead247/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; yes             ; Auto-Found SystemVerilog HDL File            ; C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/db/ip/sld2dead247/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; alt_sld_fab ;
+; db/ip/sld2dead247/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/db/ip/sld2dead247/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; alt_sld_fab ;
+; db/ip/sld2dead247/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; yes             ; Encrypted Auto-Found VHDL File               ; C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/db/ip/sld2dead247/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; alt_sld_fab ;
+; db/ip/sld2dead247/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/db/ip/sld2dead247/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; alt_sld_fab ;
+; sld_jtag_hub.vhd                                                   ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/sld_jtag_hub.vhd                                                                                    ;             ;
++--------------------------------------------------------------------+-----------------+----------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+
 
 
 +--------------------------------------------------------------+
@@ -1271,55 +1271,55 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Wed Apr 05 23:01:47 2023
+    Info: Processing started: Thu Apr 06 00:49:25 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab5 -c lab5
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 14 of the 14 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file write_address_select.v
-    Info (12023): Found entity 1: write_address_select File: C:/Users/LinF/Desktop/lab5/lab5_restored/write_address_select.v Line: 1
+    Info (12023): Found entity 1: write_address_select File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/write_address_select.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file temp_register.v
-    Info (12023): Found entity 1: temp_register File: C:/Users/LinF/Desktop/lab5/lab5_restored/temp_register.v Line: 1
+    Info (12023): Found entity 1: temp_register File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/temp_register.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file result_mux.v
-    Info (12023): Found entity 1: result_mux File: C:/Users/LinF/Desktop/lab5/lab5_restored/result_mux.v Line: 1
+    Info (12023): Found entity 1: result_mux File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/result_mux.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file regfile.v
-    Info (12023): Found entity 1: regfile File: C:/Users/LinF/Desktop/lab5/lab5_restored/regfile.v Line: 3
+    Info (12023): Found entity 1: regfile File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/regfile.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file pc.v
-    Info (12023): Found entity 1: pc File: C:/Users/LinF/Desktop/lab5/lab5_restored/pc.v Line: 1
+    Info (12023): Found entity 1: pc File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/pc.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file op2_mux.v
-    Info (12023): Found entity 1: op2_mux File: C:/Users/LinF/Desktop/lab5/lab5_restored/op2_mux.v Line: 1
+    Info (12023): Found entity 1: op2_mux File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/op2_mux.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file op1_mux.v
-    Info (12023): Found entity 1: op1_mux File: C:/Users/LinF/Desktop/lab5/lab5_restored/op1_mux.v Line: 1
+    Info (12023): Found entity 1: op1_mux File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/op1_mux.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file lab5.v
-    Info (12023): Found entity 1: lab5 File: C:/Users/LinF/Desktop/lab5/lab5_restored/lab5.v Line: 2
+    Info (12023): Found entity 1: lab5 File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/lab5.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file immediate_extractor.v
-    Info (12023): Found entity 1: immediate_extractor File: C:/Users/LinF/Desktop/lab5/lab5_restored/immediate_extractor.v Line: 1
+    Info (12023): Found entity 1: immediate_extractor File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/immediate_extractor.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file delay_counter.v
-    Info (12023): Found entity 1: delay_counter File: C:/Users/LinF/Desktop/lab5/lab5_restored/delay_counter.v Line: 1
+    Info (12023): Found entity 1: delay_counter File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/delay_counter.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file decoder.v
-    Info (12023): Found entity 1: decoder File: C:/Users/LinF/Desktop/lab5/lab5_restored/decoder.v Line: 1
+    Info (12023): Found entity 1: decoder File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/decoder.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file datapath.v
-    Info (12023): Found entity 1: datapath File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 1
+    Info (12023): Found entity 1: datapath File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file control_fsm.v
-    Info (12023): Found entity 1: control_fsm File: C:/Users/LinF/Desktop/lab5/lab5_restored/control_fsm.v Line: 1
+    Info (12023): Found entity 1: control_fsm File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/control_fsm.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file branch_logic.v
-    Info (12023): Found entity 1: branch_logic File: C:/Users/LinF/Desktop/lab5/lab5_restored/branch_logic.v Line: 1
+    Info (12023): Found entity 1: branch_logic File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/branch_logic.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu.v
-    Info (12023): Found entity 1: alu File: C:/Users/LinF/Desktop/lab5/lab5_restored/alu.v Line: 1
+    Info (12023): Found entity 1: alu File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/alu.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file instruction_rom.v
-    Info (12023): Found entity 1: instruction_rom File: C:/Users/LinF/Desktop/lab5/lab5_restored/instruction_rom.v Line: 39
+    Info (12023): Found entity 1: instruction_rom File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/instruction_rom.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file stepper_rom.v
-    Info (12023): Found entity 1: stepper_rom File: C:/Users/LinF/Desktop/lab5/lab5_restored/stepper_rom.v Line: 39
+    Info (12023): Found entity 1: stepper_rom File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/stepper_rom.v Line: 39
 Info (12127): Elaborating entity "lab5" for the top level hierarchy
-Warning (10034): Output port "LEDR[9..4]" at lab5.v(2) has no driver File: C:/Users/LinF/Desktop/lab5/lab5_restored/lab5.v Line: 2
-Info (12128): Elaborating entity "control_fsm" for hierarchy "control_fsm:the_control_fsm" File: C:/Users/LinF/Desktop/lab5/lab5_restored/lab5.v Line: 73
-Warning (10270): Verilog HDL Case Statement warning at control_fsm.v(153): incomplete case statement has no default case item File: C:/Users/LinF/Desktop/lab5/lab5_restored/control_fsm.v Line: 153
-Info (10264): Verilog HDL Case Statement information at control_fsm.v(153): all case item expressions in this case statement are onehot File: C:/Users/LinF/Desktop/lab5/lab5_restored/control_fsm.v Line: 153
-Info (12128): Elaborating entity "datapath" for hierarchy "datapath:the_datapath" File: C:/Users/LinF/Desktop/lab5/lab5_restored/lab5.v Line: 116
-Info (12128): Elaborating entity "pc" for hierarchy "datapath:the_datapath|pc:the_pc" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 48
-Info (12128): Elaborating entity "instruction_rom" for hierarchy "datapath:the_datapath|instruction_rom:the_instruction_rom" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 59
-Info (12128): Elaborating entity "altsyncram" for hierarchy "datapath:the_datapath|instruction_rom:the_instruction_rom|altsyncram:altsyncram_component" File: C:/Users/LinF/Desktop/lab5/lab5_restored/instruction_rom.v Line: 85
-Info (12130): Elaborated megafunction instantiation "datapath:the_datapath|instruction_rom:the_instruction_rom|altsyncram:altsyncram_component" File: C:/Users/LinF/Desktop/lab5/lab5_restored/instruction_rom.v Line: 85
-Info (12133): Instantiated megafunction "datapath:the_datapath|instruction_rom:the_instruction_rom|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/LinF/Desktop/lab5/lab5_restored/instruction_rom.v Line: 85
+Warning (10034): Output port "LEDR[9..4]" at lab5.v(2) has no driver File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/lab5.v Line: 2
+Info (12128): Elaborating entity "control_fsm" for hierarchy "control_fsm:the_control_fsm" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/lab5.v Line: 73
+Warning (10270): Verilog HDL Case Statement warning at control_fsm.v(153): incomplete case statement has no default case item File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/control_fsm.v Line: 153
+Info (10264): Verilog HDL Case Statement information at control_fsm.v(153): all case item expressions in this case statement are onehot File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/control_fsm.v Line: 153
+Info (12128): Elaborating entity "datapath" for hierarchy "datapath:the_datapath" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/lab5.v Line: 116
+Info (12128): Elaborating entity "pc" for hierarchy "datapath:the_datapath|pc:the_pc" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 48
+Info (12128): Elaborating entity "instruction_rom" for hierarchy "datapath:the_datapath|instruction_rom:the_instruction_rom" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 59
+Info (12128): Elaborating entity "altsyncram" for hierarchy "datapath:the_datapath|instruction_rom:the_instruction_rom|altsyncram:altsyncram_component" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/instruction_rom.v Line: 85
+Info (12130): Elaborated megafunction instantiation "datapath:the_datapath|instruction_rom:the_instruction_rom|altsyncram:altsyncram_component" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/instruction_rom.v Line: 85
+Info (12133): Instantiated megafunction "datapath:the_datapath|instruction_rom:the_instruction_rom|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/instruction_rom.v Line: 85
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "init_file" = "instruction_rom.mif"
@@ -1336,20 +1336,20 @@ Info (12133): Instantiated megafunction "datapath:the_datapath|instruction_rom:t
     Info (12134): Parameter "width_a" = "8"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_4dp1.tdf
-    Info (12023): Found entity 1: altsyncram_4dp1 File: C:/Users/LinF/Desktop/lab5/lab5_restored/db/altsyncram_4dp1.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_4dp1 File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/db/altsyncram_4dp1.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_4dp1" for hierarchy "datapath:the_datapath|instruction_rom:the_instruction_rom|altsyncram:altsyncram_component|altsyncram_4dp1:auto_generated" File: c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Info (12128): Elaborating entity "decoder" for hierarchy "datapath:the_datapath|decoder:the_decoder" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 77
-Info (12128): Elaborating entity "regfile" for hierarchy "datapath:the_datapath|regfile:the_regfile" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 93
-Info (12128): Elaborating entity "write_address_select" for hierarchy "datapath:the_datapath|write_address_select:the_write_address_select" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 102
-Info (12128): Elaborating entity "result_mux" for hierarchy "datapath:the_datapath|result_mux:the_result_mux" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 108
-Info (12128): Elaborating entity "immediate_extractor" for hierarchy "datapath:the_datapath|immediate_extractor:the_immediate_extractor" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 116
-Info (12128): Elaborating entity "alu" for hierarchy "datapath:the_datapath|alu:the_alu" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 127
-Info (12128): Elaborating entity "op1_mux" for hierarchy "datapath:the_datapath|op1_mux:the_op1_mux" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 138
-Info (12128): Elaborating entity "op2_mux" for hierarchy "datapath:the_datapath|op2_mux:the_op2_mux" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 147
-Info (12128): Elaborating entity "stepper_rom" for hierarchy "datapath:the_datapath|stepper_rom:the_stepper_rom" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 158
-Info (12128): Elaborating entity "altsyncram" for hierarchy "datapath:the_datapath|stepper_rom:the_stepper_rom|altsyncram:altsyncram_component" File: C:/Users/LinF/Desktop/lab5/lab5_restored/stepper_rom.v Line: 85
-Info (12130): Elaborated megafunction instantiation "datapath:the_datapath|stepper_rom:the_stepper_rom|altsyncram:altsyncram_component" File: C:/Users/LinF/Desktop/lab5/lab5_restored/stepper_rom.v Line: 85
-Info (12133): Instantiated megafunction "datapath:the_datapath|stepper_rom:the_stepper_rom|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/LinF/Desktop/lab5/lab5_restored/stepper_rom.v Line: 85
+Info (12128): Elaborating entity "decoder" for hierarchy "datapath:the_datapath|decoder:the_decoder" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 77
+Info (12128): Elaborating entity "regfile" for hierarchy "datapath:the_datapath|regfile:the_regfile" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 93
+Info (12128): Elaborating entity "write_address_select" for hierarchy "datapath:the_datapath|write_address_select:the_write_address_select" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 102
+Info (12128): Elaborating entity "result_mux" for hierarchy "datapath:the_datapath|result_mux:the_result_mux" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 108
+Info (12128): Elaborating entity "immediate_extractor" for hierarchy "datapath:the_datapath|immediate_extractor:the_immediate_extractor" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 116
+Info (12128): Elaborating entity "alu" for hierarchy "datapath:the_datapath|alu:the_alu" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 127
+Info (12128): Elaborating entity "op1_mux" for hierarchy "datapath:the_datapath|op1_mux:the_op1_mux" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 138
+Info (12128): Elaborating entity "op2_mux" for hierarchy "datapath:the_datapath|op2_mux:the_op2_mux" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 147
+Info (12128): Elaborating entity "stepper_rom" for hierarchy "datapath:the_datapath|stepper_rom:the_stepper_rom" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 158
+Info (12128): Elaborating entity "altsyncram" for hierarchy "datapath:the_datapath|stepper_rom:the_stepper_rom|altsyncram:altsyncram_component" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/stepper_rom.v Line: 85
+Info (12130): Elaborated megafunction instantiation "datapath:the_datapath|stepper_rom:the_stepper_rom|altsyncram:altsyncram_component" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/stepper_rom.v Line: 85
+Info (12133): Instantiated megafunction "datapath:the_datapath|stepper_rom:the_stepper_rom|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/stepper_rom.v Line: 85
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "init_file" = "stepper_rom.mif"
@@ -1366,38 +1366,38 @@ Info (12133): Instantiated megafunction "datapath:the_datapath|stepper_rom:the_s
     Info (12134): Parameter "width_a" = "4"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_nro1.tdf
-    Info (12023): Found entity 1: altsyncram_nro1 File: C:/Users/LinF/Desktop/lab5/lab5_restored/db/altsyncram_nro1.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_nro1 File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/db/altsyncram_nro1.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_nro1" for hierarchy "datapath:the_datapath|stepper_rom:the_stepper_rom|altsyncram:altsyncram_component|altsyncram_nro1:auto_generated" File: c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Info (12128): Elaborating entity "branch_logic" for hierarchy "datapath:the_datapath|branch_logic:the_branch_logic" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 165
-Info (12128): Elaborating entity "delay_counter" for hierarchy "datapath:the_datapath|delay_counter:the_delay_counter" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 176
-Info (12128): Elaborating entity "temp_register" for hierarchy "datapath:the_datapath|temp_register:the_temp_register" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 190
+Info (12128): Elaborating entity "branch_logic" for hierarchy "datapath:the_datapath|branch_logic:the_branch_logic" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 165
+Info (12128): Elaborating entity "delay_counter" for hierarchy "datapath:the_datapath|delay_counter:the_delay_counter" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 176
+Info (12128): Elaborating entity "temp_register" for hierarchy "datapath:the_datapath|temp_register:the_temp_register" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 190
 Info (12021): Found 1 design units, including 1 entities, in source file db/sld_ela_trigger_flow_sel_3831.tdf
-    Info (12023): Found entity 1: sld_ela_trigger_flow_sel_3831 File: C:/Users/LinF/Desktop/lab5/lab5_restored/db/sld_ela_trigger_flow_sel_3831.tdf Line: 24
+    Info (12023): Found entity 1: sld_ela_trigger_flow_sel_3831 File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/db/sld_ela_trigger_flow_sel_3831.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/sld_reserved_lab5_auto_signaltap_0_flow_mgr_c90c.v
-    Info (12023): Found entity 1: sld_reserved_lab5_auto_signaltap_0_flow_mgr_c90c File: C:/Users/LinF/Desktop/lab5/lab5_restored/db/sld_reserved_lab5_auto_signaltap_0_flow_mgr_c90c.v Line: 28
+    Info (12023): Found entity 1: sld_reserved_lab5_auto_signaltap_0_flow_mgr_c90c File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/db/sld_reserved_lab5_auto_signaltap_0_flow_mgr_c90c.v Line: 28
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_2c84.tdf
-    Info (12023): Found entity 1: altsyncram_2c84 File: C:/Users/LinF/Desktop/lab5/lab5_restored/db/altsyncram_2c84.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_2c84 File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/db/altsyncram_2c84.tdf Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_elc.tdf
-    Info (12023): Found entity 1: mux_elc File: C:/Users/LinF/Desktop/lab5/lab5_restored/db/mux_elc.tdf Line: 22
+    Info (12023): Found entity 1: mux_elc File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/db/mux_elc.tdf Line: 22
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_vnf.tdf
-    Info (12023): Found entity 1: decode_vnf File: C:/Users/LinF/Desktop/lab5/lab5_restored/db/decode_vnf.tdf Line: 22
+    Info (12023): Found entity 1: decode_vnf File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/db/decode_vnf.tdf Line: 22
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_a9i.tdf
-    Info (12023): Found entity 1: cntr_a9i File: C:/Users/LinF/Desktop/lab5/lab5_restored/db/cntr_a9i.tdf Line: 27
+    Info (12023): Found entity 1: cntr_a9i File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/db/cntr_a9i.tdf Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_e9c.tdf
-    Info (12023): Found entity 1: cmpr_e9c File: C:/Users/LinF/Desktop/lab5/lab5_restored/db/cmpr_e9c.tdf Line: 22
+    Info (12023): Found entity 1: cmpr_e9c File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/db/cmpr_e9c.tdf Line: 22
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_4vi.tdf
-    Info (12023): Found entity 1: cntr_4vi File: C:/Users/LinF/Desktop/lab5/lab5_restored/db/cntr_4vi.tdf Line: 25
+    Info (12023): Found entity 1: cntr_4vi File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/db/cntr_4vi.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_09i.tdf
-    Info (12023): Found entity 1: cntr_09i File: C:/Users/LinF/Desktop/lab5/lab5_restored/db/cntr_09i.tdf Line: 27
+    Info (12023): Found entity 1: cntr_09i File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/db/cntr_09i.tdf Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_c9c.tdf
-    Info (12023): Found entity 1: cmpr_c9c File: C:/Users/LinF/Desktop/lab5/lab5_restored/db/cmpr_c9c.tdf Line: 22
+    Info (12023): Found entity 1: cmpr_c9c File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/db/cmpr_c9c.tdf Line: 22
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_kri.tdf
-    Info (12023): Found entity 1: cntr_kri File: C:/Users/LinF/Desktop/lab5/lab5_restored/db/cntr_kri.tdf Line: 27
+    Info (12023): Found entity 1: cntr_kri File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/db/cntr_kri.tdf Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_99c.tdf
-    Info (12023): Found entity 1: cmpr_99c File: C:/Users/LinF/Desktop/lab5/lab5_restored/db/cmpr_99c.tdf Line: 22
+    Info (12023): Found entity 1: cmpr_99c File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/db/cmpr_99c.tdf Line: 22
 Info (12033): Analysis and Synthesis generated Signal Tap or debug node instance "auto_signaltap_0"
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2023.04.05.23:01:58 Progress: Loading sld2dead247/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2023.04.06.00:49:36 Progress: Loading sld2dead247/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -1408,72 +1408,72 @@ Info (11172): Ident: "alt_sld_fab" instantiated altera_connection_identification
 Info (11172): Alt_sld_fab: Done "alt_sld_fab" with 6 modules, 6 files
 Info (11171): Finished IP generation for the debug fabric: alt_sld_fab.
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld2dead247/alt_sld_fab.v
-    Info (12023): Found entity 1: alt_sld_fab File: C:/Users/LinF/Desktop/lab5/lab5_restored/db/ip/sld2dead247/alt_sld_fab.v Line: 9
+    Info (12023): Found entity 1: alt_sld_fab File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/db/ip/sld2dead247/alt_sld_fab.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld2dead247/submodules/alt_sld_fab_alt_sld_fab.v
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab File: C:/Users/LinF/Desktop/lab5/lab5_restored/db/ip/sld2dead247/submodules/alt_sld_fab_alt_sld_fab.v Line: 9
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/db/ip/sld2dead247/submodules/alt_sld_fab_alt_sld_fab.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld2dead247/submodules/alt_sld_fab_alt_sld_fab_ident.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_ident File: C:/Users/LinF/Desktop/lab5/lab5_restored/db/ip/sld2dead247/submodules/alt_sld_fab_alt_sld_fab_ident.sv Line: 33
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_ident File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/db/ip/sld2dead247/submodules/alt_sld_fab_alt_sld_fab_ident.sv Line: 33
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld2dead247/submodules/alt_sld_fab_alt_sld_fab_presplit.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_presplit File: C:/Users/LinF/Desktop/lab5/lab5_restored/db/ip/sld2dead247/submodules/alt_sld_fab_alt_sld_fab_presplit.sv Line: 3
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_presplit File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/db/ip/sld2dead247/submodules/alt_sld_fab_alt_sld_fab_presplit.sv Line: 3
 Info (12021): Found 2 design units, including 1 entities, in source file db/ip/sld2dead247/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd
-    Info (12022): Found design unit 1: alt_sld_fab_alt_sld_fab_sldfabric-rtl File: C:/Users/LinF/Desktop/lab5/lab5_restored/db/ip/sld2dead247/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 102
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_sldfabric File: C:/Users/LinF/Desktop/lab5/lab5_restored/db/ip/sld2dead247/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 11
+    Info (12022): Found design unit 1: alt_sld_fab_alt_sld_fab_sldfabric-rtl File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/db/ip/sld2dead247/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 102
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_sldfabric File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/db/ip/sld2dead247/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld2dead247/submodules/alt_sld_fab_alt_sld_fab_splitter.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: C:/Users/LinF/Desktop/lab5/lab5_restored/db/ip/sld2dead247/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/db/ip/sld2dead247/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDR[4]" is stuck at GND File: C:/Users/LinF/Desktop/lab5/lab5_restored/lab5.v Line: 2
-    Warning (13410): Pin "LEDR[5]" is stuck at GND File: C:/Users/LinF/Desktop/lab5/lab5_restored/lab5.v Line: 2
-    Warning (13410): Pin "LEDR[6]" is stuck at GND File: C:/Users/LinF/Desktop/lab5/lab5_restored/lab5.v Line: 2
-    Warning (13410): Pin "LEDR[7]" is stuck at GND File: C:/Users/LinF/Desktop/lab5/lab5_restored/lab5.v Line: 2
-    Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/Users/LinF/Desktop/lab5/lab5_restored/lab5.v Line: 2
-    Warning (13410): Pin "LEDR[9]" is stuck at GND File: C:/Users/LinF/Desktop/lab5/lab5_restored/lab5.v Line: 2
+    Warning (13410): Pin "LEDR[4]" is stuck at GND File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/lab5.v Line: 2
+    Warning (13410): Pin "LEDR[5]" is stuck at GND File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/lab5.v Line: 2
+    Warning (13410): Pin "LEDR[6]" is stuck at GND File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/lab5.v Line: 2
+    Warning (13410): Pin "LEDR[7]" is stuck at GND File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/lab5.v Line: 2
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/lab5.v Line: 2
+    Warning (13410): Pin "LEDR[9]" is stuck at GND File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/lab5.v Line: 2
 Info (286031): Timing-Driven Synthesis is running on partition "Top"
 Info (17049): 5 registers lost all their fanouts during netlist optimizations.
 Info (17016): Found the following redundant logic cells in design
-    Info (17048): Logic cell "stepper_signals[0]" File: C:/Users/LinF/Desktop/lab5/lab5_restored/lab5.v Line: 23
-    Info (17048): Logic cell "stepper_signals[1]" File: C:/Users/LinF/Desktop/lab5/lab5_restored/lab5.v Line: 23
-    Info (17048): Logic cell "stepper_signals[2]" File: C:/Users/LinF/Desktop/lab5/lab5_restored/lab5.v Line: 23
-    Info (17048): Logic cell "stepper_signals[3]" File: C:/Users/LinF/Desktop/lab5/lab5_restored/lab5.v Line: 23
-    Info (17048): Logic cell "datapath:the_datapath|register0[7]" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 24
-    Info (17048): Logic cell "datapath:the_datapath|register0[6]" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 24
-    Info (17048): Logic cell "datapath:the_datapath|register0[5]" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 24
-    Info (17048): Logic cell "datapath:the_datapath|register0[4]" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 24
-    Info (17048): Logic cell "datapath:the_datapath|register0[3]" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 24
-    Info (17048): Logic cell "datapath:the_datapath|register0[2]" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 24
-    Info (17048): Logic cell "datapath:the_datapath|register0[1]" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 24
-    Info (17048): Logic cell "datapath:the_datapath|register0[0]" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 24
-    Info (17048): Logic cell "datapath:the_datapath|q_wire[7]" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 28
-    Info (17048): Logic cell "datapath:the_datapath|q_wire[6]" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 28
-    Info (17048): Logic cell "datapath:the_datapath|q_wire[5]" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 28
-    Info (17048): Logic cell "datapath:the_datapath|pc_wire[0]" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 27
-    Info (17048): Logic cell "datapath:the_datapath|pc_wire[1]" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 27
-    Info (17048): Logic cell "datapath:the_datapath|pc_wire[2]" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 27
-    Info (17048): Logic cell "datapath:the_datapath|pc_wire[3]" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 27
-    Info (17048): Logic cell "datapath:the_datapath|pc_wire[4]" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 27
-    Info (17048): Logic cell "datapath:the_datapath|pc_wire[5]" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 27
-    Info (17048): Logic cell "datapath:the_datapath|pc_wire[6]" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 27
-    Info (17048): Logic cell "datapath:the_datapath|pc_wire[7]" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 27
-    Info (17048): Logic cell "datapath:the_datapath|q_wire[0]" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 28
-    Info (17048): Logic cell "datapath:the_datapath|q_wire[1]" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 28
-    Info (17048): Logic cell "datapath:the_datapath|q_wire[2]" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 28
-    Info (17048): Logic cell "datapath:the_datapath|q_wire[3]" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 28
-    Info (17048): Logic cell "datapath:the_datapath|q_wire[4]" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 28
-    Info (17048): Logic cell "datapath:the_datapath|position[0]" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 22
-    Info (17048): Logic cell "datapath:the_datapath|position[1]" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 22
-    Info (17048): Logic cell "datapath:the_datapath|position[2]" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 22
-    Info (17048): Logic cell "datapath:the_datapath|delay[1]" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 23
-    Info (17048): Logic cell "datapath:the_datapath|delay[7]" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 23
-    Info (17048): Logic cell "datapath:the_datapath|delay[6]" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 23
-    Info (17048): Logic cell "datapath:the_datapath|delay[5]" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 23
-    Info (17048): Logic cell "datapath:the_datapath|delay[0]" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 23
-    Info (17048): Logic cell "datapath:the_datapath|delay[4]" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 23
-    Info (17048): Logic cell "datapath:the_datapath|delay[3]" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 23
-    Info (17048): Logic cell "datapath:the_datapath|delay[2]" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 23
-    Info (17048): Logic cell "datapath:the_datapath|position[3]" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 22
-    Info (17048): Logic cell "datapath:the_datapath|position[4]" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 22
-    Info (17048): Logic cell "datapath:the_datapath|position[5]" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 22
-    Info (17048): Logic cell "datapath:the_datapath|position[6]" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 22
-    Info (17048): Logic cell "datapath:the_datapath|position[7]" File: C:/Users/LinF/Desktop/lab5/lab5_restored/datapath.v Line: 22
+    Info (17048): Logic cell "stepper_signals[0]" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/lab5.v Line: 23
+    Info (17048): Logic cell "stepper_signals[1]" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/lab5.v Line: 23
+    Info (17048): Logic cell "stepper_signals[2]" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/lab5.v Line: 23
+    Info (17048): Logic cell "stepper_signals[3]" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/lab5.v Line: 23
+    Info (17048): Logic cell "datapath:the_datapath|register0[7]" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 24
+    Info (17048): Logic cell "datapath:the_datapath|register0[6]" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 24
+    Info (17048): Logic cell "datapath:the_datapath|register0[5]" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 24
+    Info (17048): Logic cell "datapath:the_datapath|register0[4]" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 24
+    Info (17048): Logic cell "datapath:the_datapath|register0[3]" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 24
+    Info (17048): Logic cell "datapath:the_datapath|register0[2]" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 24
+    Info (17048): Logic cell "datapath:the_datapath|register0[1]" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 24
+    Info (17048): Logic cell "datapath:the_datapath|register0[0]" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 24
+    Info (17048): Logic cell "datapath:the_datapath|q_wire[7]" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 28
+    Info (17048): Logic cell "datapath:the_datapath|q_wire[6]" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 28
+    Info (17048): Logic cell "datapath:the_datapath|q_wire[5]" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 28
+    Info (17048): Logic cell "datapath:the_datapath|pc_wire[0]" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 27
+    Info (17048): Logic cell "datapath:the_datapath|pc_wire[1]" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 27
+    Info (17048): Logic cell "datapath:the_datapath|pc_wire[2]" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 27
+    Info (17048): Logic cell "datapath:the_datapath|pc_wire[3]" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 27
+    Info (17048): Logic cell "datapath:the_datapath|pc_wire[4]" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 27
+    Info (17048): Logic cell "datapath:the_datapath|pc_wire[5]" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 27
+    Info (17048): Logic cell "datapath:the_datapath|pc_wire[6]" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 27
+    Info (17048): Logic cell "datapath:the_datapath|pc_wire[7]" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 27
+    Info (17048): Logic cell "datapath:the_datapath|q_wire[0]" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 28
+    Info (17048): Logic cell "datapath:the_datapath|q_wire[1]" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 28
+    Info (17048): Logic cell "datapath:the_datapath|q_wire[2]" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 28
+    Info (17048): Logic cell "datapath:the_datapath|q_wire[3]" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 28
+    Info (17048): Logic cell "datapath:the_datapath|q_wire[4]" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 28
+    Info (17048): Logic cell "datapath:the_datapath|position[0]" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 22
+    Info (17048): Logic cell "datapath:the_datapath|position[1]" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 22
+    Info (17048): Logic cell "datapath:the_datapath|position[2]" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 22
+    Info (17048): Logic cell "datapath:the_datapath|delay[1]" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 23
+    Info (17048): Logic cell "datapath:the_datapath|delay[7]" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 23
+    Info (17048): Logic cell "datapath:the_datapath|delay[6]" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 23
+    Info (17048): Logic cell "datapath:the_datapath|delay[5]" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 23
+    Info (17048): Logic cell "datapath:the_datapath|delay[0]" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 23
+    Info (17048): Logic cell "datapath:the_datapath|delay[4]" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 23
+    Info (17048): Logic cell "datapath:the_datapath|delay[3]" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 23
+    Info (17048): Logic cell "datapath:the_datapath|delay[2]" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 23
+    Info (17048): Logic cell "datapath:the_datapath|position[3]" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 22
+    Info (17048): Logic cell "datapath:the_datapath|position[4]" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 22
+    Info (17048): Logic cell "datapath:the_datapath|position[5]" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 22
+    Info (17048): Logic cell "datapath:the_datapath|position[6]" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 22
+    Info (17048): Logic cell "datapath:the_datapath|position[7]" File: C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/datapath.v Line: 22
 Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to HPS_DDR3_ADDR[0] -entity DE1_SoC was ignored
     Warning (20014): Assignment for entity set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to HPS_DDR3_ADDR[10] -entity DE1_SoC was ignored
@@ -2046,7 +2046,7 @@ Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not
     Warning (20014): Assignment for entity set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to HPS_DDR3_DQ[9] -entity DE1_SoC was ignored
     Warning (20014): Assignment for entity set_instance_assignment -name D5_DELAY 2 -to HPS_DDR3_CK_N -entity DE1_SoC was ignored
     Warning (20014): Assignment for entity set_instance_assignment -name D5_DELAY 2 -to HPS_DDR3_CK_P -entity DE1_SoC was ignored
-Info (144001): Generated suppressed messages file C:/Users/LinF/Desktop/lab5/lab5_restored/output_files/lab5.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/output_files/lab5.map.smsg
 Info (35024): Successfully connected in-system debug instance "auto_signaltap_0" to all 93 required data inputs, trigger inputs, acquisition clocks, and dynamic pins
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 9 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -2056,15 +2056,15 @@ Info (21057): Implemented 1207 device resources after synthesis - the final reso
     Info (21061): Implemented 1115 logic cells
     Info (21064): Implemented 71 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 582 warnings
-    Info: Peak virtual memory: 4929 megabytes
-    Info: Processing ended: Wed Apr 05 23:02:06 2023
+    Info: Peak virtual memory: 4959 megabytes
+    Info: Processing ended: Thu Apr 06 00:49:44 2023
     Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:10
+    Info: Total CPU time (on all processors): 00:00:08
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/LinF/Desktop/lab5/lab5_restored/output_files/lab5.map.smsg.
+The suppressed messages can be found in C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/output_files/lab5.map.smsg.
 
 
