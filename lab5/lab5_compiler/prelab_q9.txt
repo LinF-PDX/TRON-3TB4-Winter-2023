@@ -1,0 +1,16 @@
+CLR r0
+SR0 #3
+MOV r1,r0	;set R1=3
+
+SRH0 #3
+SR0 #2
+MOV r3,r0	;set delay=50=00110010
+
+SRH0 #15
+SR0 #12	;set R0=-4=11111100
+
+MOVR r1
+PAUSE
+MOVRHS r0
+PAUSE
+BR #-4	;loop

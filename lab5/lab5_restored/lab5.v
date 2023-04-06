@@ -20,22 +20,13 @@ wire clk;
 wire reset_n;
 
 //more wires
-
-
-
-
-
-
-
-
-
-
+wire [3:0] stepper_signals /* synthesis keep */;
 
 assign clk=CLOCK_50;
 assign reset_n=KEY[0];
 
 
-// connect stepper signals to the green LEDs, so that we can observe them visually
+// connect stepper signals to the red LEDs, so that we can observe them visually
 assign LEDR[3:0] = stepper_signals;
 assign GPIO_0[3:0]=stepper_signals;    //3.3V is enough to activate the SN754410 Half_H driver
 // GPIO pins, from top, the 6th rows are 5V(left/inner) and GND(right/out side)

@@ -11,43 +11,49 @@ reg [7:0] reg1 /* synthesis preserve */;
 reg [7:0] reg2 /* synthesis preserve */;
 reg [7:0] reg3 /* synthesis preserve */;
 
+//user added
+assign register0=reg0;
+assign position=reg2;
+assign delay=reg3;
 
-always @(posedge clk) begin
-		if (!reset_n)
-		begin
-		reg0<=8'h00;
-		reg1<=8'h00;
-		reg2<=8'h00; 
-		reg3<=8'h00;
-		end
-		
-		else if (write)
-		begin
-			case (wr_select)
-			2'b00: reg0<=data;
-			2'b01: reg1<=data;
-			2'b10: reg2<=data;
-			2'b11: reg3<=data;
-			endcase
-		end
+//select0 mux
+always @(*) begin
+	case(select0)
+		2'b00:selected0<=reg0;
+		2'b01:selected0<=reg1;
+		2'b10:selected0<=reg2;
+		2'b11:selected0<=reg3;
+		default:selected0<=reg0; //error case
+	endcase
+end
 
-		case (select0)
-		2'b00: selected0<=reg0;
-		2'b01: selected0<=reg1;
-		2'b10: selected0<=reg2;
-		2'b11: selected0<=reg3;
+//select1 mux
+always @(*) begin
+	case(select1)
+		2'b00:selected1<=reg0;
+		2'b01:selected1<=reg1;
+		2'b10:selected1<=reg2;
+		2'b11:selected1<=reg3;
+		default:selected1<=reg0; //error case
+	endcase
+end
+
+//write data
+always @(posedge clk or negedge reset_n) begin
+	if (!reset_n) begin
+		reg0<=8'b0;
+		reg1<=8'b0;
+		reg2<=8'b0;
+		reg3<=8'b0;
+	end else if (write) begin //write enabled
+		case(wr_select)
+			2'b00:reg0<=data;
+			2'b01:reg1<=data;
+			2'b10:reg2<=data;
+			2'b11:reg3<=data;
+			default:reg0<=data;
 		endcase
-		
-		case (select1)
-		2'b00: selected1<=reg0;
-		2'b01: selected1<=reg1;
-		2'b10: selected1<=reg2;
-		2'b11: selected1<=reg3;
-		endcase
-		
-		register0 <= reg0;
-		position <= reg2;
-		delay <= reg3;
 	end
+end
 
 endmodule

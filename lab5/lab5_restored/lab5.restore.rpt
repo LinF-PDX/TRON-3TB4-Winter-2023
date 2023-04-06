@@ -1,6 +1,6 @@
 Restore Archived Project report for lab5
-Mon Mar 27 11:30:02 2023
-Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Mon Mar 28 12:13:18 2022
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
 ---------------------
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------+
 ; Restore Archived Project Summary                                        ;
 +---------------------------------+---------------------------------------+
-; Restore Archived Project Status ; Successful - Mon Mar 27 11:30:02 2023 ;
+; Restore Archived Project Status ; Successful - Mon Mar 28 12:13:18 2022 ;
 ; Revision Name                   ; lab5                                  ;
 ; Top-level Entity Name           ; lab5                                  ;
 ; Family                          ; Cyclone V                             ;
@@ -46,14 +46,14 @@ refer to the applicable agreement for further details.
 +-----------------------------------+
 ; Restore Archived Project Messages ;
 +-----------------------------------+
-Info: Successfully restored 'C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5.qar' into the 'C:/Users/LinF/Documents/School/Winter2023/3TB4/TRON-3TB4-Winter-2023/lab5/lab5_restored/' directory
+Info: Successfully restored 'C:/Users/Tim_G/Desktop/3rd Year Courses/MECHTRON 3TA4 and 3TB4/Lab/lab5/lab5.qar' into the 'C:/Users/Tim_G/Desktop/3rd Year Courses/MECHTRON 3TA4 and 3TB4/Lab/lab5/lab5_restored/' directory
 Info: Generated report 'lab5.restore.rpt'
-Info (23030): Evaluation of Tcl script c:/intelfpga_lite/17.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info (23030): Evaluation of Tcl script e:/intelfpga/17.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
 Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4826 megabytes
-    Info: Processing ended: Mon Mar 27 11:30:02 2023
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Peak virtual memory: 4853 megabytes
+    Info: Processing ended: Mon Mar 28 12:13:18 2022
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:01
 
 
 +-------------------------+

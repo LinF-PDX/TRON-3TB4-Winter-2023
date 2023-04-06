@@ -1,0 +1,326 @@
+// Copyright (C) 2017  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "03/31/2022 13:47:38"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          datapath
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module datapath_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg alu_add_sub;
+reg alu_set_high;
+reg alu_set_low;
+reg clk;
+reg commit_branch;
+reg decrement_temp;
+reg enable_delay_counter;
+reg increment_pc;
+reg increment_temp;
+reg load_temp;
+reg [1:0] op1_mux_select;
+reg [1:0] op2_mux_select;
+reg reset_n;
+reg result_mux_select;
+reg [1:0] select_immediate;
+reg [1:0] select_write_address;
+reg start_delay_counter;
+reg write_reg_file;
+// wires                                               
+wire addi;
+wire br;
+wire brz;
+wire clr;
+wire delay_done;
+wire mov;
+wire mova;
+wire movr;
+wire movrhs;
+wire pause;
+wire register0_is_zero;
+wire sr0;
+wire srh0;
+wire [3:0] stepper_signals;
+wire subi;
+wire temp_is_negative;
+wire temp_is_positive;
+wire temp_is_zero;
+
+// assign statements (if any)                          
+datapath i1 (
+// port map - connection between master ports and signals/registers   
+	.addi(addi),
+	.alu_add_sub(alu_add_sub),
+	.alu_set_high(alu_set_high),
+	.alu_set_low(alu_set_low),
+	.br(br),
+	.brz(brz),
+	.clk(clk),
+	.clr(clr),
+	.commit_branch(commit_branch),
+	.decrement_temp(decrement_temp),
+	.delay_done(delay_done),
+	.enable_delay_counter(enable_delay_counter),
+	.increment_pc(increment_pc),
+	.increment_temp(increment_temp),
+	.load_temp(load_temp),
+	.mov(mov),
+	.mova(mova),
+	.movr(movr),
+	.movrhs(movrhs),
+	.op1_mux_select(op1_mux_select),
+	.op2_mux_select(op2_mux_select),
+	.pause(pause),
+	.register0_is_zero(register0_is_zero),
+	.reset_n(reset_n),
+	.result_mux_select(result_mux_select),
+	.select_immediate(select_immediate),
+	.select_write_address(select_write_address),
+	.sr0(sr0),
+	.srh0(srh0),
+	.start_delay_counter(start_delay_counter),
+	.stepper_signals(stepper_signals),
+	.subi(subi),
+	.temp_is_negative(temp_is_negative),
+	.temp_is_positive(temp_is_positive),
+	.temp_is_zero(temp_is_zero),
+	.write_reg_file(write_reg_file)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+
+// clk
+initial
+begin
+	repeat(2)
+	begin
+		clk = 1'b0;
+		clk = #25000 1'b1;
+		# 25000;
+	end
+	clk = 1'b0;
+	clk = #30000 1'b1;
+	clk = #20000 1'b0;
+	clk = #25000 1'b1;
+	clk = #25000 1'b0;
+	clk = #50000 1'b1;
+	clk = #50000 1'b0;
+	clk = #40000 1'b1;
+	clk = #60000 1'b0;
+	clk = #25000 1'b1;
+	clk = #25000 1'b0;
+	clk = #25000 1'b1;
+	clk = #25000 1'b0;
+	clk = #10000 1'b1;
+	clk = #20000 1'b0;
+	clk = #5000 1'b1;
+	# 25000;
+	repeat(8)
+	begin
+		clk = 1'b0;
+		clk = #25000 1'b1;
+		# 25000;
+	end
+	clk = 1'b0;
+	clk = #25000 1'b1;
+end 
+
+// reset_n
+initial
+begin
+	reset_n = 1'b0;
+	reset_n = #40000 1'b1;
+end 
+
+// commit_branch
+initial
+begin
+	commit_branch = 1'b0;
+end 
+// select_immediate[ 1 ]
+initial
+begin
+	select_immediate[1] = 1'b0;
+	select_immediate[1] = #160000 1'b1;
+	select_immediate[1] = #30000 1'b0;
+end 
+// select_immediate[ 0 ]
+initial
+begin
+	select_immediate[0] = 1'b0;
+	select_immediate[0] = #70000 1'b1;
+	select_immediate[0] = #30000 1'b0;
+	select_immediate[0] = #60000 1'b1;
+	select_immediate[0] = #30000 1'b0;
+end 
+// op1_mux_select[ 1 ]
+initial
+begin
+	op1_mux_select[1] = 1'b0;
+	op1_mux_select[1] = #70000 1'b1;
+	op1_mux_select[1] = #30000 1'b0;
+	op1_mux_select[1] = #230000 1'b1;
+	op1_mux_select[1] = #40000 1'b0;
+end 
+// op1_mux_select[ 0 ]
+initial
+begin
+	op1_mux_select[0] = 1'b0;
+	op1_mux_select[0] = #70000 1'b1;
+	op1_mux_select[0] = #30000 1'b0;
+	op1_mux_select[0] = #60000 1'b1;
+	op1_mux_select[0] = #30000 1'b0;
+end 
+// op2_mux_select[ 1 ]
+initial
+begin
+	op2_mux_select[1] = 1'b0;
+	op2_mux_select[1] = #330000 1'b1;
+	op2_mux_select[1] = #40000 1'b0;
+end 
+// op2_mux_select[ 0 ]
+initial
+begin
+	op2_mux_select[0] = 1'b0;
+	op2_mux_select[0] = #70000 1'b1;
+	op2_mux_select[0] = #30000 1'b0;
+	op2_mux_select[0] = #60000 1'b1;
+	op2_mux_select[0] = #30000 1'b0;
+	op2_mux_select[0] = #140000 1'b1;
+	op2_mux_select[0] = #40000 1'b0;
+end 
+
+// alu_add_sub
+initial
+begin
+	alu_add_sub = 1'b0;
+end 
+
+// alu_set_low
+initial
+begin
+	alu_set_low = 1'b0;
+	alu_set_low = #70000 1'b1;
+	alu_set_low = #30000 1'b0;
+end 
+
+// alu_set_high
+initial
+begin
+	alu_set_high = 1'b0;
+end 
+
+// result_mux_select
+initial
+begin
+	result_mux_select = 1'b0;
+	result_mux_select = #70000 1'b1;
+	result_mux_select = #30000 1'b0;
+	result_mux_select = #60000 1'b1;
+	result_mux_select = #30000 1'b0;
+	result_mux_select = #140000 1'b1;
+	result_mux_select = #40000 1'b0;
+end 
+
+// write_reg_file
+initial
+begin
+	write_reg_file = 1'b0;
+	write_reg_file = #70000 1'b1;
+	write_reg_file = #30000 1'b0;
+	write_reg_file = #60000 1'b1;
+	write_reg_file = #30000 1'b0;
+	write_reg_file = #140000 1'b1;
+	write_reg_file = #40000 1'b0;
+end 
+// select_write_address[ 1 ]
+initial
+begin
+	select_write_address[1] = 1'b0;
+	select_write_address[1] = #160000 1'b1;
+	select_write_address[1] = #30000 1'b0;
+	select_write_address[1] = #140000 1'b1;
+	select_write_address[1] = #40000 1'b0;
+end 
+// select_write_address[ 0 ]
+initial
+begin
+	select_write_address[0] = 1'b0;
+	select_write_address[0] = #330000 1'b1;
+	select_write_address[0] = #40000 1'b0;
+end 
+
+// increment_pc
+initial
+begin
+	increment_pc = 1'b0;
+	increment_pc = #70000 1'b1;
+	increment_pc = #30000 1'b0;
+	increment_pc = #60000 1'b1;
+	increment_pc = #30000 1'b0;
+	increment_pc = #480000 1'b1;
+	increment_pc = #30000 1'b0;
+end 
+
+// load_temp
+initial
+begin
+	load_temp = 1'b0;
+	load_temp = #240000 1'b1;
+	load_temp = #40000 1'b0;
+end 
+
+// increment_temp
+initial
+begin
+	increment_temp = 1'b0;
+end 
+
+// decrement_temp
+initial
+begin
+	decrement_temp = 1'b0;
+	decrement_temp = #330000 1'b1;
+	decrement_temp = #40000 1'b0;
+end 
+
+// start_delay_counter
+initial
+begin
+	start_delay_counter = 1'b0;
+	start_delay_counter = #330000 1'b1;
+	start_delay_counter = #40000 1'b0;
+end 
+
+// enable_delay_counter
+initial
+begin
+	enable_delay_counter = 1'b0;
+	enable_delay_counter = #410000 1'b1;
+	enable_delay_counter = #240000 1'b0;
+end 
+endmodule
+
